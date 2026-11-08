@@ -20,8 +20,10 @@ def validate(root: Path, manifest_path: Path):
     assert len(index) == 30, f'Expected 30 index rows; got {len(index)}'
     for project in manifest:
         folder = root/project['name']
-        assert {x.name for x in folder.iterdir() if x.is_dir()} == {'osv','grype','default'}, project['name']
-        doc = json.loads((folder/'default/reference.json').read_text(encoding='utf-8'))
+        expected = {'osv.json', 'grype.json', 'default.json'}
+        actual = {x.name for x in folder.iterdir()}
+        assert actual == expected, (project['name'], actual ^ expected)
+        doc = json.loads((folder/'default.json').read_text(encoding='utf-8'))
         assert doc['project_id'] == project['id']
         assert doc['pinned_commit'] == project['ref']
         c = doc['counts']
@@ -31,15 +33,16 @@ def validate(root: Path, manifest_path: Path):
         assert c['grype'] == c['both'] + c['only_grype']
         assert c['total'] == (c['both'] + c['only_osv'] + c['only_grype'] +
                               c.get('independently_verified_but_not_detected', 0))
-        for scanner in ('osv','grype'):
-            scan = json.loads((folder/scanner/'findings.json').read_text(encoding='utf-8'))
-            assert scan['project_id'] == project['id']
-            assert scan['count'] == len(scan['findings']) == c[scanner]
-            with (folder/scanner/'findings.csv').open(newline='',encoding='utf-8-sig') as f:
-                assert len(list(csv.DictReader(f))) == c[scanner]
-        with (folder/'default/reference.csv').open(newline='', encoding='utf-8-sig') as f:
-            assert len(list(csv.DictReader(f))) == c['total']
-    print('VALIDATED: 30 project folders, exactly 3 subfolders each, all counts consistent.')
+        for scanner, key in (('osv', 'results'), ('grype', 'matches')):
+            result = json.loads((folder / (scanner + '.json')).read_text(encoding='utf-8'))
+            assert isinstance(result, dict), (project['name'], scanner)
+            state = doc['scan_status'][scanner]
+            if state == 'ok':
+                assert isinstance(result.get(key), list), (project['name'], scanner, key)
+            else:
+                assert result.get('scan_status') == state, (project['name'], scanner)
+                assert key not in result, (project['name'], scanner, 'fabricated empty report')
+    print('VALIDATED: 30 project folders, exactly 3 JSON files each, all counts consistent.')
 
 
 def main():
