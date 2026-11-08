@@ -52,7 +52,7 @@ class RebuildTests(unittest.TestCase):
                     'evidence_url':'https://github.com/example/repo/blob/aaaa/lockfile',
                     'notes':'manually verified'}]
             table=generate(manifest, truth, root/'raw', root/'application')
-            docs=json.loads((root/'application/project-001/default/reference.json').read_text())
+            docs=json.loads((root/'application/project-001/default.json').read_text())
             findings=docs['vulnerabilities']
             self.assertEqual(2,len(findings))
             self.assertEqual(1,sum(x['verification_status']=='project_and_advisory_verified' for x in findings))
@@ -60,13 +60,17 @@ class RebuildTests(unittest.TestCase):
             self.assertEqual(1,docs['counts']['both'])
             self.assertEqual(1,docs['counts']['independently_verified_but_not_detected'])
             validate(root/'application',self._write_manifest(root,manifest))
-            # The final ZIP must contain genuine unmodified native scanner reports.
-            self.assertTrue((root/'application/project-001/osv/result.json').is_file())
-            self.assertTrue((root/'application/project-001/grype/result.json').is_file())
-            self.assertEqual('ok', json.loads(
-                (root/'application/project-001/osv/scan-status.json').read_text())['status'])
-            self.assertEqual('ok', json.loads(
-                (root/'application/project-001/grype/scan-status.json').read_text())['status'])
+            # All project folders have exactly 3 files. Native reports are unmodified.
+            target = root / 'application/project-001'
+            self.assertEqual({'osv.json', 'grype.json', 'default.json'},
+                             {x.name for x in target.iterdir()})
+            self.assertEqual(json.loads((raw / 'osv/result.json').read_text()),
+                             json.loads((target / 'osv.json').read_text()))
+            self.assertEqual(json.loads((raw / 'grype/result.json').read_text()),
+                             json.loads((target / 'grype.json').read_text()))
+            failed = json.loads((root/'application/project-002/osv.json').read_text())
+            self.assertEqual('missing_artifact', failed['scan_status'])
+            self.assertNotIn('results', failed)
 
     @staticmethod
     def _write_manifest(root,manifest):
