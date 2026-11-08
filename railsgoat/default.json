@@ -1,0 +1,4206 @@
+{
+  "schema_version": 1,
+  "project_id": "P009",
+  "project": "railsgoat",
+  "repository": "OWASP/railsgoat",
+  "pinned_commit": "f5951f13089d85c979de09e7da3c8c0fb982f94a",
+  "source_run": "https://github.com/maksimrin8-design/SCAanalyze/actions/runs/42440365259",
+  "reference_type": "scanner_union_plus_independently_verified_examples",
+  "is_complete_independent_ground_truth": false,
+  "methodology": "Every finding reported by at least one analyzer, with CVE/GHSA aliases merged, plus verified dependencies and advisories from ground-truth/verified.csv. Scanner-only entries remain PROVISIONAL and vulnerabilities missed by both analyzers may be absent. Do not infer unbiased recall or precision.",
+  "scan_status": {
+    "osv": "ok",
+    "grype": "ok"
+  },
+  "counts": {
+    "both": 74,
+    "severity_Low": 90,
+    "verified": 0,
+    "severity_Medium": 69,
+    "severity_High": 25,
+    "severity_Critical": 2,
+    "only_grype": 112,
+    "only_osv": 0,
+    "independently_verified_but_not_detected": 0,
+    "total": 186,
+    "osv": 74,
+    "grype": 186,
+    "comparison_valid": true
+  },
+  "vulnerabilities": [
+    {
+      "package": "actionview",
+      "installed_version": "8.0.4",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-33168",
+      "aliases": [
+        "CVE-2026-33168",
+        "GHSA-V55J-83PF-R9CQ"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-79"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-V55J-83PF-R9CQ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "activestorage",
+      "installed_version": "8.0.4",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-33173",
+      "aliases": [
+        "CVE-2026-33173",
+        "GHSA-QCFX-2MFW-W4CG"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-925"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-QCFX-2MFW-W4CG",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "activestorage",
+      "installed_version": "8.0.4",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-33174",
+      "aliases": [
+        "CVE-2026-33174",
+        "GHSA-R46P-8F7G-VVVG"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-789"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-R46P-8F7G-VVVG",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "activestorage",
+      "installed_version": "8.0.4",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-33195",
+      "aliases": [
+        "CVE-2026-33195",
+        "GHSA-9XRJ-H377-FR87"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-22"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-9XRJ-H377-FR87",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "activestorage",
+      "installed_version": "8.0.4",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-33202",
+      "aliases": [
+        "CVE-2026-33202",
+        "GHSA-73F9-JHHH-HR5M"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-74"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-73F9-JHHH-HR5M",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "activestorage",
+      "installed_version": "8.0.4",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-33658",
+      "aliases": [
+        "CVE-2026-33658",
+        "GHSA-P9FM-F462-GGRG"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-P9FM-F462-GGRG",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "activestorage",
+      "installed_version": "8.0.4",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-66066",
+      "aliases": [
+        "CVE-2026-66066",
+        "GHSA-XR9X-R78C-5HRM"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-1188"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-XR9X-R78C-5HRM",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "activesupport",
+      "installed_version": "8.0.4",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-33169",
+      "aliases": [
+        "CVE-2026-33169",
+        "GHSA-CG4J-Q9V8-6V38"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1333",
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-CG4J-Q9V8-6V38",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "activesupport",
+      "installed_version": "8.0.4",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-33170",
+      "aliases": [
+        "CVE-2026-33170",
+        "GHSA-89VF-4333-QX8V"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-79"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-89VF-4333-QX8V",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "activesupport",
+      "installed_version": "8.0.4",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-33176",
+      "aliases": [
+        "CVE-2026-33176",
+        "GHSA-2J26-FRM8-CMJ9"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-2J26-FRM8-CMJ9",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "addressable",
+      "installed_version": "2.8.8",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-35611",
+      "aliases": [
+        "CVE-2026-35611",
+        "GHSA-H27X-RFFW-24P4"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-H27X-RFFW-24P4",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "bcrypt",
+      "installed_version": "3.1.21",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-33306",
+      "aliases": [
+        "CVE-2026-33306",
+        "GHSA-F27W-VCWJ-C954"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-190"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-F27W-VCWJ-C954",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "concurrent-ruby",
+      "installed_version": "1.3.6",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-54904",
+      "aliases": [
+        "CVE-2026-54904",
+        "GHSA-H8W8-99G7-QMVJ"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-835"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-H8W8-99G7-QMVJ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "concurrent-ruby",
+      "installed_version": "1.3.6",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-54905",
+      "aliases": [
+        "CVE-2026-54905",
+        "GHSA-WV3X-4VXV-WHPP"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-128"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WV3X-4VXV-WHPP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "concurrent-ruby",
+      "installed_version": "1.3.6",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-54906",
+      "aliases": [
+        "CVE-2026-54906",
+        "GHSA-6WX8-W4F5-WWCR"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-414",
+        "CWE-667"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-6WX8-W4F5-WWCR",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "crass",
+      "installed_version": "1.0.6",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-116695",
+      "aliases": [
+        "CVE-2026-116695",
+        "GHSA-PQ4G-8RXF-4G29"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-436"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-PQ4G-8RXF-4G29",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "crass",
+      "installed_version": "1.0.6",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-61845",
+      "aliases": [
+        "CVE-2026-61845",
+        "GHSA-6WMF-3R64-VCWV"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-674",
+        "CWE-789"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-6WMF-3R64-VCWV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "crass",
+      "installed_version": "1.0.6",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-61846",
+      "aliases": [
+        "CVE-2026-61846",
+        "GHSA-6JXJ-PX6V-747W"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-674"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-6JXJ-PX6V-747W",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "crass",
+      "installed_version": "1.0.6",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-61847",
+      "aliases": [
+        "CVE-2026-61847",
+        "GHSA-WWPR-JFF3-395C"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-674"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WWPR-JFF3-395C",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "crass",
+      "installed_version": "1.0.6",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-61848",
+      "aliases": [
+        "CVE-2026-61848",
+        "GHSA-8VFG-2R28-HVHJ"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8VFG-2R28-HVHJ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "erb",
+      "installed_version": "6.0.1",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-41316",
+      "aliases": [
+        "CVE-2026-41316",
+        "GHSA-Q339-8RMV-2MHV"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-502",
+        "CWE-693"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-Q339-8RMV-2MHV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "json",
+      "installed_version": "2.18.0",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-33210",
+      "aliases": [
+        "CVE-2026-33210",
+        "GHSA-3M6G-2423-7CP3"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-134"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-3M6G-2423-7CP3",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "json",
+      "installed_version": "2.18.0",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-54696",
+      "aliases": [
+        "CVE-2026-54696",
+        "GHSA-X2F5-4PRF-W687"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-122",
+        "CWE-131",
+        "CWE-787"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-X2F5-4PRF-W687",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "loofah",
+      "installed_version": "2.25.0",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-73490",
+      "aliases": [
+        "CVE-2026-73490",
+        "GHSA-9WJQ-CP2P-HRGF"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-79"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-9WJQ-CP2P-HRGF",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "loofah",
+      "installed_version": "2.25.0",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-73491",
+      "aliases": [
+        "CVE-2026-73491",
+        "GHSA-8WHX-365G-H9VV"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-184"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8WHX-365G-H9VV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "loofah",
+      "installed_version": "2.25.0",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-73492",
+      "aliases": [
+        "CVE-2026-73492",
+        "GHSA-5QHF-9PHG-95M2"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-184",
+        "CWE-79"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5QHF-9PHG-95M2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "loofah",
+      "installed_version": "2.25.0",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-2J22-PR5W-6GQ8",
+      "aliases": [
+        "GHSA-2J22-PR5W-6GQ8"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-116",
+        "CWE-79"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-2J22-PR5W-6GQ8",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "loofah",
+      "installed_version": "2.25.0",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-46FP-8F5P-PF2M",
+      "aliases": [
+        "GHSA-46FP-8F5P-PF2M"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-79"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-46FP-8F5P-PF2M",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "mail",
+      "installed_version": "2.9.0",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-63435",
+      "aliases": [
+        "CVE-2026-63435",
+        "GHSA-MVXR-6M87-MV2Q"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-436"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-MVXR-6M87-MV2Q",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "net-imap",
+      "installed_version": "0.6.2",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-42245",
+      "aliases": [
+        "CVE-2026-42245",
+        "GHSA-Q2MW-FVJ9-VVCW"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-Q2MW-FVJ9-VVCW",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "net-imap",
+      "installed_version": "0.6.2",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-42246",
+      "aliases": [
+        "CVE-2026-42246",
+        "GHSA-VCGP-9326-PQCP"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-325",
+        "CWE-392",
+        "CWE-393",
+        "CWE-636",
+        "CWE-754",
+        "CWE-841"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-VCGP-9326-PQCP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "net-imap",
+      "installed_version": "0.6.2",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-42256",
+      "aliases": [
+        "CVE-2026-42256",
+        "GHSA-87PF-FPWV-P7M7"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1322",
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-87PF-FPWV-P7M7",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "net-imap",
+      "installed_version": "0.6.2",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-42257",
+      "aliases": [
+        "CVE-2026-42257",
+        "GHSA-HM49-WCQC-G2XG"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-77",
+        "CWE-93"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-HM49-WCQC-G2XG",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "net-imap",
+      "installed_version": "0.6.2",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-42258",
+      "aliases": [
+        "CVE-2026-42258",
+        "GHSA-75XQ-5H9V-W6PX"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-77",
+        "CWE-93"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-75XQ-5H9V-W6PX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "net-imap",
+      "installed_version": "0.6.2",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-47240",
+      "aliases": [
+        "CVE-2026-47240",
+        "GHSA-8P34-64R3-MWG8"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-77",
+        "CWE-93"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8P34-64R3-MWG8",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "net-imap",
+      "installed_version": "0.6.2",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-47241",
+      "aliases": [
+        "CVE-2026-47241",
+        "GHSA-C4FP-CXRR-MJ66"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-162",
+        "CWE-182",
+        "CWE-186"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-C4FP-CXRR-MJ66",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "net-imap",
+      "installed_version": "0.6.2",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-47242",
+      "aliases": [
+        "CVE-2026-47242",
+        "GHSA-46Q3-7GV7-QMGG"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-77",
+        "CWE-93"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-46Q3-7GV7-QMGG",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-57234",
+      "aliases": [
+        "CVE-2026-57234",
+        "GHSA-8678-W3JW-XFC2"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-178",
+        "CWE-184",
+        "CWE-611"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8678-W3JW-XFC2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-57235",
+      "aliases": [
+        "CVE-2026-57235",
+        "GHSA-5PRR-V3J2-97MH"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-125",
+        "CWE-190"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5PRR-V3J2-97MH",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-57236",
+      "aliases": [
+        "CVE-2026-57236",
+        "GHSA-5V8H-3H3Q-446P"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-416"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5V8H-3H3Q-446P",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-57434",
+      "aliases": [
+        "CVE-2026-57434",
+        "GHSA-9CV2-CFXC-V4V2"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-476"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-9CV2-CFXC-V4V2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-57435",
+      "aliases": [
+        "CVE-2026-57435",
+        "GHSA-PHWJ-RPRQ-35PP"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-416",
+        "CWE-825"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-PHWJ-RPRQ-35PP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-57436",
+      "aliases": [
+        "CVE-2026-57436",
+        "GHSA-WJV4-X9W8-WM3H"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-416"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WJV4-X9W8-WM3H",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-57437",
+      "aliases": [
+        "CVE-2026-57437",
+        "GHSA-P67V-3W7G-WJG7"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-416"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-P67V-3W7G-WJG7",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-57438",
+      "aliases": [
+        "CVE-2026-57438",
+        "GHSA-WFPW-MMFH-QQ69"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-416"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WFPW-MMFH-QQ69",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-79770",
+      "aliases": [
+        "CVE-2026-79770",
+        "GHSA-C4RQ-3M3G-8WGX"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-C4RQ-3M3G-8WGX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-79771",
+      "aliases": [
+        "CVE-2026-79771",
+        "GHSA-V2FC-QM4H-8HQV"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-401"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-V2FC-QM4H-8HQV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-79772",
+      "aliases": [
+        "CVE-2026-79772",
+        "GHSA-WX95-C6CV-8532"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-252"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WX95-C6CV-8532",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-aarch64-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-79770",
+      "aliases": [
+        "CVE-2026-79770",
+        "GHSA-C4RQ-3M3G-8WGX"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-C4RQ-3M3G-8WGX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-aarch64-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-79771",
+      "aliases": [
+        "CVE-2026-79771",
+        "GHSA-V2FC-QM4H-8HQV"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-401"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-V2FC-QM4H-8HQV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-aarch64-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-79772",
+      "aliases": [
+        "CVE-2026-79772",
+        "GHSA-WX95-C6CV-8532"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-252"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WX95-C6CV-8532",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-aarch64-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-5PRR-V3J2-97MH",
+      "aliases": [
+        "GHSA-5PRR-V3J2-97MH"
+      ],
+      "severity": "Medium",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5PRR-V3J2-97MH",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-aarch64-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-5V8H-3H3Q-446P",
+      "aliases": [
+        "GHSA-5V8H-3H3Q-446P"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5V8H-3H3Q-446P",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-aarch64-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-8678-W3JW-XFC2",
+      "aliases": [
+        "GHSA-8678-W3JW-XFC2"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8678-W3JW-XFC2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-aarch64-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-9CV2-CFXC-V4V2",
+      "aliases": [
+        "GHSA-9CV2-CFXC-V4V2"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-9CV2-CFXC-V4V2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-aarch64-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-P67V-3W7G-WJG7",
+      "aliases": [
+        "GHSA-P67V-3W7G-WJG7"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-P67V-3W7G-WJG7",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-aarch64-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-PHWJ-RPRQ-35PP",
+      "aliases": [
+        "GHSA-PHWJ-RPRQ-35PP"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-PHWJ-RPRQ-35PP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-aarch64-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-WFPW-MMFH-QQ69",
+      "aliases": [
+        "GHSA-WFPW-MMFH-QQ69"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WFPW-MMFH-QQ69",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-aarch64-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-WJV4-X9W8-WM3H",
+      "aliases": [
+        "GHSA-WJV4-X9W8-WM3H"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WJV4-X9W8-WM3H",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-aarch64-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-79770",
+      "aliases": [
+        "CVE-2026-79770",
+        "GHSA-C4RQ-3M3G-8WGX"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-C4RQ-3M3G-8WGX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-aarch64-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-79771",
+      "aliases": [
+        "CVE-2026-79771",
+        "GHSA-V2FC-QM4H-8HQV"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-401"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-V2FC-QM4H-8HQV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-aarch64-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-79772",
+      "aliases": [
+        "CVE-2026-79772",
+        "GHSA-WX95-C6CV-8532"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-252"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WX95-C6CV-8532",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-aarch64-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-5PRR-V3J2-97MH",
+      "aliases": [
+        "GHSA-5PRR-V3J2-97MH"
+      ],
+      "severity": "Medium",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5PRR-V3J2-97MH",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-aarch64-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-5V8H-3H3Q-446P",
+      "aliases": [
+        "GHSA-5V8H-3H3Q-446P"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5V8H-3H3Q-446P",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-aarch64-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-8678-W3JW-XFC2",
+      "aliases": [
+        "GHSA-8678-W3JW-XFC2"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8678-W3JW-XFC2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-aarch64-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-9CV2-CFXC-V4V2",
+      "aliases": [
+        "GHSA-9CV2-CFXC-V4V2"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-9CV2-CFXC-V4V2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-aarch64-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-P67V-3W7G-WJG7",
+      "aliases": [
+        "GHSA-P67V-3W7G-WJG7"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-P67V-3W7G-WJG7",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-aarch64-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-PHWJ-RPRQ-35PP",
+      "aliases": [
+        "GHSA-PHWJ-RPRQ-35PP"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-PHWJ-RPRQ-35PP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-aarch64-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-WFPW-MMFH-QQ69",
+      "aliases": [
+        "GHSA-WFPW-MMFH-QQ69"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WFPW-MMFH-QQ69",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-aarch64-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-WJV4-X9W8-WM3H",
+      "aliases": [
+        "GHSA-WJV4-X9W8-WM3H"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WJV4-X9W8-WM3H",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-79770",
+      "aliases": [
+        "CVE-2026-79770",
+        "GHSA-C4RQ-3M3G-8WGX"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-C4RQ-3M3G-8WGX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-79771",
+      "aliases": [
+        "CVE-2026-79771",
+        "GHSA-V2FC-QM4H-8HQV"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-401"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-V2FC-QM4H-8HQV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-79772",
+      "aliases": [
+        "CVE-2026-79772",
+        "GHSA-WX95-C6CV-8532"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-252"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WX95-C6CV-8532",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-5PRR-V3J2-97MH",
+      "aliases": [
+        "GHSA-5PRR-V3J2-97MH"
+      ],
+      "severity": "Medium",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5PRR-V3J2-97MH",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-5V8H-3H3Q-446P",
+      "aliases": [
+        "GHSA-5V8H-3H3Q-446P"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5V8H-3H3Q-446P",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-8678-W3JW-XFC2",
+      "aliases": [
+        "GHSA-8678-W3JW-XFC2"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8678-W3JW-XFC2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-9CV2-CFXC-V4V2",
+      "aliases": [
+        "GHSA-9CV2-CFXC-V4V2"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-9CV2-CFXC-V4V2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-P67V-3W7G-WJG7",
+      "aliases": [
+        "GHSA-P67V-3W7G-WJG7"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-P67V-3W7G-WJG7",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-PHWJ-RPRQ-35PP",
+      "aliases": [
+        "GHSA-PHWJ-RPRQ-35PP"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-PHWJ-RPRQ-35PP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-WFPW-MMFH-QQ69",
+      "aliases": [
+        "GHSA-WFPW-MMFH-QQ69"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WFPW-MMFH-QQ69",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-WJV4-X9W8-WM3H",
+      "aliases": [
+        "GHSA-WJV4-X9W8-WM3H"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WJV4-X9W8-WM3H",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-79770",
+      "aliases": [
+        "CVE-2026-79770",
+        "GHSA-C4RQ-3M3G-8WGX"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-C4RQ-3M3G-8WGX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-79771",
+      "aliases": [
+        "CVE-2026-79771",
+        "GHSA-V2FC-QM4H-8HQV"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-401"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-V2FC-QM4H-8HQV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-79772",
+      "aliases": [
+        "CVE-2026-79772",
+        "GHSA-WX95-C6CV-8532"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-252"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WX95-C6CV-8532",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-5PRR-V3J2-97MH",
+      "aliases": [
+        "GHSA-5PRR-V3J2-97MH"
+      ],
+      "severity": "Medium",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5PRR-V3J2-97MH",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-5V8H-3H3Q-446P",
+      "aliases": [
+        "GHSA-5V8H-3H3Q-446P"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5V8H-3H3Q-446P",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-8678-W3JW-XFC2",
+      "aliases": [
+        "GHSA-8678-W3JW-XFC2"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8678-W3JW-XFC2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-9CV2-CFXC-V4V2",
+      "aliases": [
+        "GHSA-9CV2-CFXC-V4V2"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-9CV2-CFXC-V4V2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-P67V-3W7G-WJG7",
+      "aliases": [
+        "GHSA-P67V-3W7G-WJG7"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-P67V-3W7G-WJG7",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-PHWJ-RPRQ-35PP",
+      "aliases": [
+        "GHSA-PHWJ-RPRQ-35PP"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-PHWJ-RPRQ-35PP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-WFPW-MMFH-QQ69",
+      "aliases": [
+        "GHSA-WFPW-MMFH-QQ69"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WFPW-MMFH-QQ69",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-WJV4-X9W8-WM3H",
+      "aliases": [
+        "GHSA-WJV4-X9W8-WM3H"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WJV4-X9W8-WM3H",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm64-darwin",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-79770",
+      "aliases": [
+        "CVE-2026-79770",
+        "GHSA-C4RQ-3M3G-8WGX"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-C4RQ-3M3G-8WGX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm64-darwin",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-79771",
+      "aliases": [
+        "CVE-2026-79771",
+        "GHSA-V2FC-QM4H-8HQV"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-401"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-V2FC-QM4H-8HQV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm64-darwin",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-79772",
+      "aliases": [
+        "CVE-2026-79772",
+        "GHSA-WX95-C6CV-8532"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-252"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WX95-C6CV-8532",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm64-darwin",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-5PRR-V3J2-97MH",
+      "aliases": [
+        "GHSA-5PRR-V3J2-97MH"
+      ],
+      "severity": "Medium",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5PRR-V3J2-97MH",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm64-darwin",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-5V8H-3H3Q-446P",
+      "aliases": [
+        "GHSA-5V8H-3H3Q-446P"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5V8H-3H3Q-446P",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm64-darwin",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-8678-W3JW-XFC2",
+      "aliases": [
+        "GHSA-8678-W3JW-XFC2"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8678-W3JW-XFC2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm64-darwin",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-9CV2-CFXC-V4V2",
+      "aliases": [
+        "GHSA-9CV2-CFXC-V4V2"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-9CV2-CFXC-V4V2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm64-darwin",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-P67V-3W7G-WJG7",
+      "aliases": [
+        "GHSA-P67V-3W7G-WJG7"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-P67V-3W7G-WJG7",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm64-darwin",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-PHWJ-RPRQ-35PP",
+      "aliases": [
+        "GHSA-PHWJ-RPRQ-35PP"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-PHWJ-RPRQ-35PP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm64-darwin",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-WFPW-MMFH-QQ69",
+      "aliases": [
+        "GHSA-WFPW-MMFH-QQ69"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WFPW-MMFH-QQ69",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-arm64-darwin",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-WJV4-X9W8-WM3H",
+      "aliases": [
+        "GHSA-WJV4-X9W8-WM3H"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WJV4-X9W8-WM3H",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-darwin",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-79770",
+      "aliases": [
+        "CVE-2026-79770",
+        "GHSA-C4RQ-3M3G-8WGX"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-C4RQ-3M3G-8WGX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-darwin",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-79771",
+      "aliases": [
+        "CVE-2026-79771",
+        "GHSA-V2FC-QM4H-8HQV"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-401"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-V2FC-QM4H-8HQV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-darwin",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-79772",
+      "aliases": [
+        "CVE-2026-79772",
+        "GHSA-WX95-C6CV-8532"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-252"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WX95-C6CV-8532",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-darwin",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-5PRR-V3J2-97MH",
+      "aliases": [
+        "GHSA-5PRR-V3J2-97MH"
+      ],
+      "severity": "Medium",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5PRR-V3J2-97MH",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-darwin",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-5V8H-3H3Q-446P",
+      "aliases": [
+        "GHSA-5V8H-3H3Q-446P"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5V8H-3H3Q-446P",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-darwin",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-8678-W3JW-XFC2",
+      "aliases": [
+        "GHSA-8678-W3JW-XFC2"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8678-W3JW-XFC2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-darwin",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-9CV2-CFXC-V4V2",
+      "aliases": [
+        "GHSA-9CV2-CFXC-V4V2"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-9CV2-CFXC-V4V2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-darwin",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-P67V-3W7G-WJG7",
+      "aliases": [
+        "GHSA-P67V-3W7G-WJG7"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-P67V-3W7G-WJG7",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-darwin",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-PHWJ-RPRQ-35PP",
+      "aliases": [
+        "GHSA-PHWJ-RPRQ-35PP"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-PHWJ-RPRQ-35PP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-darwin",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-WFPW-MMFH-QQ69",
+      "aliases": [
+        "GHSA-WFPW-MMFH-QQ69"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WFPW-MMFH-QQ69",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-darwin",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-WJV4-X9W8-WM3H",
+      "aliases": [
+        "GHSA-WJV4-X9W8-WM3H"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WJV4-X9W8-WM3H",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-79770",
+      "aliases": [
+        "CVE-2026-79770",
+        "GHSA-C4RQ-3M3G-8WGX"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-C4RQ-3M3G-8WGX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-79771",
+      "aliases": [
+        "CVE-2026-79771",
+        "GHSA-V2FC-QM4H-8HQV"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-401"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-V2FC-QM4H-8HQV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-79772",
+      "aliases": [
+        "CVE-2026-79772",
+        "GHSA-WX95-C6CV-8532"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-252"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WX95-C6CV-8532",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-5PRR-V3J2-97MH",
+      "aliases": [
+        "GHSA-5PRR-V3J2-97MH"
+      ],
+      "severity": "Medium",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5PRR-V3J2-97MH",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-5V8H-3H3Q-446P",
+      "aliases": [
+        "GHSA-5V8H-3H3Q-446P"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5V8H-3H3Q-446P",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-8678-W3JW-XFC2",
+      "aliases": [
+        "GHSA-8678-W3JW-XFC2"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8678-W3JW-XFC2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-9CV2-CFXC-V4V2",
+      "aliases": [
+        "GHSA-9CV2-CFXC-V4V2"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-9CV2-CFXC-V4V2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-P67V-3W7G-WJG7",
+      "aliases": [
+        "GHSA-P67V-3W7G-WJG7"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-P67V-3W7G-WJG7",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-PHWJ-RPRQ-35PP",
+      "aliases": [
+        "GHSA-PHWJ-RPRQ-35PP"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-PHWJ-RPRQ-35PP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-WFPW-MMFH-QQ69",
+      "aliases": [
+        "GHSA-WFPW-MMFH-QQ69"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WFPW-MMFH-QQ69",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-WJV4-X9W8-WM3H",
+      "aliases": [
+        "GHSA-WJV4-X9W8-WM3H"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WJV4-X9W8-WM3H",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-79770",
+      "aliases": [
+        "CVE-2026-79770",
+        "GHSA-C4RQ-3M3G-8WGX"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-C4RQ-3M3G-8WGX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-79771",
+      "aliases": [
+        "CVE-2026-79771",
+        "GHSA-V2FC-QM4H-8HQV"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-401"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-V2FC-QM4H-8HQV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-79772",
+      "aliases": [
+        "CVE-2026-79772",
+        "GHSA-WX95-C6CV-8532"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-252"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WX95-C6CV-8532",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-5PRR-V3J2-97MH",
+      "aliases": [
+        "GHSA-5PRR-V3J2-97MH"
+      ],
+      "severity": "Medium",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5PRR-V3J2-97MH",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-5V8H-3H3Q-446P",
+      "aliases": [
+        "GHSA-5V8H-3H3Q-446P"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5V8H-3H3Q-446P",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-8678-W3JW-XFC2",
+      "aliases": [
+        "GHSA-8678-W3JW-XFC2"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8678-W3JW-XFC2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-9CV2-CFXC-V4V2",
+      "aliases": [
+        "GHSA-9CV2-CFXC-V4V2"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-9CV2-CFXC-V4V2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-P67V-3W7G-WJG7",
+      "aliases": [
+        "GHSA-P67V-3W7G-WJG7"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-P67V-3W7G-WJG7",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-PHWJ-RPRQ-35PP",
+      "aliases": [
+        "GHSA-PHWJ-RPRQ-35PP"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-PHWJ-RPRQ-35PP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-WFPW-MMFH-QQ69",
+      "aliases": [
+        "GHSA-WFPW-MMFH-QQ69"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WFPW-MMFH-QQ69",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nokogiri",
+      "installed_version": "1.19.0-x86_64-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-WJV4-X9W8-WM3H",
+      "aliases": [
+        "GHSA-WJV4-X9W8-WM3H"
+      ],
+      "severity": "Low",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WJV4-X9W8-WM3H",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "puma",
+      "installed_version": "6.6.1",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-47736",
+      "aliases": [
+        "CVE-2026-47736",
+        "GHSA-QPGP-93VX-G8V8"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-QPGP-93VX-G8V8",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "puma",
+      "installed_version": "6.6.1",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-47737",
+      "aliases": [
+        "CVE-2026-47737",
+        "GHSA-2VQW-3MP8-CGMX"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-290",
+        "CWE-345"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-2VQW-3MP8-CGMX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "rack",
+      "installed_version": "3.1.19",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-22860",
+      "aliases": [
+        "CVE-2026-22860",
+        "GHSA-MXW3-3HH2-X2MH"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-22",
+        "CWE-548"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-MXW3-3HH2-X2MH",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "rack",
+      "installed_version": "3.1.19",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-25500",
+      "aliases": [
+        "CVE-2026-25500",
+        "GHSA-WHRJ-4476-WVMP"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-79"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WHRJ-4476-WVMP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "rack",
+      "installed_version": "3.1.19",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-26961",
+      "aliases": [
+        "CVE-2026-26961",
+        "GHSA-VGPV-F759-9WX3"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-436"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-VGPV-F759-9WX3",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "rack",
+      "installed_version": "3.1.19",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-32762",
+      "aliases": [
+        "CVE-2026-32762",
+        "GHSA-QFGR-CRR9-7R49"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-436"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-QFGR-CRR9-7R49",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "rack",
+      "installed_version": "3.1.19",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-34230",
+      "aliases": [
+        "CVE-2026-34230",
+        "GHSA-V569-HP3G-36WR"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-V569-HP3G-36WR",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "rack",
+      "installed_version": "3.1.19",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-34763",
+      "aliases": [
+        "CVE-2026-34763",
+        "GHSA-7MQQ-6CF9-V2QP"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-625"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-7MQQ-6CF9-V2QP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "rack",
+      "installed_version": "3.1.19",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-34785",
+      "aliases": [
+        "CVE-2026-34785",
+        "GHSA-H2JQ-G4CQ-5PPQ"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-187",
+        "CWE-200",
+        "CWE-552"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-H2JQ-G4CQ-5PPQ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "rack",
+      "installed_version": "3.1.19",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-34786",
+      "aliases": [
+        "CVE-2026-34786",
+        "GHSA-Q4QF-9J86-F5MH"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-180"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-Q4QF-9J86-F5MH",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "rack",
+      "installed_version": "3.1.19",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-34826",
+      "aliases": [
+        "CVE-2026-34826",
+        "GHSA-X8CG-FQ8G-MXFX"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-X8CG-FQ8G-MXFX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "rack",
+      "installed_version": "3.1.19",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-34827",
+      "aliases": [
+        "CVE-2026-34827",
+        "GHSA-V6X5-CG8R-VV6X"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-407",
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-V6X5-CG8R-VV6X",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "rack",
+      "installed_version": "3.1.19",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-34829",
+      "aliases": [
+        "CVE-2026-34829",
+        "GHSA-8VQR-QJWX-82MW"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8VQR-QJWX-82MW",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "rack",
+      "installed_version": "3.1.19",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-34830",
+      "aliases": [
+        "CVE-2026-34830",
+        "GHSA-QV7J-4883-HWH7"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-625"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-QV7J-4883-HWH7",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "rack",
+      "installed_version": "3.1.19",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-34831",
+      "aliases": [
+        "CVE-2026-34831",
+        "GHSA-Q2WW-5357-X388"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-130",
+        "CWE-135"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-Q2WW-5357-X388",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "rack",
+      "installed_version": "3.1.19",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-34835",
+      "aliases": [
+        "CVE-2026-34835",
+        "GHSA-G2PF-XV49-M2H5"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1286"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-G2PF-XV49-M2H5",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "rack-session",
+      "installed_version": "2.1.1",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-39324",
+      "aliases": [
+        "CVE-2026-39324",
+        "GHSA-33QG-7WPP-89CQ"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-287",
+        "CWE-345",
+        "CWE-502",
+        "CWE-565"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-33QG-7WPP-89CQ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "rails-html-sanitizer",
+      "installed_version": "1.6.2",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-73648",
+      "aliases": [
+        "CVE-2026-73648",
+        "GHSA-CJ75-F6XR-R4G7"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-79"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-CJ75-F6XR-R4G7",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "rubyzip",
+      "installed_version": "3.2.2",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-85396",
+      "aliases": [
+        "CVE-2026-85396",
+        "GHSA-47M2-WP7J-P9VC"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-22"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-47M2-WP7J-P9VC",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "sqlite3",
+      "installed_version": "2.9.0",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-54619",
+      "aliases": [
+        "CVE-2026-54619",
+        "GHSA-28HH-PR2H-2W89"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-416"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-28HH-PR2H-2W89",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "sqlite3",
+      "installed_version": "2.9.0",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-54620",
+      "aliases": [
+        "CVE-2026-54620",
+        "GHSA-J7FR-3V8C-3QC3"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-416"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-J7FR-3V8C-3QC3",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "sqlite3",
+      "installed_version": "2.9.0",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-MWM8-39RW-8826",
+      "aliases": [
+        "GHSA-MWM8-39RW-8826"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-416"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-MWM8-39RW-8826",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "sqlite3",
+      "installed_version": "2.9.0-aarch64-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-54619",
+      "aliases": [
+        "CVE-2026-54619",
+        "GHSA-28HH-PR2H-2W89"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-416"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-28HH-PR2H-2W89",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "sqlite3",
+      "installed_version": "2.9.0-aarch64-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-54620",
+      "aliases": [
+        "CVE-2026-54620",
+        "GHSA-J7FR-3V8C-3QC3"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-416"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-J7FR-3V8C-3QC3",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "sqlite3",
+      "installed_version": "2.9.0-aarch64-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-MWM8-39RW-8826",
+      "aliases": [
+        "GHSA-MWM8-39RW-8826"
+      ],
+      "severity": "Medium",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-MWM8-39RW-8826",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "sqlite3",
+      "installed_version": "2.9.0-aarch64-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-54619",
+      "aliases": [
+        "CVE-2026-54619",
+        "GHSA-28HH-PR2H-2W89"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-416"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-28HH-PR2H-2W89",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "sqlite3",
+      "installed_version": "2.9.0-aarch64-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-54620",
+      "aliases": [
+        "CVE-2026-54620",
+        "GHSA-J7FR-3V8C-3QC3"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-416"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-J7FR-3V8C-3QC3",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "sqlite3",
+      "installed_version": "2.9.0-aarch64-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-MWM8-39RW-8826",
+      "aliases": [
+        "GHSA-MWM8-39RW-8826"
+      ],
+      "severity": "Medium",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-MWM8-39RW-8826",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "sqlite3",
+      "installed_version": "2.9.0-arm-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-54619",
+      "aliases": [
+        "CVE-2026-54619",
+        "GHSA-28HH-PR2H-2W89"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-416"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-28HH-PR2H-2W89",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "sqlite3",
+      "installed_version": "2.9.0-arm-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-54620",
+      "aliases": [
+        "CVE-2026-54620",
+        "GHSA-J7FR-3V8C-3QC3"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-416"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-J7FR-3V8C-3QC3",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "sqlite3",
+      "installed_version": "2.9.0-arm-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-MWM8-39RW-8826",
+      "aliases": [
+        "GHSA-MWM8-39RW-8826"
+      ],
+      "severity": "Medium",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-MWM8-39RW-8826",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "sqlite3",
+      "installed_version": "2.9.0-arm-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-54619",
+      "aliases": [
+        "CVE-2026-54619",
+        "GHSA-28HH-PR2H-2W89"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-416"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-28HH-PR2H-2W89",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "sqlite3",
+      "installed_version": "2.9.0-arm-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-54620",
+      "aliases": [
+        "CVE-2026-54620",
+        "GHSA-J7FR-3V8C-3QC3"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-416"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-J7FR-3V8C-3QC3",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "sqlite3",
+      "installed_version": "2.9.0-arm-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-MWM8-39RW-8826",
+      "aliases": [
+        "GHSA-MWM8-39RW-8826"
+      ],
+      "severity": "Medium",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-MWM8-39RW-8826",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "sqlite3",
+      "installed_version": "2.9.0-arm64-darwin",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-54619",
+      "aliases": [
+        "CVE-2026-54619",
+        "GHSA-28HH-PR2H-2W89"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-416"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-28HH-PR2H-2W89",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "sqlite3",
+      "installed_version": "2.9.0-arm64-darwin",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-54620",
+      "aliases": [
+        "CVE-2026-54620",
+        "GHSA-J7FR-3V8C-3QC3"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-416"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-J7FR-3V8C-3QC3",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "sqlite3",
+      "installed_version": "2.9.0-arm64-darwin",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-MWM8-39RW-8826",
+      "aliases": [
+        "GHSA-MWM8-39RW-8826"
+      ],
+      "severity": "Medium",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-MWM8-39RW-8826",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "sqlite3",
+      "installed_version": "2.9.0-x86_64-darwin",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-54619",
+      "aliases": [
+        "CVE-2026-54619",
+        "GHSA-28HH-PR2H-2W89"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-416"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-28HH-PR2H-2W89",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "sqlite3",
+      "installed_version": "2.9.0-x86_64-darwin",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-54620",
+      "aliases": [
+        "CVE-2026-54620",
+        "GHSA-J7FR-3V8C-3QC3"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-416"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-J7FR-3V8C-3QC3",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "sqlite3",
+      "installed_version": "2.9.0-x86_64-darwin",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-MWM8-39RW-8826",
+      "aliases": [
+        "GHSA-MWM8-39RW-8826"
+      ],
+      "severity": "Medium",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-MWM8-39RW-8826",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "sqlite3",
+      "installed_version": "2.9.0-x86_64-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-54619",
+      "aliases": [
+        "CVE-2026-54619",
+        "GHSA-28HH-PR2H-2W89"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-416"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-28HH-PR2H-2W89",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "sqlite3",
+      "installed_version": "2.9.0-x86_64-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-54620",
+      "aliases": [
+        "CVE-2026-54620",
+        "GHSA-J7FR-3V8C-3QC3"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-416"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-J7FR-3V8C-3QC3",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "sqlite3",
+      "installed_version": "2.9.0-x86_64-linux-gnu",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-MWM8-39RW-8826",
+      "aliases": [
+        "GHSA-MWM8-39RW-8826"
+      ],
+      "severity": "Medium",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-MWM8-39RW-8826",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "sqlite3",
+      "installed_version": "2.9.0-x86_64-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-54619",
+      "aliases": [
+        "CVE-2026-54619",
+        "GHSA-28HH-PR2H-2W89"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-416"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-28HH-PR2H-2W89",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "sqlite3",
+      "installed_version": "2.9.0-x86_64-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-54620",
+      "aliases": [
+        "CVE-2026-54620",
+        "GHSA-J7FR-3V8C-3QC3"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-416"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-J7FR-3V8C-3QC3",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "sqlite3",
+      "installed_version": "2.9.0-x86_64-linux-musl",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "GHSA-MWM8-39RW-8826",
+      "aliases": [
+        "GHSA-MWM8-39RW-8826"
+      ],
+      "severity": "Medium",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-MWM8-39RW-8826",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "websocket-driver",
+      "installed_version": "0.8.0",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-54463",
+      "aliases": [
+        "CVE-2026-54463",
+        "GHSA-GHHP-3QVG-889P"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-GHHP-3QVG-889P",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "websocket-driver",
+      "installed_version": "0.8.0",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-54464",
+      "aliases": [
+        "CVE-2026-54464",
+        "GHSA-33PH-FCCM-39PJ"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-33PH-FCCM-39PJ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "websocket-driver",
+      "installed_version": "0.8.0",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-54465",
+      "aliases": [
+        "CVE-2026-54465",
+        "GHSA-8J3G-F24P-4MPW"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8J3G-F24P-4MPW",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "websocket-driver",
+      "installed_version": "0.8.0",
+      "ecosystem": "rubygems",
+      "vulnerability_id": "CVE-2026-61666",
+      "aliases": [
+        "CVE-2026-61666",
+        "GHSA-2X63-GW47-W4MM"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-248"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-2X63-GW47-W4MM",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "grype_dependency_source": "https://github.com/OWASP/railsgoat/blob/f5951f13089d85c979de09e7da3c8c0fb982f94a/Gemfile.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    }
+  ]
+}

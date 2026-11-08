@@ -1,0 +1,1395 @@
+{
+  "schema_version": 1,
+  "project_id": "P007",
+  "project": "webgoat",
+  "repository": "WebGoat/WebGoat",
+  "pinned_commit": "be2c186b94201bcbdfa46c3a6f5f53dd83262d6a",
+  "source_run": "https://github.com/maksimrin8-design/SCAanalyze/actions/runs/42440365259",
+  "reference_type": "scanner_union_plus_independently_verified_examples",
+  "is_complete_independent_ground_truth": false,
+  "methodology": "Every finding reported by at least one analyzer, with CVE/GHSA aliases merged, plus verified dependencies and advisories from ground-truth/verified.csv. Scanner-only entries remain PROVISIONAL and vulnerabilities missed by both analyzers may be absent. Do not infer unbiased recall or precision.",
+  "scan_status": {
+    "osv": "ok",
+    "grype": "ok"
+  },
+  "counts": {
+    "only_osv": 19,
+    "severity_High": 32,
+    "verified": 0,
+    "severity_Medium": 18,
+    "both": 36,
+    "severity_Critical": 5,
+    "only_grype": 0,
+    "independently_verified_but_not_detected": 0,
+    "total": 55,
+    "osv": 55,
+    "grype": 36,
+    "comparison_valid": true
+  },
+  "vulnerabilities": [
+    {
+      "package": "com.fasterxml.jackson.core:jackson-core",
+      "installed_version": "2.21.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2026-89407",
+      "aliases": [
+        "CVE-2026-89407",
+        "GHSA-P6PP-M3F8-5C89"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333",
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-P6PP-M3F8-5C89",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.fasterxml.jackson.core:jackson-core",
+      "installed_version": "2.21.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2026-89425",
+      "aliases": [
+        "CVE-2026-89425",
+        "GHSA-7HHH-6RMP-J9QF"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-7HHH-6RMP-J9QF",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "installed_version": "2.21.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2026-19032",
+      "aliases": [
+        "CVE-2026-19032",
+        "GHSA-WJGM-6HV5-3CVF"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-470",
+        "CWE-610"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WJGM-6HV5-3CVF",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "installed_version": "2.21.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2026-68497",
+      "aliases": [
+        "CVE-2026-68497",
+        "GHSA-Q4XH-88C3-WMH7"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-Q4XH-88C3-WMH7",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "installed_version": "2.21.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2026-83557",
+      "aliases": [
+        "CVE-2026-83557",
+        "GHSA-GX83-3VF8-GH7J"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-502",
+        "CWE-915"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-GX83-3VF8-GH7J",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "installed_version": "2.21.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2026-91776",
+      "aliases": [
+        "CVE-2026-91776",
+        "GHSA-WV8Q-QHHJ-9H54"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WV8Q-QHHJ-9H54",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.fasterxml.jackson.core:jackson-databind",
+      "installed_version": "2.21.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2026-91777",
+      "aliases": [
+        "CVE-2026-91777",
+        "GHSA-CXP5-3PX4-PW24"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-CXP5-3PX4-PW24",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2013-7285",
+      "aliases": [
+        "CVE-2013-7285",
+        "GHSA-F554-X222-WGF7"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-F554-X222-WGF7",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2016-3674",
+      "aliases": [
+        "CVE-2016-3674",
+        "GHSA-RGH3-987H-WPMW"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-200"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-RGH3-987H-WPMW",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2017-7957",
+      "aliases": [
+        "CVE-2017-7957",
+        "GHSA-7HWC-46RM-65JH"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-20"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-7HWC-46RM-65JH",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2020-26217",
+      "aliases": [
+        "BIT-ACTIVEMQ-2020-26217",
+        "CVE-2020-26217",
+        "GHSA-MW36-7C6C-Q4Q2"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-78"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-MW36-7C6C-Q4Q2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2020-26258",
+      "aliases": [
+        "CVE-2020-26258",
+        "GHSA-4CCH-WXPW-8P28"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-918"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-4CCH-WXPW-8P28",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2020-26259",
+      "aliases": [
+        "CVE-2020-26259",
+        "GHSA-JFVX-7WRX-43FH"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-78"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-JFVX-7WRX-43FH",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2021-21341",
+      "aliases": [
+        "BIT-ACTIVEMQ-2021-21341",
+        "CVE-2021-21341",
+        "GHSA-2P3X-QW9C-25HH"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-502",
+        "CWE-835"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-2P3X-QW9C-25HH",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2021-21342",
+      "aliases": [
+        "BIT-ACTIVEMQ-2021-21342",
+        "CVE-2021-21342",
+        "GHSA-HVV8-336G-RX3M"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-502",
+        "CWE-918"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-HVV8-336G-RX3M",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2021-21343",
+      "aliases": [
+        "BIT-ACTIVEMQ-2021-21343",
+        "CVE-2021-21343",
+        "GHSA-74CV-F58X-F9WF"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-502",
+        "CWE-73"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-74CV-F58X-F9WF",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2021-21344",
+      "aliases": [
+        "BIT-ACTIVEMQ-2021-21344",
+        "CVE-2021-21344",
+        "GHSA-59JW-JQF4-3WQ3"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-434",
+        "CWE-502"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-59JW-JQF4-3WQ3",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2021-21345",
+      "aliases": [
+        "BIT-ACTIVEMQ-2021-21345",
+        "CVE-2021-21345",
+        "GHSA-HWPC-8XQV-JVJ4"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-502",
+        "CWE-78",
+        "CWE-94"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-HWPC-8XQV-JVJ4",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2021-21346",
+      "aliases": [
+        "BIT-ACTIVEMQ-2021-21346",
+        "CVE-2021-21346",
+        "GHSA-4HRM-M67V-5CXR"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-434",
+        "CWE-502"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-4HRM-M67V-5CXR",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2021-21347",
+      "aliases": [
+        "BIT-ACTIVEMQ-2021-21347",
+        "CVE-2021-21347",
+        "GHSA-QPFQ-PH7R-QV6F"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-434",
+        "CWE-502"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-QPFQ-PH7R-QV6F",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2021-21348",
+      "aliases": [
+        "BIT-ACTIVEMQ-2021-21348",
+        "CVE-2021-21348",
+        "GHSA-56P8-3FH9-4CVQ"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-502"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-56P8-3FH9-4CVQ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2021-21349",
+      "aliases": [
+        "BIT-ACTIVEMQ-2021-21349",
+        "CVE-2021-21349",
+        "GHSA-F6HM-88X3-MFJV"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-502",
+        "CWE-918"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-F6HM-88X3-MFJV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2021-21350",
+      "aliases": [
+        "BIT-ACTIVEMQ-2021-21350",
+        "CVE-2021-21350",
+        "GHSA-43GC-MJXG-GVRQ"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-434",
+        "CWE-502"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-43GC-MJXG-GVRQ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2021-21351",
+      "aliases": [
+        "BIT-ACTIVEMQ-2021-21351",
+        "CVE-2021-21351",
+        "GHSA-HRCP-8F3Q-4W2C"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-434",
+        "CWE-502"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-HRCP-8F3Q-4W2C",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2021-29505",
+      "aliases": [
+        "CVE-2021-29505",
+        "GHSA-7CHV-RRW6-W6FC"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-502",
+        "CWE-74",
+        "CWE-94"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-7CHV-RRW6-W6FC",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2021-39139",
+      "aliases": [
+        "CVE-2021-39139",
+        "GHSA-64XX-CQ4Q-MF44"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-434",
+        "CWE-502"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-64XX-CQ4Q-MF44",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2021-39140",
+      "aliases": [
+        "CVE-2021-39140",
+        "GHSA-6WF9-JMG9-VXCC"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-502",
+        "CWE-835"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-6WF9-JMG9-VXCC",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2021-39141",
+      "aliases": [
+        "CVE-2021-39141",
+        "GHSA-G5W6-MRJ7-75H2"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-434",
+        "CWE-502"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-G5W6-MRJ7-75H2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2021-39144",
+      "aliases": [
+        "CVE-2021-39144",
+        "GHSA-J9H8-PHRW-H4FH"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-306",
+        "CWE-502",
+        "CWE-94"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-J9H8-PHRW-H4FH",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2021-39145",
+      "aliases": [
+        "CVE-2021-39145",
+        "GHSA-8JRJ-525P-826V"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-434",
+        "CWE-502"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8JRJ-525P-826V",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2021-39146",
+      "aliases": [
+        "CVE-2021-39146",
+        "GHSA-P8PQ-R894-FM8F"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-434",
+        "CWE-502"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-P8PQ-R894-FM8F",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2021-39147",
+      "aliases": [
+        "CVE-2021-39147",
+        "GHSA-H7V4-7XG3-HXCC"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-434",
+        "CWE-502"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-H7V4-7XG3-HXCC",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2021-39148",
+      "aliases": [
+        "CVE-2021-39148",
+        "GHSA-QRX8-8545-4WG2"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-434",
+        "CWE-502"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-QRX8-8545-4WG2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2021-39149",
+      "aliases": [
+        "CVE-2021-39149",
+        "GHSA-3CCQ-5VW3-2P6X"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-434",
+        "CWE-502"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-3CCQ-5VW3-2P6X",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2021-39150",
+      "aliases": [
+        "CVE-2021-39150",
+        "GHSA-CXFM-5M4G-X7XP"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-502",
+        "CWE-918"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-CXFM-5M4G-X7XP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2021-39151",
+      "aliases": [
+        "CVE-2021-39151",
+        "GHSA-HPH2-M3G5-XXV4"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-434",
+        "CWE-502"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-HPH2-M3G5-XXV4",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2021-39152",
+      "aliases": [
+        "CVE-2021-39152",
+        "GHSA-XW4P-CRPJ-VJX2"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-502",
+        "CWE-918"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-XW4P-CRPJ-VJX2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2021-39153",
+      "aliases": [
+        "CVE-2021-39153",
+        "GHSA-2Q8X-2P7F-574V"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-434",
+        "CWE-502"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-2Q8X-2P7F-574V",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2021-39154",
+      "aliases": [
+        "CVE-2021-39154",
+        "GHSA-6W62-HX7R-MW68"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-434",
+        "CWE-502"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-6W62-HX7R-MW68",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2021-43859",
+      "aliases": [
+        "BIT-JENKINS-2021-43859",
+        "CVE-2021-43859",
+        "GHSA-RMR5-CPV2-VGJF"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-502"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-RMR5-CPV2-VGJF",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2022-40151",
+      "aliases": [
+        "CVE-2022-40151",
+        "GHSA-F8CC-G7J8-XXPM"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-121",
+        "CWE-502",
+        "CWE-787"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-F8CC-G7J8-XXPM",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2022-41966",
+      "aliases": [
+        "CVE-2022-41966",
+        "GHSA-J563-GRX4-PJPV"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-120",
+        "CWE-121",
+        "CWE-502",
+        "CWE-674"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-J563-GRX4-PJPV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "com.thoughtworks.xstream:xstream",
+      "installed_version": "1.4.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2024-47072",
+      "aliases": [
+        "CVE-2024-47072",
+        "GHSA-HFQ9-HGGM-C56Q"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-121",
+        "CWE-502"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-HFQ9-HGGM-C56Q",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "org.apache.commons:commons-lang3",
+      "installed_version": "3.14.0",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2025-48924",
+      "aliases": [
+        "CVE-2025-48924",
+        "GHSA-J288-Q9X7-2F5V"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-674"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-J288-Q9X7-2F5V",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "org.apache.tomcat.embed:tomcat-embed-core",
+      "installed_version": "11.0.24",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2026-65182",
+      "aliases": [
+        "BIT-TOMCAT-2026-65182",
+        "CVE-2026-65182",
+        "GHSA-GCX9-497G-6CP6"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-284"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-GCX9-497G-6CP6",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "org.apache.tomcat.embed:tomcat-embed-core",
+      "installed_version": "11.0.24",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2026-65637",
+      "aliases": [
+        "BIT-TOMCAT-2026-65637",
+        "CVE-2026-65637",
+        "GHSA-F525-44XV-F2QJ"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-20"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-F525-44XV-F2QJ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "org.apache.tomcat.embed:tomcat-embed-core",
+      "installed_version": "11.0.24",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2026-65905",
+      "aliases": [
+        "BIT-TOMCAT-2026-65905",
+        "CVE-2026-65905",
+        "GHSA-9XV2-5V5Q-P794"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-294"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-9XV2-5V5Q-P794",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "org.apache.tomcat.embed:tomcat-embed-core",
+      "installed_version": "11.0.24",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2026-68525",
+      "aliases": [
+        "BIT-TOMCAT-2026-68525",
+        "CVE-2026-68525",
+        "GHSA-H3X4-894J-XPX5"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-863"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-H3X4-894J-XPX5",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tools.jackson.core:jackson-core",
+      "installed_version": "3.1.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2026-89407",
+      "aliases": [
+        "CVE-2026-89407",
+        "GHSA-P6PP-M3F8-5C89"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333",
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-P6PP-M3F8-5C89",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tools.jackson.core:jackson-core",
+      "installed_version": "3.1.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2026-89425",
+      "aliases": [
+        "CVE-2026-89425",
+        "GHSA-7HHH-6RMP-J9QF"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-7HHH-6RMP-J9QF",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tools.jackson.core:jackson-databind",
+      "installed_version": "3.1.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2026-19032",
+      "aliases": [
+        "CVE-2026-19032",
+        "GHSA-WJGM-6HV5-3CVF"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-470",
+        "CWE-610"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WJGM-6HV5-3CVF",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tools.jackson.core:jackson-databind",
+      "installed_version": "3.1.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2026-68497",
+      "aliases": [
+        "CVE-2026-68497",
+        "GHSA-Q4XH-88C3-WMH7"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-Q4XH-88C3-WMH7",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tools.jackson.core:jackson-databind",
+      "installed_version": "3.1.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2026-83557",
+      "aliases": [
+        "CVE-2026-83557",
+        "GHSA-GX83-3VF8-GH7J"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-502",
+        "CWE-915"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-GX83-3VF8-GH7J",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tools.jackson.core:jackson-databind",
+      "installed_version": "3.1.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2026-91776",
+      "aliases": [
+        "CVE-2026-91776",
+        "GHSA-WV8Q-QHHJ-9H54"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WV8Q-QHHJ-9H54",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tools.jackson.core:jackson-databind",
+      "installed_version": "3.1.5",
+      "ecosystem": "maven",
+      "vulnerability_id": "CVE-2026-91777",
+      "aliases": [
+        "CVE-2026-91777",
+        "GHSA-CXP5-3PX4-PW24"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-CXP5-3PX4-PW24",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/WebGoat/WebGoat/blob/be2c186b94201bcbdfa46c3a6f5f53dd83262d6a/pom.xml",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    }
+  ]
+}

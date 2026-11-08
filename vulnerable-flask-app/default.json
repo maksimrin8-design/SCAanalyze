@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "project_id": "P012",
+  "project": "vulnerable-flask-app",
+  "repository": "videvelopers/Vulnerable-Flask-App",
+  "pinned_commit": "155a9d4020cd6382e7cef2a4166a714c54af3441",
+  "source_run": "https://github.com/maksimrin8-design/SCAanalyze/actions/runs/42440365259",
+  "reference_type": "scanner_union_plus_independently_verified_examples",
+  "is_complete_independent_ground_truth": false,
+  "methodology": "Every finding reported by at least one analyzer, with CVE/GHSA aliases merged, plus verified dependencies and advisories from ground-truth/verified.csv. Scanner-only entries remain PROVISIONAL and vulnerabilities missed by both analyzers may be absent. Do not infer unbiased recall or precision.",
+  "scan_status": {
+    "osv": "ok",
+    "grype": "ok"
+  },
+  "counts": {
+    "both": 0,
+    "only_osv": 0,
+    "only_grype": 0,
+    "independently_verified_but_not_detected": 0,
+    "verified": 0,
+    "total": 0,
+    "osv": 0,
+    "grype": 0,
+    "comparison_valid": true
+  },
+  "vulnerabilities": []
+}

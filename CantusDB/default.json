@@ -1,0 +1,309 @@
+{
+  "schema_version": 1,
+  "project_id": "P025",
+  "project": "CantusDB",
+  "repository": "DDMAL/CantusDB",
+  "pinned_commit": "ae827fcd0ed68262c89ed478bfa0bec676337ce1",
+  "source_run": "https://github.com/maksimrin8-design/SCAanalyze/actions/runs/42440365259",
+  "reference_type": "scanner_union_plus_independently_verified_examples",
+  "is_complete_independent_ground_truth": false,
+  "methodology": "Every finding reported by at least one analyzer, with CVE/GHSA aliases merged, plus verified dependencies and advisories from ground-truth/verified.csv. Scanner-only entries remain PROVISIONAL and vulnerabilities missed by both analyzers may be absent. Do not infer unbiased recall or precision.",
+  "scan_status": {
+    "osv": "ok",
+    "grype": "ok"
+  },
+  "counts": {
+    "both": 11,
+    "severity_High": 4,
+    "verified": 0,
+    "severity_Critical": 1,
+    "severity_Medium": 6,
+    "only_osv": 0,
+    "only_grype": 0,
+    "independently_verified_but_not_detected": 0,
+    "total": 11,
+    "osv": 11,
+    "grype": 11,
+    "comparison_valid": true
+  },
+  "vulnerabilities": [
+    {
+      "package": "black",
+      "installed_version": "26.5.1",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-114134",
+      "aliases": [
+        "CVE-2026-114134",
+        "GHSA-CG8M-R9F2-5WM2"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-829"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-CG8M-R9F2-5WM2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/DDMAL/CantusDB/blob/ae827fcd0ed68262c89ed478bfa0bec676337ce1/poetry.lock",
+      "grype_dependency_source": "https://github.com/DDMAL/CantusDB/blob/ae827fcd0ed68262c89ed478bfa0bec676337ce1/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "certifi",
+      "installed_version": "2025.1.31",
+      "ecosystem": "pypi",
+      "vulnerability_id": "GHSA-6Q48-6C7W-9GW2",
+      "aliases": [
+        "GHSA-6Q48-6C7W-9GW2",
+        "PYSEC-2026-4320"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-295"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-6Q48-6C7W-9GW2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/DDMAL/CantusDB/blob/ae827fcd0ed68262c89ed478bfa0bec676337ce1/poetry.lock",
+      "grype_dependency_source": "https://github.com/DDMAL/CantusDB/blob/ae827fcd0ed68262c89ed478bfa0bec676337ce1/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "django",
+      "installed_version": "5.2.16",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-15307",
+      "aliases": [
+        "BIT-DJANGO-2026-15307",
+        "CVE-2026-15307",
+        "GHSA-WVQV-FJ8W-QMHM",
+        "PYSEC-2026-4035"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-73",
+        "CWE-918"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WVQV-FJ8W-QMHM",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/DDMAL/CantusDB/blob/ae827fcd0ed68262c89ed478bfa0bec676337ce1/poetry.lock",
+      "grype_dependency_source": "https://github.com/DDMAL/CantusDB/blob/ae827fcd0ed68262c89ed478bfa0bec676337ce1/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "django",
+      "installed_version": "5.2.16",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-15830",
+      "aliases": [
+        "BIT-DJANGO-2026-15830",
+        "CVE-2026-15830",
+        "GHSA-Q238-5CXM-5C9H",
+        "PYSEC-2026-3717"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-674"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-Q238-5CXM-5C9H",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/DDMAL/CantusDB/blob/ae827fcd0ed68262c89ed478bfa0bec676337ce1/poetry.lock",
+      "grype_dependency_source": "https://github.com/DDMAL/CantusDB/blob/ae827fcd0ed68262c89ed478bfa0bec676337ce1/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pylint",
+      "installed_version": "3.3.4",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-114608",
+      "aliases": [
+        "CVE-2026-114608",
+        "GHSA-22QQ-2FWX-7P67"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-502"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-22QQ-2FWX-7P67",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/DDMAL/CantusDB/blob/ae827fcd0ed68262c89ed478bfa0bec676337ce1/poetry.lock",
+      "grype_dependency_source": "https://github.com/DDMAL/CantusDB/blob/ae827fcd0ed68262c89ed478bfa0bec676337ce1/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "soupsieve",
+      "installed_version": "2.8.4",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-85999",
+      "aliases": [
+        "CVE-2026-85999",
+        "GHSA-J934-XHV5-FG8F",
+        "PYSEC-2026-4171"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1333",
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-J934-XHV5-FG8F",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/DDMAL/CantusDB/blob/ae827fcd0ed68262c89ed478bfa0bec676337ce1/poetry.lock",
+      "grype_dependency_source": "https://github.com/DDMAL/CantusDB/blob/ae827fcd0ed68262c89ed478bfa0bec676337ce1/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "soupsieve",
+      "installed_version": "2.8.4",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-86000",
+      "aliases": [
+        "CVE-2026-86000",
+        "GHSA-GJV8-XP57-G29C",
+        "PYSEC-2026-4170"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1333",
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-GJV8-XP57-G29C",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/DDMAL/CantusDB/blob/ae827fcd0ed68262c89ed478bfa0bec676337ce1/poetry.lock",
+      "grype_dependency_source": "https://github.com/DDMAL/CantusDB/blob/ae827fcd0ed68262c89ed478bfa0bec676337ce1/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "urllib3",
+      "installed_version": "2.7.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-97687",
+      "aliases": [
+        "CVE-2026-97687",
+        "GHSA-8988-9CW3-XX77",
+        "PYSEC-2026-4175"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-295",
+        "CWE-440"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8988-9CW3-XX77",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/DDMAL/CantusDB/blob/ae827fcd0ed68262c89ed478bfa0bec676337ce1/poetry.lock",
+      "grype_dependency_source": "https://github.com/DDMAL/CantusDB/blob/ae827fcd0ed68262c89ed478bfa0bec676337ce1/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "urllib3",
+      "installed_version": "2.7.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-97688",
+      "aliases": [
+        "CVE-2026-97688",
+        "GHSA-GH4C-6FX4-QH6G",
+        "PYSEC-2026-4176"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-835"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-GH4C-6FX4-QH6G",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/DDMAL/CantusDB/blob/ae827fcd0ed68262c89ed478bfa0bec676337ce1/poetry.lock",
+      "grype_dependency_source": "https://github.com/DDMAL/CantusDB/blob/ae827fcd0ed68262c89ed478bfa0bec676337ce1/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "urllib3",
+      "installed_version": "2.7.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-97689",
+      "aliases": [
+        "CVE-2026-97689",
+        "GHSA-VXQ7-64XX-V4GW",
+        "PYSEC-2026-4177"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-VXQ7-64XX-V4GW",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/DDMAL/CantusDB/blob/ae827fcd0ed68262c89ed478bfa0bec676337ce1/poetry.lock",
+      "grype_dependency_source": "https://github.com/DDMAL/CantusDB/blob/ae827fcd0ed68262c89ed478bfa0bec676337ce1/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "werkzeug",
+      "installed_version": "3.1.6",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-102598",
+      "aliases": [
+        "CVE-2026-102598",
+        "GHSA-G6X2-HCCM-HH4M",
+        "PYSEC-2026-4312"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-67"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-G6X2-HCCM-HH4M",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/DDMAL/CantusDB/blob/ae827fcd0ed68262c89ed478bfa0bec676337ce1/poetry.lock",
+      "grype_dependency_source": "https://github.com/DDMAL/CantusDB/blob/ae827fcd0ed68262c89ed478bfa0bec676337ce1/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    }
+  ]
+}
