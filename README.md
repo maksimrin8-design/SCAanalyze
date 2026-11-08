@@ -8,31 +8,17 @@ GitHub Actions сам выполнит сканирование всех 30 пр
 После завершения откройте нужный запуск → **Artifacts** и скачайте `SCA-RESULTS-30-PROJECTS`. GitHub скачает ZIP, внутри которого находятся:
 
 ```text
-INDEX.csv                   # все 30 проектов и число находок каждого сканера
+INDEX.csv             # summary across all 30 applications
 osv-test/
-  project.json              # репозиторий, зафиксированный commit и статусы сканов
-  osv/
-    result.json             # ОРИГИНАЛЬНЫЙ JSON-отчёт OSV-Scanner
-    findings.json           # нормализованный полный список OSV
-    findings.csv
-    exit-code.txt
-    version.txt
-    scan-status.json
-  grype/
-    result.json             # ОРИГИНАЛЬНЫЙ JSON-отчёт Grype
-    findings.json           # нормализованный полный список Grype
-    findings.csv
-    exit-code.txt
-    version.txt
-    scan-status.json
-  default/
-    reference.json          # объединённый предварительный эталон
-    reference.csv           # полный список уникальных пакетов/версий/advisory
+  osv.json             # original OSV-Scanner report
+  grype.json           # original Grype report
+  default.json         # provisional merged reference list
 nodejs-goof/
-  osv/
-  grype/
-  default/
-... 30 проектов всего, ровно 3 подпапки в каждом.
+  osv.json
+  grype.json
+  default.json
+... (30 project folders total, each with EXACTLY THREE JSON files)
+
 ```
 
 **Принцип формирования `default`:** объединение находок OSV и Grype с удалением повторов и сопоставлением CVE/GHSA. Отдельные записи из `ground-truth/verified.csv` дополнительно имеют пометку `project_and_advisory_verified`, если проверены по зафиксированным зависимостям проекта и независимому advisory. Все остальные имеют пометку `scanner_union_provisional` — это **не** независимый, гарантированно полный эталон. Уязвимости, пропущенные **обоими** инструментами, могут отсутствовать.
@@ -53,10 +39,10 @@ tests/                              # тесты разборщиков и ва�
 
 ## Результаты при сбоях
 
-У каждого сканера есть `scan-status.json` и, когда он действительно был запущен, `exit-code.txt`. Если он не смог завершиться или не создал валидный JSON, в архиве фиксируется ошибка (`failed`, `not_run`, `invalid_report` и т.д.). Отсутствие отчёта **не** превращается в выдуманное `0 уязвимостей`.
+When a scanner fails, its corresponding `osv.json` / `grype.json` contains a clear error status instead of fabricated empty findings; the merged `default.json` also records both scanner statuses. Internal diagnostics are available in temporary GitHub Actions artifacts, not in the final project folders.
 
 При частичном сбое итоговый ZIP всё равно будет сформирован, но workflow сообщит об ошибке после загрузки артефакта, чтобы сбой не остался незамеченным.
 
 ## Воспроизводимость
 
-OSV-Scanner v2.7.0 и Grype v0.121.2, исходные проекты по закреплённым SHA. Базы уязвимостей могут меняться между запусками, поэтому `project.json` содержит ссылку на конкретный запуск GitHub Actions, а `version.txt` — версию программы.
+OSV-Scanner v2.7.0 и Grype v0.121.2, исходные проекты по закреплённым SHA. Базы уязвимостей могут меняться между запусками, поэтому `default.json` contains the pinned commit and GitHub Actions run URL; scanner versions are fixed in the workflow.
