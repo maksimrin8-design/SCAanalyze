@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Recreate application/<name>/{osv,grype,default} from a GitHub Actions scan.
+"""Recreate application/<name>/{osv.json,grype.json,default.json} from scans.
 
 The `default` reference is a PROVISIONAL union of tool observations, supplemented
 by independently validated dependency+advisory rows. It is not an independent
@@ -143,6 +143,7 @@ def generate(manifest, truth, raw_dir, out_dir, run_url=''):
         dest = out_dir / name
         if not dest.resolve().is_relative_to(out_dir.resolve()):
             raise ValueError('Unsafe project directory: ' + name)
+        dest.mkdir(parents=True, exist_ok=True)
         scan_status = diag_by_pid[pid]['scans']
         meta_index = all_observation_metadata(root)
         enriched = [decorate(r, meta_index) for r in by_pid[pid] if r['vulnerability_id']]
@@ -169,48 +170,33 @@ def generate(manifest, truth, raw_dir, out_dir, run_url=''):
             counts['comparison_valid'] = False
         else:
             counts['comparison_valid'] = True
-        write_json(dest / 'project.json', {
-            'project_id': pid, 'name': name, 'repository': p['repo'], 'pinned_commit': p['ref'],
-            'source_run': run_url, 'scan_status': scan_status, 'counts': dict(counts)})
-        # Preserve the actual, unmodified scanner reports and execution details
-        # in the FINAL archive, not only in temporary matrix-job artifacts.
+        # Exactly three files per application in the FINAL archive. Internal
+        # runner artifacts are allowed to contain auxiliary logs and metadata.
+        # Keep successful native scanner JSON unchanged for direct inspection.
+        # If a scan failed, preserve an explicit error object, not fabricated []
+        # findings that could be mistaken for a clean scan.
         for scanner in ('osv', 'grype'):
-            out_scanner = dest / scanner
-            out_scanner.mkdir(parents=True, exist_ok=True)
-            scan_root = root / scanner if root is not None else None
-            if scan_root and scan_root.is_dir():
-                for filename in ('result.json', 'exit-code.txt', 'version.txt', 'stderr.log'):
-                    src = scan_root / filename
-                    if src.is_file():
-                        shutil.copy2(src, out_scanner / filename)
-            write_json(out_scanner / 'scan-status.json', {
-                'project_id': pid, 'scanner': scanner,
-                'status': scan_status[scanner], 'source_run': run_url,
-                'raw_json_present': (out_scanner / 'result.json').is_file(),
-                'explanation': ('Completed with a structurally valid report' if scan_status[scanner] == 'ok'
-                                else 'Scan incomplete/unavailable; do not interpret missing findings as zero.'),
-            })
-        entry_cols = ['package','installed_version','ecosystem','vulnerability_id','aliases',
-                      'severity','cwe_types','found_by','verification_status','advisory_url',
-                      'project_evidence_url','osv_dependency_source','grype_dependency_source','notes']
-        for scanner in ('osv','grype'):
-            observations = [e for e in enriched if scanner in e['found_by']]
-            scan_root = root / scanner if root is not None else None
-            version_file = scan_root / 'version.txt' if scan_root is not None else None
-            version = version_file.read_text(encoding='utf-8').strip() if version_file and version_file.exists() else ''
-            info = {'scanner': scanner, 'project_id': pid, 'repository': p['repo'], 'pinned_commit': p['ref'],
-                    'source_run': run_url, 'status': scan_status[scanner], 'version': version,
-                    'count': len(observations), 'findings': observations,
-                    'native_json': 'result.json (if scan produced one); see scan-status.json for failures.'}
-            write_json(dest / scanner / 'findings.json', info)
-            write_csv(dest / scanner / 'findings.csv', entry_cols, [
-                {**e, 'aliases': ';'.join(e['aliases']), 'cwe_types': ';'.join(e['cwe_types']), 'found_by': ';'.join(e['found_by'])}
-                for e in observations])
-        if root is not None:
-            for filename in ('upstream-commit.txt', 'dependency-files.txt'):
-                src = root / filename
-                if src.is_file():
-                    shutil.copy2(src, dest / filename)
+            source = root / scanner / 'result.json' if root is not None else None
+            target = dest / (scanner + '.json')
+            status = scan_status[scanner]
+            if status == 'ok':
+                if source is None or not source.is_file():
+                    raise AssertionError('Missing native scanner report despite OK: ' + pid)
+                shutil.copyfile(source, target)
+            else:
+                scan_root = root / scanner if root is not None else None
+                exit_file = scan_root / 'exit-code.txt' if scan_root is not None else None
+                stderr_file = scan_root / 'stderr.log' if scan_root is not None else None
+                write_json(target, {
+                    'scanner': scanner, 'scan_status': status,
+                    'project_id': pid, 'repository': p['repo'],
+                    'pinned_commit': p['ref'], 'source_run': run_url,
+                    'exit_code': exit_file.read_text(encoding='utf-8').strip()
+                                 if exit_file and exit_file.is_file() else None,
+                    'error_excerpt': stderr_file.read_text(encoding='utf-8', errors='replace')[-8000:]
+                                     if stderr_file and stderr_file.is_file() else '',
+                    'warning': 'Scanner did not complete: no result can be inferred.',
+                })
         reference = {
             'schema_version': 1, 'project_id': pid, 'project': name, 'repository': p['repo'],
             'pinned_commit': p['ref'], 'source_run': run_url,
@@ -222,10 +208,7 @@ def generate(manifest, truth, raw_dir, out_dir, run_url=''):
                             'analyzers may be absent. Do not infer unbiased recall or precision.'),
             'scan_status': scan_status, 'counts': dict(counts), 'vulnerabilities': enriched,
         }
-        write_json(dest / 'default' / 'reference.json', reference)
-        write_csv(dest / 'default' / 'reference.csv', entry_cols, [
-            {**e, 'aliases': ';'.join(e['aliases']), 'cwe_types': ';'.join(e['cwe_types']), 'found_by': ';'.join(e['found_by'])}
-            for e in enriched])
+        write_json(dest / 'default.json', reference)
         index.append({'id': pid, 'application': name, 'repository': p['repo'], 'commit': p['ref'],
                       'total_reference': counts['total'], 'osv': counts['osv'], 'grype': counts['grype'],
                       'both': counts['both'], 'only_osv': counts['only_osv'],
@@ -234,11 +217,11 @@ def generate(manifest, truth, raw_dir, out_dir, run_url=''):
                       'medium': counts['severity_Medium'], 'low': counts['severity_Low'],
                       'unknown': counts['severity_Unknown'],
                       'osv_status': scan_status['osv'], 'grype_status': scan_status['grype'],
-                      'reference_file': name + '/default/reference.json'})
+                      'reference_file': name + '/default.json'})
     index_cols = list(index[0])
     write_csv(out_dir/'INDEX.csv', index_cols, index)
     # A transparent single CSV comparison summary for the course supervisor.
-    (out_dir.parent/'sca-summary.csv').write_bytes((out_dir/'INDEX.csv').read_bytes())
+    # The single INDEX.csv lives only at archive root, not in app folders.
     print('Generated', len(index), 'application folders;', sum(x['total_reference'] for x in index), 'reference observations')
     return index
 
