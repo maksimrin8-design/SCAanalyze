@@ -1,0 +1,1107 @@
+{
+  "schema_version": 1,
+  "project_id": "P029",
+  "project": "openpiv-python",
+  "repository": "OpenPIV/openpiv-python",
+  "pinned_commit": "7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285",
+  "source_run": "https://github.com/maksimrin8-design/SCAanalyze/actions/runs/42440365259",
+  "reference_type": "scanner_union_plus_independently_verified_examples",
+  "is_complete_independent_ground_truth": false,
+  "methodology": "Every finding reported by at least one analyzer, with CVE/GHSA aliases merged, plus verified dependencies and advisories from ground-truth/verified.csv. Scanner-only entries remain PROVISIONAL and vulnerabilities missed by both analyzers may be absent. Do not infer unbiased recall or precision.",
+  "scan_status": {
+    "osv": "ok",
+    "grype": "ok"
+  },
+  "counts": {
+    "both": 42,
+    "severity_High": 26,
+    "verified": 0,
+    "severity_Medium": 11,
+    "severity_Critical": 5,
+    "only_osv": 0,
+    "only_grype": 0,
+    "independently_verified_but_not_detected": 0,
+    "total": 42,
+    "osv": 42,
+    "grype": 42,
+    "comparison_valid": true
+  },
+  "vulnerabilities": [
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112390",
+      "aliases": [
+        "BIT-PILLOW-2026-112390",
+        "CVE-2026-112390",
+        "GHSA-22HG-R758-RRW9"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-835"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-22HG-R758-RRW9",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112391",
+      "aliases": [
+        "BIT-PILLOW-2026-112391",
+        "CVE-2026-112391",
+        "GHSA-254F-3936-288H"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-835"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-254F-3936-288H",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112392",
+      "aliases": [
+        "BIT-PILLOW-2026-112392",
+        "CVE-2026-112392",
+        "GHSA-27H8-GF7J-V5HC",
+        "PYSEC-2026-4326"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-476"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-27H8-GF7J-V5HC",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112393",
+      "aliases": [
+        "BIT-PILLOW-2026-112393",
+        "CVE-2026-112393",
+        "GHSA-332P-7HRC-92WF"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-122"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-332P-7HRC-92WF",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112394",
+      "aliases": [
+        "BIT-PILLOW-2026-112394",
+        "CVE-2026-112394",
+        "GHSA-4558-3H8R-V8XP",
+        "PYSEC-2026-4327"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-126"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-4558-3H8R-V8XP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112395",
+      "aliases": [
+        "BIT-PILLOW-2026-112395",
+        "CVE-2026-112395",
+        "GHSA-462X-PGG6-55FP"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-122"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-462X-PGG6-55FP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112396",
+      "aliases": [
+        "BIT-PILLOW-2026-112396",
+        "CVE-2026-112396",
+        "GHSA-4RR5-89J8-MWWM",
+        "PYSEC-2026-4328"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-416"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-4RR5-89J8-MWWM",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112397",
+      "aliases": [
+        "BIT-PILLOW-2026-112397",
+        "CVE-2026-112397",
+        "GHSA-58R4-6RV3-GFH8",
+        "PYSEC-2026-4329"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-787"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-58R4-6RV3-GFH8",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112398",
+      "aliases": [
+        "BIT-PILLOW-2026-112398",
+        "CVE-2026-112398",
+        "GHSA-5X8W-8JJ5-Q52H",
+        "PYSEC-2026-4330"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-122",
+        "CWE-787"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5X8W-8JJ5-Q52H",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112399",
+      "aliases": [
+        "BIT-PILLOW-2026-112399",
+        "CVE-2026-112399",
+        "GHSA-5XM2-6676-QCP9"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-789"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5XM2-6676-QCP9",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112400",
+      "aliases": [
+        "BIT-PILLOW-2026-112400",
+        "CVE-2026-112400",
+        "GHSA-65QM-JVMH-6PQG"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-65QM-JVMH-6PQG",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112401",
+      "aliases": [
+        "BIT-PILLOW-2026-112401",
+        "CVE-2026-112401",
+        "GHSA-74R2-7FF9-MJJ2"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-74R2-7FF9-MJJ2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112402",
+      "aliases": [
+        "BIT-PILLOW-2026-112402",
+        "CVE-2026-112402",
+        "GHSA-7MWM-GHPF-9VRM",
+        "PYSEC-2026-4331"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-416"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-7MWM-GHPF-9VRM",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112403",
+      "aliases": [
+        "BIT-PILLOW-2026-112403",
+        "CVE-2026-112403",
+        "GHSA-8G5G-8VMR-9782",
+        "PYSEC-2026-4332"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-122"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8G5G-8VMR-9782",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112404",
+      "aliases": [
+        "BIT-PILLOW-2026-112404",
+        "CVE-2026-112404",
+        "GHSA-C6HW-5GRF-FF96"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-125",
+        "CWE-126"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-C6HW-5GRF-FF96",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112405",
+      "aliases": [
+        "BIT-PILLOW-2026-112405",
+        "CVE-2026-112405",
+        "GHSA-CP9V-662Q-VVX9",
+        "PYSEC-2026-4333"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-476"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-CP9V-662Q-VVX9",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112406",
+      "aliases": [
+        "BIT-PILLOW-2026-112406",
+        "CVE-2026-112406",
+        "GHSA-F2G6-542V-9J58"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-835"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-F2G6-542V-9J58",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112891",
+      "aliases": [
+        "BIT-PILLOW-2026-112891",
+        "CVE-2026-112891",
+        "GHSA-FC9G-5QG7-MF45"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-FC9G-5QG7-MF45",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112892",
+      "aliases": [
+        "BIT-PILLOW-2026-112892",
+        "CVE-2026-112892",
+        "GHSA-GG2R-WVFM-Q9RX"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-409"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-GG2R-WVFM-Q9RX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112893",
+      "aliases": [
+        "BIT-PILLOW-2026-112893",
+        "CVE-2026-112893",
+        "GHSA-J4M9-6W36-PW47"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-457",
+        "CWE-763"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-J4M9-6W36-PW47",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112894",
+      "aliases": [
+        "BIT-PILLOW-2026-112894",
+        "CVE-2026-112894",
+        "GHSA-JG86-V3JV-HRPM"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-JG86-V3JV-HRPM",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112895",
+      "aliases": [
+        "BIT-PILLOW-2026-112895",
+        "CVE-2026-112895",
+        "GHSA-P4WG-P73J-C528"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-674"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-P4WG-P73J-C528",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112896",
+      "aliases": [
+        "BIT-PILLOW-2026-112896",
+        "CVE-2026-112896",
+        "GHSA-PCHR-8J38-3X4P",
+        "PYSEC-2026-4334"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-125"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-PCHR-8J38-3X4P",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112897",
+      "aliases": [
+        "BIT-PILLOW-2026-112897",
+        "CVE-2026-112897",
+        "GHSA-Q45J-58J2-45RG"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-908"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-Q45J-58J2-45RG",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112898",
+      "aliases": [
+        "BIT-PILLOW-2026-112898",
+        "CVE-2026-112898",
+        "GHSA-RFGQ-Q3W2-PMV2"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-457"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-RFGQ-Q3W2-PMV2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112899",
+      "aliases": [
+        "CVE-2026-112899",
+        "GHSA-VX6W-VV9F-6GVG"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-VX6W-VV9F-6GVG",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112900",
+      "aliases": [
+        "BIT-PILLOW-2026-112900",
+        "CVE-2026-112900",
+        "GHSA-W889-685W-C8FH"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-78",
+        "CWE-88"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-W889-685W-C8FH",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112901",
+      "aliases": [
+        "BIT-PILLOW-2026-112901",
+        "CVE-2026-112901",
+        "GHSA-XGH8-JP6Q-P5X8",
+        "PYSEC-2026-4335"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-XGH8-JP6Q-P5X8",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-112902",
+      "aliases": [
+        "CVE-2026-112902",
+        "GHSA-XVH5-G6GV-559V"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-686"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-XVH5-G6GV-559V",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-114501",
+      "aliases": [
+        "BIT-PILLOW-2026-114501",
+        "CVE-2026-114501",
+        "GHSA-654X-CWWV-5J9C",
+        "PYSEC-2026-4336"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-226",
+        "CWE-908"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-654X-CWWV-5J9C",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-96636",
+      "aliases": [
+        "BIT-PILLOW-2026-96636",
+        "CVE-2026-96636",
+        "GHSA-P8HX-V2P6-RP84",
+        "PYSEC-2026-4337"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-409"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-P8HX-V2P6-RP84",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-96637",
+      "aliases": [
+        "BIT-PILLOW-2026-96637",
+        "CVE-2026-96637",
+        "GHSA-G842-9RC4-69PW",
+        "PYSEC-2026-4338"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-409"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-G842-9RC4-69PW",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-96638",
+      "aliases": [
+        "BIT-PILLOW-2026-96638",
+        "CVE-2026-96638",
+        "GHSA-24RC-8HJ2-V98C"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-24RC-8HJ2-V98C",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-96639",
+      "aliases": [
+        "BIT-PILLOW-2026-96639",
+        "CVE-2026-96639",
+        "GHSA-V9PV-5GC8-W2M6",
+        "PYSEC-2026-4339"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-125",
+        "CWE-787"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-V9PV-5GC8-W2M6",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-96640",
+      "aliases": [
+        "BIT-PILLOW-2026-96640",
+        "CVE-2026-96640",
+        "GHSA-MRFP-P49P-3HF2"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-MRFP-P49P-3HF2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-96641",
+      "aliases": [
+        "BIT-PILLOW-2026-96641",
+        "CVE-2026-96641",
+        "GHSA-4RM8-3HMM-39FG",
+        "PYSEC-2026-4340"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-190"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-4RM8-3HMM-39FG",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-96642",
+      "aliases": [
+        "BIT-PILLOW-2026-96642",
+        "CVE-2026-96642",
+        "GHSA-3J72-P6QG-6XP7",
+        "PYSEC-2026-4341"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-835"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-3J72-P6QG-6XP7",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-96643",
+      "aliases": [
+        "BIT-PILLOW-2026-96643",
+        "CVE-2026-96643",
+        "GHSA-G4QV-2JXX-769H",
+        "PYSEC-2026-4342"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-G4QV-2JXX-769H",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-96644",
+      "aliases": [
+        "BIT-PILLOW-2026-96644",
+        "CVE-2026-96644",
+        "GHSA-9V9V-9QVF-H2HJ",
+        "PYSEC-2026-4343"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-125"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-9V9V-9QVF-H2HJ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-96778",
+      "aliases": [
+        "BIT-PILLOW-2026-96778",
+        "CVE-2026-96778",
+        "GHSA-G7CR-3P24-7WF7"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-787"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-G7CR-3P24-7WF7",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pillow",
+      "installed_version": "12.3.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "GHSA-78G4-XQWV-Q3G8",
+      "aliases": [
+        "GHSA-78G4-XQWV-Q3G8"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1395",
+        "CWE-787"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-78G4-XQWV-Q3G8",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pytest",
+      "installed_version": "7.4.4",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2025-71176",
+      "aliases": [
+        "CVE-2025-71176",
+        "GHSA-6W46-J5RX-G56G",
+        "PYSEC-2026-1845"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-379"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-6W46-J5RX-G56G",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "grype_dependency_source": "https://github.com/OpenPIV/openpiv-python/blob/7e46ce8e9585f8e763dc94a1eccd5bb0dbbb5285/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    }
+  ]
+}

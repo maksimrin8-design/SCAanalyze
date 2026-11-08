@@ -1,0 +1,3639 @@
+{
+  "schema_version": 1,
+  "project_id": "P028",
+  "project": "OpenHands",
+  "repository": "OpenHands/OpenHands",
+  "pinned_commit": "9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9",
+  "source_run": "https://github.com/maksimrin8-design/SCAanalyze/actions/runs/42440365259",
+  "reference_type": "scanner_union_plus_independently_verified_examples",
+  "is_complete_independent_ground_truth": false,
+  "methodology": "Every finding reported by at least one analyzer, with CVE/GHSA aliases merged, plus verified dependencies and advisories from ground-truth/verified.csv. Scanner-only entries remain PROVISIONAL and vulnerabilities missed by both analyzers may be absent. Do not infer unbiased recall or precision.",
+  "scan_status": {
+    "osv": "ok",
+    "grype": "ok"
+  },
+  "counts": {
+    "only_osv": 109,
+    "severity_Medium": 64,
+    "verified": 0,
+    "severity_High": 66,
+    "both": 43,
+    "severity_Low": 19,
+    "severity_Critical": 3,
+    "only_grype": 0,
+    "independently_verified_but_not_detected": 0,
+    "total": 152,
+    "osv": 152,
+    "grype": 43,
+    "comparison_valid": true
+  },
+  "vulnerabilities": [
+    {
+      "package": "@vitest/mocker",
+      "installed_version": "4.1.10",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-112949",
+      "aliases": [
+        "CVE-2026-112949",
+        "GHSA-QXG6-89MG-RQV8"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-116",
+        "CWE-306",
+        "CWE-94"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-QXG6-89MG-RQV8",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "@vitest/mocker",
+      "installed_version": "4.1.10",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-84373",
+      "aliases": [
+        "CVE-2026-84373",
+        "GHSA-82FW-GWWQ-J7X9"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-22"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-82FW-GWWQ-J7X9",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "@xmldom/xmldom",
+      "installed_version": "0.8.13",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-83605",
+      "aliases": [
+        "CVE-2026-83605",
+        "GHSA-4W3W-2RP5-G8JM"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-91"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-4W3W-2RP5-G8JM",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "@xmldom/xmldom",
+      "installed_version": "0.8.13",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-83607",
+      "aliases": [
+        "CVE-2026-83607",
+        "GHSA-W2RR-34G9-RVRJ"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-91"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-W2RR-34G9-RVRJ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "@xmldom/xmldom",
+      "installed_version": "0.8.13",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-83608",
+      "aliases": [
+        "CVE-2026-83608",
+        "GHSA-27P8-2357-5QQV"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-91"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-27P8-2357-5QQV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "@xmldom/xmldom",
+      "installed_version": "0.8.13",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-83610",
+      "aliases": [
+        "CVE-2026-83610",
+        "GHSA-6GMQ-8VP8-GCM6"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-116"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-6GMQ-8VP8-GCM6",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "@xmldom/xmldom",
+      "installed_version": "0.8.13",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-83611",
+      "aliases": [
+        "CVE-2026-83611",
+        "GHSA-6H8R-XR42-GP59"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1286"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-6H8R-XR42-GP59",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "@xmldom/xmldom",
+      "installed_version": "0.8.13",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-83613",
+      "aliases": [
+        "CVE-2026-83613",
+        "GHSA-8344-3JMQ-59R6"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8344-3JMQ-59R6",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "@xmldom/xmldom",
+      "installed_version": "0.8.13",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-83614",
+      "aliases": [
+        "CVE-2026-83614",
+        "GHSA-93R5-FHX6-VMG9"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-93R5-FHX6-VMG9",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "@xmldom/xmldom",
+      "installed_version": "0.8.13",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-83615",
+      "aliases": [
+        "CVE-2026-83615",
+        "GHSA-965W-775F-MR7G"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-965W-775F-MR7G",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "@xmldom/xmldom",
+      "installed_version": "0.8.13",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-83616",
+      "aliases": [
+        "CVE-2026-83616",
+        "GHSA-C7Q8-3CH8-VQPV"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-91"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-C7Q8-3CH8-VQPV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "@xmldom/xmldom",
+      "installed_version": "0.8.13",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-83619",
+      "aliases": [
+        "CVE-2026-83619",
+        "GHSA-X4FP-J954-R2F4"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333",
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-X4FP-J954-R2F4",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "axios",
+      "installed_version": "1.18.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-101898",
+      "aliases": [
+        "CVE-2026-101898",
+        "GHSA-3PQ3-5FJ3-CG6V"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-918"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-3PQ3-5FJ3-CG6V",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "axios",
+      "installed_version": "1.18.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-101899",
+      "aliases": [
+        "CVE-2026-101899",
+        "GHSA-44G4-M2MJ-WPVX"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-693"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-44G4-M2MJ-WPVX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "axios",
+      "installed_version": "1.18.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-101900",
+      "aliases": [
+        "CVE-2026-101900",
+        "GHSA-4HQW-QXG8-JXX2"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1321",
+        "CWE-693",
+        "CWE-74"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-4HQW-QXG8-JXX2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "axios",
+      "installed_version": "1.18.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-101901",
+      "aliases": [
+        "CVE-2026-101901",
+        "GHSA-542G-H47M-68V8"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-542G-H47M-68V8",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "axios",
+      "installed_version": "1.18.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-101902",
+      "aliases": [
+        "CVE-2026-101902",
+        "GHSA-9FR6-4GFG-395G"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-9FR6-4GFG-395G",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "axios",
+      "installed_version": "1.18.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-101903",
+      "aliases": [
+        "CVE-2026-101903",
+        "GHSA-C29M-XWM3-CM6R"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-C29M-XWM3-CM6R",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "axios",
+      "installed_version": "1.18.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-101904",
+      "aliases": [
+        "CVE-2026-101904",
+        "GHSA-J8RH-479H-CP32"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1321",
+        "CWE-74"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-J8RH-479H-CP32",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "axios",
+      "installed_version": "1.18.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-101905",
+      "aliases": [
+        "CVE-2026-101905",
+        "GHSA-M8M8-QJ5V-23W3"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1321",
+        "CWE-441"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-M8M8-QJ5V-23W3",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "axios",
+      "installed_version": "1.18.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-101906",
+      "aliases": [
+        "CVE-2026-101906",
+        "GHSA-MGHH-PGCX-3JJJ"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333",
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-MGHH-PGCX-3JJJ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "axios",
+      "installed_version": "1.18.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-101907",
+      "aliases": [
+        "CVE-2026-101907",
+        "GHSA-R4GJ-5M52-G5WH"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-441",
+        "CWE-601"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-R4GJ-5M52-G5WH",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "axios",
+      "installed_version": "1.18.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-101908",
+      "aliases": [
+        "CVE-2026-101908",
+        "GHSA-VH66-26GQ-Q6X8"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-VH66-26GQ-Q6X8",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "axios",
+      "installed_version": "1.18.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-101909",
+      "aliases": [
+        "CVE-2026-101909",
+        "GHSA-X97P-JQ2G-JP4F"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-X97P-JQ2G-JP4F",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "baseline-browser-mapping",
+      "installed_version": "2.10.33",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-45819",
+      "aliases": [
+        "CVE-2026-45819",
+        "GHSA-W5VR-8V7Q-W6RV"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-705"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-W5VR-8V7Q-W6RV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "body-parser",
+      "installed_version": "1.20.6",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-111181",
+      "aliases": [
+        "CVE-2026-111181",
+        "GHSA-27R3-JXMH-P828"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-248"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-27R3-JXMH-P828",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "brace-expansion",
+      "installed_version": "1.1.18",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-102276",
+      "aliases": [
+        "CVE-2026-102276",
+        "GHSA-6J4F-FJ2G-MC7P"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-674"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-6J4F-FJ2G-MC7P",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "brace-expansion",
+      "installed_version": "1.1.18",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-102277",
+      "aliases": [
+        "CVE-2026-102277",
+        "GHSA-Q2HR-2G5M-VWHR"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-Q2HR-2G5M-VWHR",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "brace-expansion",
+      "installed_version": "1.1.18",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-102278",
+      "aliases": [
+        "CVE-2026-102278",
+        "GHSA-QHR7-859C-M2P7"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-674"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-QHR7-859C-M2P7",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "brace-expansion",
+      "installed_version": "2.1.4",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-102276",
+      "aliases": [
+        "CVE-2026-102276",
+        "GHSA-6J4F-FJ2G-MC7P"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-674"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-6J4F-FJ2G-MC7P",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "brace-expansion",
+      "installed_version": "2.1.4",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-102277",
+      "aliases": [
+        "CVE-2026-102277",
+        "GHSA-Q2HR-2G5M-VWHR"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-Q2HR-2G5M-VWHR",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "brace-expansion",
+      "installed_version": "2.1.4",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-102278",
+      "aliases": [
+        "CVE-2026-102278",
+        "GHSA-QHR7-859C-M2P7"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-674"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-QHR7-859C-M2P7",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "brace-expansion",
+      "installed_version": "5.0.9",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-102276",
+      "aliases": [
+        "CVE-2026-102276",
+        "GHSA-6J4F-FJ2G-MC7P"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-674"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-6J4F-FJ2G-MC7P",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "brace-expansion",
+      "installed_version": "5.0.9",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-102277",
+      "aliases": [
+        "CVE-2026-102277",
+        "GHSA-Q2HR-2G5M-VWHR"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-Q2HR-2G5M-VWHR",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "brace-expansion",
+      "installed_version": "5.0.9",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-102278",
+      "aliases": [
+        "CVE-2026-102278",
+        "GHSA-QHR7-859C-M2P7"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-674"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-QHR7-859C-M2P7",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "browserslist",
+      "installed_version": "4.28.2",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-73088",
+      "aliases": [
+        "CVE-2026-73088",
+        "GHSA-73WF-GQ98-2V4G"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1321",
+        "CWE-248"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-73WF-GQ98-2V4G",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "browserslist",
+      "installed_version": "4.28.2",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-73089",
+      "aliases": [
+        "CVE-2026-73089",
+        "GHSA-C83G-RGW3-J3CX"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-C83G-RGW3-J3CX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "compression",
+      "installed_version": "1.8.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-87776",
+      "aliases": [
+        "CVE-2026-87776",
+        "GHSA-VC2V-76PW-4V95"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-401",
+        "CWE-459"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-VC2V-76PW-4V95",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "deepmerge",
+      "installed_version": "4.3.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-93753",
+      "aliases": [
+        "CVE-2026-93753",
+        "GHSA-GCQX-W48M-W2H4"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-GCQX-W48M-W2H4",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "dompurify",
+      "installed_version": "3.4.12",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-109345",
+      "aliases": [
+        "CVE-2026-109345",
+        "GHSA-6688-9RHM-GJV2"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-79"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-6688-9RHM-GJV2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "dompurify",
+      "installed_version": "3.4.12",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-116802",
+      "aliases": [
+        "CVE-2026-116802",
+        "GHSA-C6GR-QVV4-5V3F"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-79"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-C6GR-QVV4-5V3F",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "dompurify",
+      "installed_version": "3.4.12",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-116803",
+      "aliases": [
+        "CVE-2026-116803",
+        "GHSA-MRV2-3PQR-J5JR"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-693",
+        "CWE-79"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-MRV2-3PQR-J5JR",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "dompurify",
+      "installed_version": "3.4.12",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-116804",
+      "aliases": [
+        "CVE-2026-116804",
+        "GHSA-CG2G-XH64-V4Q7"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-79"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-CG2G-XH64-V4Q7",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "dompurify",
+      "installed_version": "3.4.12",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-75838",
+      "aliases": [
+        "CVE-2026-75838",
+        "GHSA-55Q2-FJHQ-7XH7"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-79"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-55Q2-FJHQ-7XH7",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "electron",
+      "installed_version": "42.3.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-102673",
+      "aliases": [
+        "CVE-2026-102673",
+        "GHSA-HQ2X-R82H-9WJ4"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-346",
+        "CWE-693"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-HQ2X-R82H-9WJ4",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "electron",
+      "installed_version": "42.3.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-102674",
+      "aliases": [
+        "CVE-2026-102674",
+        "GHSA-GR2M-V5GQ-V685"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-266",
+        "CWE-693"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-GR2M-V5GQ-V685",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "electron",
+      "installed_version": "42.3.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-102675",
+      "aliases": [
+        "CVE-2026-102675",
+        "GHSA-J84W-JFHQ-VHVJ"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-346"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-J84W-JFHQ-VHVJ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "electron",
+      "installed_version": "42.3.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-102676",
+      "aliases": [
+        "CVE-2026-102676",
+        "GHSA-9QH4-3JW8-366W"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1188",
+        "CWE-269"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-9QH4-3JW8-366W",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "electron",
+      "installed_version": "42.3.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-102677",
+      "aliases": [
+        "CVE-2026-102677",
+        "GHSA-QMV3-FV6V-RMHQ"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-20",
+        "CWE-345"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-QMV3-FV6V-RMHQ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "electron",
+      "installed_version": "42.3.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-113796",
+      "aliases": [
+        "CVE-2026-113796",
+        "GHSA-2P8C-GR87-2676"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-352"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-2P8C-GR87-2676",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "electron",
+      "installed_version": "42.3.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-113797",
+      "aliases": [
+        "CVE-2026-113797",
+        "GHSA-98MX-CJP9-GCHM"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-862"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-98MX-CJP9-GCHM",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "electron",
+      "installed_version": "42.3.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-113798",
+      "aliases": [
+        "CVE-2026-113798",
+        "GHSA-X562-297C-G43G"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-346"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-X562-297C-G43G",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "electron",
+      "installed_version": "42.3.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-113800",
+      "aliases": [
+        "CVE-2026-113800",
+        "GHSA-FW47-9C62-H3VW"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-346"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-FW47-9C62-H3VW",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "electron",
+      "installed_version": "42.3.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-114121",
+      "aliases": [
+        "CVE-2026-114121",
+        "GHSA-997Q-GVVC-JWMX"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-346"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-997Q-GVVC-JWMX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "electron",
+      "installed_version": "42.3.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-114122",
+      "aliases": [
+        "CVE-2026-114122",
+        "GHSA-3QXV-5XGR-Q7W9"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-125"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-3QXV-5XGR-Q7W9",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "electron",
+      "installed_version": "42.3.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-114124",
+      "aliases": [
+        "CVE-2026-114124",
+        "GHSA-H3V5-H239-PG29"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-125"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-H3V5-H239-PG29",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "electron",
+      "installed_version": "42.3.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-115570",
+      "aliases": [
+        "CVE-2026-115570",
+        "GHSA-JR5W-W6X2-84P9"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-299"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-JR5W-W6X2-84P9",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "electron",
+      "installed_version": "42.3.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-70606",
+      "aliases": [
+        "CVE-2026-70606",
+        "GHSA-R4W5-6PFG-JXP5"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-668"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-R4W5-6PFG-JXP5",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "extract-zip",
+      "installed_version": "2.0.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-19693",
+      "aliases": [
+        "CVE-2026-19693",
+        "GHSA-7PQW-9J4J-H8Q3"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-22"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-7PQW-9J4J-H8Q3",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "extract-zip",
+      "installed_version": "2.0.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-56876",
+      "aliases": [
+        "CVE-2026-56876",
+        "GHSA-JMR9-QJV8-65GV"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-22"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-JMR9-QJV8-65GV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "fast-uri",
+      "installed_version": "3.1.5",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-110095",
+      "aliases": [
+        "CVE-2026-110095",
+        "GHSA-XHQ7-XMQJ-769H"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-41"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-XHQ7-XMQJ-769H",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "fast-uri",
+      "installed_version": "3.1.5",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-110180",
+      "aliases": [
+        "CVE-2026-110180",
+        "GHSA-WJR9-J795-JXCR"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-20",
+        "CWE-436"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WJR9-J795-JXCR",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "fast-uri",
+      "installed_version": "3.1.5",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-110306",
+      "aliases": [
+        "CVE-2026-110306",
+        "GHSA-W74X-V6F9-J3XG"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-172",
+        "CWE-180"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-W74X-V6F9-J3XG",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "fast-uri",
+      "installed_version": "3.1.5",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-110725",
+      "aliases": [
+        "CVE-2026-110725",
+        "GHSA-333X-W4R6-6CRP"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-116",
+        "CWE-41"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-333X-W4R6-6CRP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "fast-uri",
+      "installed_version": "3.1.5",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-75899",
+      "aliases": [
+        "CVE-2026-75899",
+        "GHSA-FPH4-WMHF-6FWF"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-174",
+        "CWE-918"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-FPH4-WMHF-6FWF",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "fast-uri",
+      "installed_version": "3.1.5",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-75931",
+      "aliases": [
+        "CVE-2026-75931",
+        "GHSA-5JGF-P345-68V8"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-436"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5JGF-P345-68V8",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "fast-uri",
+      "installed_version": "3.1.5",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-75975",
+      "aliases": [
+        "CVE-2026-75975",
+        "GHSA-F65P-4M7J-42XC"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-20",
+        "CWE-918"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-F65P-4M7J-42XC",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "fast-uri",
+      "installed_version": "3.1.5",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-76172",
+      "aliases": [
+        "CVE-2026-76172",
+        "GHSA-JQFF-G426-HQXP"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-177"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-JQFF-G426-HQXP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "fast-uri",
+      "installed_version": "3.1.5",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-84292",
+      "aliases": [
+        "CVE-2026-84292",
+        "GHSA-QW65-CVWX-89V3"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-116"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-QW65-CVWX-89V3",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "fast-uri",
+      "installed_version": "3.1.5",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-86472",
+      "aliases": [
+        "CVE-2026-86472",
+        "GHSA-HRR3-GC8F-F4QJ"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-178"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-HRR3-GC8F-F4QJ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "fflate",
+      "installed_version": "0.4.8",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-45820",
+      "aliases": [
+        "CVE-2026-45820",
+        "GHSA-PX8P-9VWX-VF98"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-835"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-PX8P-9VWX-VF98",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "follow-redirects",
+      "installed_version": "1.16.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-111755",
+      "aliases": [
+        "CVE-2026-111755",
+        "GHSA-8R9P-F939-6H3C"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-185",
+        "CWE-200"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8R9P-F939-6H3C",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "follow-redirects",
+      "installed_version": "1.16.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-111756",
+      "aliases": [
+        "CVE-2026-111756",
+        "GHSA-Q3JH-WRC6-JGQ8"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-200",
+        "CWE-212"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-Q3JH-WRC6-JGQ8",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "follow-redirects",
+      "installed_version": "1.16.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-116689",
+      "aliases": [
+        "CVE-2026-116689",
+        "GHSA-MRWP-F3Q8-3G9P"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-201"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-MRWP-F3Q8-3G9P",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "i18next-http-backend",
+      "installed_version": "4.0.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-105800",
+      "aliases": [
+        "CVE-2026-105800",
+        "GHSA-XVQ9-WJP8-HWQF"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-74",
+        "CWE-918"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-XVQ9-WJP8-HWQF",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "i18next-http-backend",
+      "installed_version": "4.0.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-115730",
+      "aliases": [
+        "CVE-2026-115730",
+        "GHSA-9JHJ-WVMW-CFX5"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-74"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-9JHJ-WVMW-CFX5",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "i18next-http-backend",
+      "installed_version": "4.0.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-118258",
+      "aliases": [
+        "CVE-2026-118258",
+        "GHSA-3CMX-XJWW-583X"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-74"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-3CMX-XJWW-583X",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "js-yaml",
+      "installed_version": "4.3.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-84375",
+      "aliases": [
+        "CVE-2026-84375",
+        "GHSA-2883-XCG3-V3HH"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-2883-XCG3-V3HH",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "minimatch",
+      "installed_version": "10.2.5",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-118764",
+      "aliases": [
+        "CVE-2026-118764",
+        "GHSA-G3HV-75WG-M249"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-405"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-G3HV-75WG-M249",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "minimatch",
+      "installed_version": "10.2.6",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-118764",
+      "aliases": [
+        "CVE-2026-118764",
+        "GHSA-G3HV-75WG-M249"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-405"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-G3HV-75WG-M249",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "minimatch",
+      "installed_version": "9.0.9",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-118764",
+      "aliases": [
+        "CVE-2026-118764",
+        "GHSA-G3HV-75WG-M249"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-405"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-G3HV-75WG-M249",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "moment",
+      "installed_version": "2.30.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-17495",
+      "aliases": [
+        "CVE-2026-17495",
+        "GHSA-4P3W-J4W9-5JQW"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-27"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-4P3W-J4W9-5JQW",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "morgan",
+      "installed_version": "1.11.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-15603",
+      "aliases": [
+        "CVE-2026-15603",
+        "GHSA-JXFW-X594-9X9M"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-117"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-JXFW-X594-9X9M",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "morgan",
+      "installed_version": "1.11.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-87859",
+      "aliases": [
+        "CVE-2026-87859",
+        "GHSA-9F6G-J8CH-79G4"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-117"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-9F6G-J8CH-79G4",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nanoid",
+      "installed_version": "3.3.17",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-67213",
+      "aliases": [
+        "CVE-2026-67213",
+        "GHSA-2V37-7H3G-55P8"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-835"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-2V37-7H3G-55P8",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "postcss-selector-parser",
+      "installed_version": "6.0.10",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-104844",
+      "aliases": [
+        "CVE-2026-104844",
+        "GHSA-RJ75-HQRM-R3GF"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-RJ75-HQRM-R3GF",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "proxy-addr",
+      "installed_version": "2.0.7",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-90711",
+      "aliases": [
+        "CVE-2026-90711",
+        "GHSA-JQCG-44MW-7W3H"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-290",
+        "CWE-348",
+        "CWE-697"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-JQCG-44MW-7W3H",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "qs",
+      "installed_version": "6.15.2",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-110816",
+      "aliases": [
+        "CVE-2026-110816",
+        "GHSA-6PQ8-JHM2-2VCW"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-248",
+        "CWE-704"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-6PQ8-JHM2-2VCW",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "qs",
+      "installed_version": "6.15.2",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-82417",
+      "aliases": [
+        "CVE-2026-82417",
+        "GHSA-4MJR-XMP4-GH2G"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-248",
+        "CWE-703"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-4MJR-XMP4-GH2G",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "qs",
+      "installed_version": "6.15.2",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-82562",
+      "aliases": [
+        "CVE-2026-82562",
+        "GHSA-X5FP-WJ9C-MXMX"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-X5FP-WJ9C-MXMX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "qs",
+      "installed_version": "6.15.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-110816",
+      "aliases": [
+        "CVE-2026-110816",
+        "GHSA-6PQ8-JHM2-2VCW"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-248",
+        "CWE-704"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-6PQ8-JHM2-2VCW",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "qs",
+      "installed_version": "6.15.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-82417",
+      "aliases": [
+        "CVE-2026-82417",
+        "GHSA-4MJR-XMP4-GH2G"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-248",
+        "CWE-703"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-4MJR-XMP4-GH2G",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "qs",
+      "installed_version": "6.15.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-82562",
+      "aliases": [
+        "CVE-2026-82562",
+        "GHSA-X5FP-WJ9C-MXMX"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-X5FP-WJ9C-MXMX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "shell-quote",
+      "installed_version": "1.9.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-102422",
+      "aliases": [
+        "CVE-2026-102422",
+        "GHSA-PQG4-J6R4-53MV"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-78"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-PQG4-J6R4-53MV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "source-map-js",
+      "installed_version": "1.2.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-93749",
+      "aliases": [
+        "CVE-2026-93749",
+        "GHSA-68FV-2MGG-JV7Q"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1284"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-68FV-2MGG-JV7Q",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "6.28.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-109383",
+      "aliases": [
+        "CVE-2026-109383",
+        "GHSA-2M5V-PCH6-74HX"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-295"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-2M5V-PCH6-74HX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "6.28.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-109869",
+      "aliases": [
+        "CVE-2026-109869",
+        "GHSA-XJJ6-F33Q-929C"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-248",
+        "CWE-459"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-XJJ6-F33Q-929C",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "6.28.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-109924",
+      "aliases": [
+        "CVE-2026-109924",
+        "GHSA-4QV8-2P9J-2685"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-4QV8-2P9J-2685",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "6.28.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-109932",
+      "aliases": [
+        "CVE-2026-109932",
+        "GHSA-9FM3-97PX-RJF6"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-405",
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-9FM3-97PX-RJF6",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "6.28.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-18540",
+      "aliases": [
+        "CVE-2026-18540",
+        "GHSA-R53P-7PC4-XJ5R"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-444"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-R53P-7PC4-XJ5R",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "6.28.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-19534",
+      "aliases": [
+        "CVE-2026-19534",
+        "GHSA-RFGV-XXQX-MFG5"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-248",
+        "CWE-252"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-RFGV-XXQX-MFG5",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "6.28.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-85024",
+      "aliases": [
+        "CVE-2026-85024",
+        "GHSA-3WWX-PV8P-Q78V"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-248"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-3WWX-PV8P-Q78V",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "6.28.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-87018",
+      "aliases": [
+        "CVE-2026-87018",
+        "GHSA-QRXM-FQHP-JWVM"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-248",
+        "CWE-617"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-QRXM-FQHP-JWVM",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "7.29.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-109383",
+      "aliases": [
+        "CVE-2026-109383",
+        "GHSA-2M5V-PCH6-74HX"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-295"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-2M5V-PCH6-74HX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "7.29.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-109829",
+      "aliases": [
+        "CVE-2026-109829",
+        "GHSA-4W7W-5XRC-9H26"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-346",
+        "CWE-524"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-4W7W-5XRC-9H26",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "7.29.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-109841",
+      "aliases": [
+        "CVE-2026-109841",
+        "GHSA-F72V-6W45-Q472"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-178"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-F72V-6W45-Q472",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "7.29.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-109869",
+      "aliases": [
+        "CVE-2026-109869",
+        "GHSA-XJJ6-F33Q-929C"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-248",
+        "CWE-459"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-XJJ6-F33Q-929C",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "7.29.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-109924",
+      "aliases": [
+        "CVE-2026-109924",
+        "GHSA-4QV8-2P9J-2685"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-4QV8-2P9J-2685",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "7.29.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-109932",
+      "aliases": [
+        "CVE-2026-109932",
+        "GHSA-9FM3-97PX-RJF6"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-405",
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-9FM3-97PX-RJF6",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "7.29.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-18149",
+      "aliases": [
+        "CVE-2026-18149",
+        "GHSA-PMJH-FQ2X-6V4X"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-772"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-PMJH-FQ2X-6V4X",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "7.29.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-18540",
+      "aliases": [
+        "CVE-2026-18540",
+        "GHSA-R53P-7PC4-XJ5R"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-444"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-R53P-7PC4-XJ5R",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "7.29.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-19534",
+      "aliases": [
+        "CVE-2026-19534",
+        "GHSA-RFGV-XXQX-MFG5"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-248",
+        "CWE-252"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-RFGV-XXQX-MFG5",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "7.29.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-84890",
+      "aliases": [
+        "CVE-2026-84890",
+        "GHSA-3XPG-4RPP-HHHM"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-3XPG-4RPP-HHHM",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "7.29.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-84933",
+      "aliases": [
+        "CVE-2026-84933",
+        "GHSA-2JFJ-6HJV-FM6J"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-200",
+        "CWE-524"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-2JFJ-6HJV-FM6J",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "7.29.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-84947",
+      "aliases": [
+        "CVE-2026-84947",
+        "GHSA-2GQQ-GQF2-X968"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-20",
+        "CWE-248"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-2GQQ-GQF2-X968",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "7.29.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-84961",
+      "aliases": [
+        "CVE-2026-84961",
+        "GHSA-W293-VG96-WGC3"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-295"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-W293-VG96-WGC3",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "7.29.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-85008",
+      "aliases": [
+        "CVE-2026-85008",
+        "GHSA-8436-99HF-9MMV"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-345"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8436-99HF-9MMV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "7.29.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-85014",
+      "aliases": [
+        "CVE-2026-85014",
+        "GHSA-RX4F-C7P8-82VQ"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-248",
+        "CWE-754"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-RX4F-C7P8-82VQ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "7.29.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-85024",
+      "aliases": [
+        "CVE-2026-85024",
+        "GHSA-3WWX-PV8P-Q78V"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-248"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-3WWX-PV8P-Q78V",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "7.29.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-87018",
+      "aliases": [
+        "CVE-2026-87018",
+        "GHSA-QRXM-FQHP-JWVM"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-248",
+        "CWE-617"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-QRXM-FQHP-JWVM",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "7.29.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-87029",
+      "aliases": [
+        "CVE-2026-87029",
+        "GHSA-55WC-3PG8-JFW6"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-248"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-55WC-3PG8-JFW6",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "8.10.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-109383",
+      "aliases": [
+        "CVE-2026-109383",
+        "GHSA-2M5V-PCH6-74HX"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-295"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-2M5V-PCH6-74HX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "8.10.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-109829",
+      "aliases": [
+        "CVE-2026-109829",
+        "GHSA-4W7W-5XRC-9H26"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-346",
+        "CWE-524"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-4W7W-5XRC-9H26",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "8.10.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-109841",
+      "aliases": [
+        "CVE-2026-109841",
+        "GHSA-F72V-6W45-Q472"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-178"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-F72V-6W45-Q472",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "8.10.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-109869",
+      "aliases": [
+        "CVE-2026-109869",
+        "GHSA-XJJ6-F33Q-929C"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-248",
+        "CWE-459"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-XJJ6-F33Q-929C",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "8.10.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-109924",
+      "aliases": [
+        "CVE-2026-109924",
+        "GHSA-4QV8-2P9J-2685"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-4QV8-2P9J-2685",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "8.10.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-109932",
+      "aliases": [
+        "CVE-2026-109932",
+        "GHSA-9FM3-97PX-RJF6"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-405",
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-9FM3-97PX-RJF6",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "8.10.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-18149",
+      "aliases": [
+        "CVE-2026-18149",
+        "GHSA-PMJH-FQ2X-6V4X"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-772"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-PMJH-FQ2X-6V4X",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "8.10.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-18540",
+      "aliases": [
+        "CVE-2026-18540",
+        "GHSA-R53P-7PC4-XJ5R"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-444"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-R53P-7PC4-XJ5R",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "8.10.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-19534",
+      "aliases": [
+        "CVE-2026-19534",
+        "GHSA-RFGV-XXQX-MFG5"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-248",
+        "CWE-252"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-RFGV-XXQX-MFG5",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "8.10.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-84890",
+      "aliases": [
+        "CVE-2026-84890",
+        "GHSA-3XPG-4RPP-HHHM"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-3XPG-4RPP-HHHM",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "8.10.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-84933",
+      "aliases": [
+        "CVE-2026-84933",
+        "GHSA-2JFJ-6HJV-FM6J"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-200",
+        "CWE-524"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-2JFJ-6HJV-FM6J",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "8.10.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-84947",
+      "aliases": [
+        "CVE-2026-84947",
+        "GHSA-2GQQ-GQF2-X968"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-20",
+        "CWE-248"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-2GQQ-GQF2-X968",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "8.10.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-84961",
+      "aliases": [
+        "CVE-2026-84961",
+        "GHSA-W293-VG96-WGC3"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-295"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-W293-VG96-WGC3",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "8.10.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-85008",
+      "aliases": [
+        "CVE-2026-85008",
+        "GHSA-8436-99HF-9MMV"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-345"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8436-99HF-9MMV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "8.10.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-85014",
+      "aliases": [
+        "CVE-2026-85014",
+        "GHSA-RX4F-C7P8-82VQ"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-248",
+        "CWE-754"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-RX4F-C7P8-82VQ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "8.10.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-85024",
+      "aliases": [
+        "CVE-2026-85024",
+        "GHSA-3WWX-PV8P-Q78V"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-248"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-3WWX-PV8P-Q78V",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "8.10.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-85152",
+      "aliases": [
+        "CVE-2026-85152",
+        "GHSA-VP8M-P9JH-Q5PM"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-346"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-VP8M-P9JH-Q5PM",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "8.10.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-87018",
+      "aliases": [
+        "CVE-2026-87018",
+        "GHSA-QRXM-FQHP-JWVM"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-248",
+        "CWE-617"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-QRXM-FQHP-JWVM",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undici",
+      "installed_version": "8.10.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-87029",
+      "aliases": [
+        "CVE-2026-87029",
+        "GHSA-55WC-3PG8-JFW6"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-248"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-55WC-3PG8-JFW6",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "vite",
+      "installed_version": "7.3.6",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-112942",
+      "aliases": [
+        "CVE-2026-112942",
+        "GHSA-587H-7WMJ-H5PM"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-77"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-587H-7WMJ-H5PM",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "vite",
+      "installed_version": "7.3.6",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-112943",
+      "aliases": [
+        "CVE-2026-112943",
+        "GHSA-698V-4R3X-3VCV"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-78"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-698V-4R3X-3VCV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "vite",
+      "installed_version": "7.3.6",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-112944",
+      "aliases": [
+        "CVE-2026-112944",
+        "GHSA-R825-W8MM-5PXW"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-88"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-R825-W8MM-5PXW",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "vite",
+      "installed_version": "7.3.6",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-112945",
+      "aliases": [
+        "CVE-2026-112945",
+        "GHSA-9JRQ-W75R-8GCW"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-80"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-9JRQ-W75R-8GCW",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "vite",
+      "installed_version": "7.3.6",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-112946",
+      "aliases": [
+        "CVE-2026-112946",
+        "GHSA-RQ7H-C2JC-7F22"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-22",
+        "CWE-284"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-RQ7H-C2JC-7F22",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "vite",
+      "installed_version": "8.0.16",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-112942",
+      "aliases": [
+        "CVE-2026-112942",
+        "GHSA-587H-7WMJ-H5PM"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-77"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-587H-7WMJ-H5PM",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "vite",
+      "installed_version": "8.0.16",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-112943",
+      "aliases": [
+        "CVE-2026-112943",
+        "GHSA-698V-4R3X-3VCV"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-78"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-698V-4R3X-3VCV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "vite",
+      "installed_version": "8.0.16",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-112944",
+      "aliases": [
+        "CVE-2026-112944",
+        "GHSA-R825-W8MM-5PXW"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-88"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-R825-W8MM-5PXW",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "vite",
+      "installed_version": "8.0.16",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-112945",
+      "aliases": [
+        "CVE-2026-112945",
+        "GHSA-9JRQ-W75R-8GCW"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-80"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-9JRQ-W75R-8GCW",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "vite",
+      "installed_version": "8.0.16",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-112946",
+      "aliases": [
+        "CVE-2026-112946",
+        "GHSA-RQ7H-C2JC-7F22"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-22",
+        "CWE-284"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-RQ7H-C2JC-7F22",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "vitest",
+      "installed_version": "4.1.10",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-84373",
+      "aliases": [
+        "CVE-2026-84373",
+        "GHSA-82FW-GWWQ-J7X9"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-22"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-82FW-GWWQ-J7X9",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "zod",
+      "installed_version": "4.4.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2023-54404",
+      "aliases": [
+        "CVE-2023-54404",
+        "GHSA-MRHX-C7XC-M3W5"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-MRHX-C7XC-M3W5",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "grype_dependency_source": "https://github.com/OpenHands/OpenHands/blob/9e8ba84f75470cbf28494105c9c6d1d2a96fc8a9/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    }
+  ]
+}
