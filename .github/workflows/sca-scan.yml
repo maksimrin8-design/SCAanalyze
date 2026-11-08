@@ -171,7 +171,7 @@ jobs:
             --output-dir application \
             --run-url "$RUN_URL"
 
-      - name: Validate 30 project folders and three subfolders each
+      - name: Validate 30 project folders with exactly three JSON files
         run: python scripts/validate.py --root application --manifest projects/manifest.json
 
       - name: Upload ONE final ZIP with all 30 project folders
