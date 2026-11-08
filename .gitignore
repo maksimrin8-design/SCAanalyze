@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+application/
+raw-artifacts/
+scan-output/
+sca-results-30.zip

@@ -1,0 +1,201 @@
+name: SCA - build archive for 30 projects
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sca-30-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    name: Validate 30 projects
+    runs-on: ubuntu-latest
+    outputs:
+      projects: ${{ steps.matrix.outputs.projects }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate manifest and verified advisories
+        id: matrix
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv, json, os, re
+          with open('projects/manifest.json', encoding='utf-8') as f:
+              projects = json.load(f)['projects']
+          assert len(projects) == 30, f'Exactly 30 required, got {len(projects)}'
+          assert len({p['id'] for p in projects}) == 30
+          assert len({p['name'] for p in projects}) == 30
+          assert all(re.fullmatch(r'[a-f0-9]{40}', p['ref']) for p in projects)
+          assert all(re.fullmatch(r'[A-Za-z0-9._-]+', p['name']) for p in projects)
+          with open('ground-truth/verified.csv', newline='', encoding='utf-8-sig') as f:
+              reader = csv.DictReader(f)
+              required = {'project_id','package','version','ecosystem','vulnerability_ids','status','evidence_url'}
+              assert required.issubset(set(reader.fieldnames or [])), 'Invalid verified.csv columns'
+              for row in reader:
+                  assert row['status'] == 'verified'
+                  assert row['project_id'] in {p['id'] for p in projects}
+          with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as f:
+              f.write('projects=' + json.dumps(projects, separators=(',', ':')) + '\n')
+          PY
+
+  scan:
+    name: ${{ matrix.project.id }} - ${{ matrix.project.name }}
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      max-parallel: 5
+      matrix:
+        project: ${{ fromJson(needs.prepare.outputs.projects) }}
+    steps:
+      - name: Checkout benchmark scripts
+        uses: actions/checkout@v4
+        with:
+          path: benchmark
+
+      - name: Initialize temporary project folders
+        shell: bash
+        run: |
+          APP="application/${{ matrix.project.name }}"
+          mkdir -p "$APP/osv" "$APP/grype" "$APP/default"
+          cat > "$APP/project.json" <<'JSON'
+          {"project_id":"${{ matrix.project.id }}","name":"${{ matrix.project.name }}","repository":"${{ matrix.project.repo }}","commit":"${{ matrix.project.ref }}"}
+          JSON
+
+      - name: Checkout upstream at pinned commit
+        id: upstream
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          repository: ${{ matrix.project.repo }}
+          ref: ${{ matrix.project.ref }}
+          path: target-repo
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Record dependency files and commit
+        if: steps.upstream.outcome == 'success'
+        shell: bash
+        run: |
+          APP="application/${{ matrix.project.name }}"
+          git -C target-repo rev-parse HEAD > "$APP/upstream-commit.txt"
+          find target-repo -type f | grep -E '/(package-lock\.json|npm-shrinkwrap\.json|yarn\.lock|pnpm-lock\.yaml|pom\.xml|gradle\.lockfile|requirements[^/]*\.txt|Pipfile\.lock|poetry\.lock|uv\.lock|go\.mod|go\.sum|Cargo\.lock|Gemfile\.lock|composer\.lock)$' | sort > "$APP/dependency-files.txt" || true
+
+      - name: Install OSV-Scanner v2.7.0
+        if: steps.upstream.outcome == 'success'
+        id: install_osv
+        continue-on-error: true
+        shell: bash
+        run: |
+          curl -fsSL --retry 3 https://github.com/google/osv-scanner/releases/download/v2.7.0/osv-scanner_linux_amd64 -o osv-scanner
+          chmod +x osv-scanner
+          sudo install osv-scanner /usr/local/bin/osv-scanner
+          osv-scanner --version > "application/${{ matrix.project.name }}/osv/version.txt"
+
+      - name: Run OSV-Scanner
+        if: steps.install_osv.outcome == 'success'
+        shell: bash
+        timeout-minutes: 18
+        run: |
+          APP="application/${{ matrix.project.name }}/osv"
+          set +e
+          osv-scanner scan source -r target-repo --no-call-analysis=go --format json --output-file "$APP/result.json" 2>"$APP/stderr.log"
+          rc=$?
+          set -e
+          echo "$rc" > "$APP/exit-code.txt"
+          echo "OSV exit code: $rc (0=clean scan, 1=some vulnerabilities, other=error)"
+
+      - name: Install Grype v0.121.2
+        if: steps.upstream.outcome == 'success'
+        id: install_grype
+        continue-on-error: true
+        shell: bash
+        run: |
+          curl -fsSL --retry 3 https://raw.githubusercontent.com/anchore/grype/v0.121.2/install.sh | sh -s -- -b /usr/local/bin v0.121.2
+          grype version > "application/${{ matrix.project.name }}/grype/version.txt"
+
+      - name: Run Grype
+        if: steps.install_grype.outcome == 'success'
+        shell: bash
+        timeout-minutes: 18
+        run: |
+          APP="application/${{ matrix.project.name }}/grype"
+          set +e
+          grype dir:target-repo -o json --file "$APP/result.json" 2>"$APP/stderr.log"
+          rc=$?
+          set -e
+          echo "$rc" > "$APP/exit-code.txt"
+          echo "Grype exit code: $rc (0=completed, other=error)"
+
+      - name: Transfer this project's raw reports to archive job
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: internal-scan-${{ matrix.project.id }}
+          path: application/
+          if-no-files-found: error
+          retention-days: 7
+
+  archive:
+    name: Assemble single 30-project ZIP
+    needs: [prepare, scan]
+    if: always() && needs.prepare.result == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download intermediate scan results
+        uses: actions/download-artifact@v4
+        with:
+          pattern: internal-scan-*
+          path: raw-artifacts
+          merge-multiple: false
+
+      - name: Run parser tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Build all 30 project folders and reference lists
+        env:
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        shell: bash
+        run: |
+          python scripts/rebuild_reports.py \
+            --manifest projects/manifest.json \
+            --ground-truth ground-truth/verified.csv \
+            --results-dir raw-artifacts \
+            --output-dir application \
+            --run-url "$RUN_URL"
+
+      - name: Validate 30 project folders and three subfolders each
+        run: python scripts/validate.py --root application --manifest projects/manifest.json
+
+      - name: Upload ONE final ZIP with all 30 project folders
+        uses: actions/upload-artifact@v4
+        with:
+          name: SCA-RESULTS-30-PROJECTS
+          path: application/
+          if-no-files-found: error
+          retention-days: 90
+          compression-level: 6
+
+      - name: Mark incomplete scans after publishing the archive
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv, sys
+          with open('application/INDEX.csv', newline='', encoding='utf-8-sig') as f:
+              rows = list(csv.DictReader(f))
+          failures = [(r['id'], r['application'], r['osv_status'], r['grype_status'])
+                      for r in rows if r['osv_status'] != 'ok' or r['grype_status'] != 'ok']
+          if failures:
+              print(f'WARNING: {len(failures)} projects had incomplete scans. The ZIP is available.')
+              for row in failures:
+                  print('Incomplete:', *row)
+              sys.exit(1)
+          print('SUCCESS: 30 projects, both scanners completed, final ZIP uploaded.')
+          PY
