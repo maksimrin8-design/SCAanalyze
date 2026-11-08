@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "project_id": "P020",
+  "project": "gin",
+  "repository": "gin-gonic/gin",
+  "pinned_commit": "0f09c3a9b4626d9fe9979cf4d0521d6ae32ab646",
+  "source_run": "https://github.com/maksimrin8-design/SCAanalyze/actions/runs/42440365259",
+  "reference_type": "scanner_union_plus_independently_verified_examples",
+  "is_complete_independent_ground_truth": false,
+  "methodology": "Every finding reported by at least one analyzer, with CVE/GHSA aliases merged, plus verified dependencies and advisories from ground-truth/verified.csv. Scanner-only entries remain PROVISIONAL and vulnerabilities missed by both analyzers may be absent. Do not infer unbiased recall or precision.",
+  "scan_status": {
+    "osv": "ok",
+    "grype": "ok"
+  },
+  "counts": {
+    "both": 8,
+    "severity_Unknown": 1,
+    "verified": 0,
+    "severity_High": 5,
+    "severity_Critical": 1,
+    "severity_Medium": 1,
+    "only_osv": 0,
+    "only_grype": 0,
+    "independently_verified_but_not_detected": 0,
+    "total": 8,
+    "osv": 8,
+    "grype": 8,
+    "comparison_valid": true
+  },
+  "vulnerabilities": [
+    {
+      "package": "golang.org/x/crypto",
+      "installed_version": "0.56.0",
+      "ecosystem": "go",
+      "vulnerability_id": "GO-2026-5932",
+      "aliases": [
+        "GO-2026-5932"
+      ],
+      "severity": "Unknown",
+      "cwe_types": [],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://osv.dev/vulnerability/GO-2026-5932",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/gin-gonic/gin/blob/0f09c3a9b4626d9fe9979cf4d0521d6ae32ab646/go.mod",
+      "grype_dependency_source": "https://github.com/gin-gonic/gin/blob/0f09c3a9b4626d9fe9979cf4d0521d6ae32ab646/go.mod",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "golang.org/x/net",
+      "installed_version": "0.57.0",
+      "ecosystem": "go",
+      "vulnerability_id": "CVE-2026-78659",
+      "aliases": [
+        "BIT-GOLANG-2026-78659",
+        "CVE-2026-78659",
+        "GO-2026-6603"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-405"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78659",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/gin-gonic/gin/blob/0f09c3a9b4626d9fe9979cf4d0521d6ae32ab646/go.mod",
+      "grype_dependency_source": "https://github.com/gin-gonic/gin/blob/0f09c3a9b4626d9fe9979cf4d0521d6ae32ab646/go.mod",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "golang.org/x/net",
+      "installed_version": "0.57.0",
+      "ecosystem": "go",
+      "vulnerability_id": "CVE-2026-78660",
+      "aliases": [
+        "BIT-GOLANG-2026-78660",
+        "CVE-2026-78660",
+        "GO-2026-6610"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-444"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78660",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/gin-gonic/gin/blob/0f09c3a9b4626d9fe9979cf4d0521d6ae32ab646/go.mod",
+      "grype_dependency_source": "https://github.com/gin-gonic/gin/blob/0f09c3a9b4626d9fe9979cf4d0521d6ae32ab646/go.mod",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "golang.org/x/net",
+      "installed_version": "0.57.0",
+      "ecosystem": "go",
+      "vulnerability_id": "CVE-2026-78661",
+      "aliases": [
+        "CVE-2026-78661",
+        "GO-2026-6860"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78661",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/gin-gonic/gin/blob/0f09c3a9b4626d9fe9979cf4d0521d6ae32ab646/go.mod",
+      "grype_dependency_source": "https://github.com/gin-gonic/gin/blob/0f09c3a9b4626d9fe9979cf4d0521d6ae32ab646/go.mod",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "golang.org/x/net",
+      "installed_version": "0.57.0",
+      "ecosystem": "go",
+      "vulnerability_id": "CVE-2026-78663",
+      "aliases": [
+        "BIT-GOLANG-2026-78663",
+        "CVE-2026-78663",
+        "GO-2026-6612"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-675"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78663",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/gin-gonic/gin/blob/0f09c3a9b4626d9fe9979cf4d0521d6ae32ab646/go.mod",
+      "grype_dependency_source": "https://github.com/gin-gonic/gin/blob/0f09c3a9b4626d9fe9979cf4d0521d6ae32ab646/go.mod",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "golang.org/x/net",
+      "installed_version": "0.57.0",
+      "ecosystem": "go",
+      "vulnerability_id": "CVE-2026-78669",
+      "aliases": [
+        "BIT-GOLANG-2026-78669",
+        "CVE-2026-78669",
+        "GO-2026-6611"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-405"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78669",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/gin-gonic/gin/blob/0f09c3a9b4626d9fe9979cf4d0521d6ae32ab646/go.mod",
+      "grype_dependency_source": "https://github.com/gin-gonic/gin/blob/0f09c3a9b4626d9fe9979cf4d0521d6ae32ab646/go.mod",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "golang.org/x/net",
+      "installed_version": "0.57.0",
+      "ecosystem": "go",
+      "vulnerability_id": "CVE-2026-97032",
+      "aliases": [
+        "BIT-GOLANG-2026-97032",
+        "CVE-2026-97032",
+        "GO-2026-6617"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-362"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97032",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/gin-gonic/gin/blob/0f09c3a9b4626d9fe9979cf4d0521d6ae32ab646/go.mod",
+      "grype_dependency_source": "https://github.com/gin-gonic/gin/blob/0f09c3a9b4626d9fe9979cf4d0521d6ae32ab646/go.mod",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "golang.org/x/net",
+      "installed_version": "0.57.0",
+      "ecosystem": "go",
+      "vulnerability_id": "CVE-2026-97045",
+      "aliases": [
+        "CVE-2026-97045",
+        "GO-2026-6866"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-79"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97045",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/gin-gonic/gin/blob/0f09c3a9b4626d9fe9979cf4d0521d6ae32ab646/go.mod",
+      "grype_dependency_source": "https://github.com/gin-gonic/gin/blob/0f09c3a9b4626d9fe9979cf4d0521d6ae32ab646/go.mod",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    }
+  ]
+}

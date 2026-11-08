@@ -1,0 +1,1511 @@
+{
+  "schema_version": 1,
+  "project_id": "P027",
+  "project": "cycode-cli",
+  "repository": "cycodehq/cycode-cli",
+  "pinned_commit": "0d44b695dd0300040b31a9216fe9cacf278145da",
+  "source_run": "https://github.com/maksimrin8-design/SCAanalyze/actions/runs/42440365259",
+  "reference_type": "scanner_union_plus_independently_verified_examples",
+  "is_complete_independent_ground_truth": false,
+  "methodology": "Every finding reported by at least one analyzer, with CVE/GHSA aliases merged, plus verified dependencies and advisories from ground-truth/verified.csv. Scanner-only entries remain PROVISIONAL and vulnerabilities missed by both analyzers may be absent. Do not infer unbiased recall or precision.",
+  "scan_status": {
+    "osv": "ok",
+    "grype": "ok"
+  },
+  "counts": {
+    "only_grype": 1,
+    "severity_Critical": 5,
+    "verified": 0,
+    "both": 58,
+    "severity_Medium": 22,
+    "severity_High": 30,
+    "severity_Low": 2,
+    "only_osv": 0,
+    "independently_verified_but_not_detected": 0,
+    "total": 59,
+    "osv": 58,
+    "grype": 59,
+    "comparison_valid": true
+  },
+  "vulnerabilities": [
+    {
+      "package": "pypa/gh-action-pypi-publish",
+      "installed_version": "v1.14.1",
+      "ecosystem": "github-action",
+      "vulnerability_id": "GHSA-5XJX-3W67-W9X9",
+      "aliases": [
+        "GHSA-5XJX-3W67-W9X9"
+      ],
+      "severity": "Critical",
+      "cwe_types": [],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5XJX-3W67-W9X9",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/.github/workflows/pre_release.yml;https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/.github/workflows/release.yml",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "anyio",
+      "installed_version": "4.12.1",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-63374",
+      "aliases": [
+        "CVE-2026-63374",
+        "GHSA-82R6-8W77-94W6",
+        "PYSEC-2026-4025"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-295",
+        "CWE-297"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-82R6-8W77-94W6",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "anyio",
+      "installed_version": "4.12.1",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-64847",
+      "aliases": [
+        "CVE-2026-64847",
+        "GHSA-5P39-CFHJ-2XMP",
+        "PYSEC-2026-4024"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5P39-CFHJ-2XMP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "certifi",
+      "installed_version": "2026.7.22",
+      "ecosystem": "pypi",
+      "vulnerability_id": "GHSA-6Q48-6C7W-9GW2",
+      "aliases": [
+        "GHSA-6Q48-6C7W-9GW2",
+        "PYSEC-2026-4320"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-295"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-6Q48-6C7W-9GW2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "cryptography",
+      "installed_version": "49.0.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-69247",
+      "aliases": [
+        "CVE-2026-69247",
+        "GHSA-G6CJ-PR64-35W5",
+        "PYSEC-2026-3552"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-208",
+        "CWE-209"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-G6CJ-PR64-35W5",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "gitpython",
+      "installed_version": "3.1.57",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-100689",
+      "aliases": [
+        "CVE-2026-100689",
+        "GHSA-59CR-6R3X-644W"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-22",
+        "CWE-73"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-59CR-6R3X-644W",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "gitpython",
+      "installed_version": "3.1.57",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-110855",
+      "aliases": [
+        "CVE-2026-110855",
+        "GHSA-FX3J-RWGX-FR94"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-200"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-FX3J-RWGX-FR94",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "gitpython",
+      "installed_version": "3.1.57",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-110856",
+      "aliases": [
+        "CVE-2026-110856",
+        "GHSA-M64X-33Q8-M5H7"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-M64X-33Q8-M5H7",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "gitpython",
+      "installed_version": "3.1.57",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-110857",
+      "aliases": [
+        "CVE-2026-110857",
+        "GHSA-W8JC-G24H-CRHW"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1287"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-W8JC-G24H-CRHW",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "gitpython",
+      "installed_version": "3.1.57",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-110858",
+      "aliases": [
+        "CVE-2026-110858",
+        "GHSA-F9J4-QGGQ-H239"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-78",
+        "CWE-88"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-F9J4-QGGQ-H239",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "gitpython",
+      "installed_version": "3.1.57",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-110859",
+      "aliases": [
+        "CVE-2026-110859",
+        "GHSA-23MF-XHV8-69C2"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-200",
+        "CWE-73",
+        "CWE-88"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-23MF-XHV8-69C2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "gitpython",
+      "installed_version": "3.1.57",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-110860",
+      "aliases": [
+        "CVE-2026-110860",
+        "GHSA-GQ48-PQFC-9P58"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-22",
+        "CWE-59"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-GQ48-PQFC-9P58",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "gitpython",
+      "installed_version": "3.1.57",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-114145",
+      "aliases": [
+        "CVE-2026-114145",
+        "GHSA-83VG-56QC-22M7"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-696"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-83VG-56QC-22M7",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "gitpython",
+      "installed_version": "3.1.57",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-76217",
+      "aliases": [
+        "CVE-2026-76217",
+        "GHSA-HH9P-6WH2-4MFC",
+        "PYSEC-2026-3841"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-200",
+        "CWE-73"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-HH9P-6WH2-4MFC",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "gitpython",
+      "installed_version": "3.1.57",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-76218",
+      "aliases": [
+        "CVE-2026-76218",
+        "GHSA-9RJ7-RF2P-W77R",
+        "PYSEC-2026-3840"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-88",
+        "CWE-94"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-9RJ7-RF2P-W77R",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "gitpython",
+      "installed_version": "3.1.57",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-76219",
+      "aliases": [
+        "CVE-2026-76219",
+        "GHSA-4GMW-GG2M-W46P",
+        "PYSEC-2026-3838"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-88"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-4GMW-GG2M-W46P",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "gitpython",
+      "installed_version": "3.1.57",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-76220",
+      "aliases": [
+        "CVE-2026-76220",
+        "GHSA-WVPP-8HX9-P66J",
+        "PYSEC-2026-3843"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-88"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WVPP-8HX9-P66J",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "gitpython",
+      "installed_version": "3.1.57",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-76221",
+      "aliases": [
+        "CVE-2026-76221",
+        "GHSA-JM78-9FVV-MHGR",
+        "PYSEC-2026-3783"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-74",
+        "CWE-88"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-JM78-9FVV-MHGR",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "gitpython",
+      "installed_version": "3.1.57",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-76222",
+      "aliases": [
+        "CVE-2026-76222",
+        "GHSA-HMQ2-W58F-27JC",
+        "PYSEC-2026-3784"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-22",
+        "CWE-73"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-HMQ2-W58F-27JC",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "gitpython",
+      "installed_version": "3.1.57",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-78675",
+      "aliases": [
+        "CVE-2026-78675",
+        "GHSA-7833-FR7J-V32Q",
+        "PYSEC-2026-3785"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-200",
+        "CWE-73"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-7833-FR7J-V32Q",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "gitpython",
+      "installed_version": "3.1.57",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-78676",
+      "aliases": [
+        "CVE-2026-78676",
+        "GHSA-284H-M62Q-GF8W",
+        "PYSEC-2026-3786"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-88",
+        "CWE-94"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-284H-M62Q-GF8W",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "gitpython",
+      "installed_version": "3.1.57",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-78677",
+      "aliases": [
+        "CVE-2026-78677",
+        "GHSA-8MCC-HRX5-HVXC",
+        "PYSEC-2026-3787"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-22",
+        "CWE-73"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8MCC-HRX5-HVXC",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "gitpython",
+      "installed_version": "3.1.57",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-78678",
+      "aliases": [
+        "CVE-2026-78678",
+        "GHSA-5XXX-QHH7-9287",
+        "PYSEC-2026-3788"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-200",
+        "CWE-88"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5XXX-QHH7-9287",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "gitpython",
+      "installed_version": "3.1.57",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-78679",
+      "aliases": [
+        "CVE-2026-78679",
+        "GHSA-3WXW-XV34-2FRG",
+        "PYSEC-2026-3837"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-200",
+        "CWE-73",
+        "CWE-88"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-3WXW-XV34-2FRG",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "gitpython",
+      "installed_version": "3.1.57",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-87817",
+      "aliases": [
+        "CVE-2026-87817",
+        "GHSA-239G-WHFQ-7XJ9",
+        "PYSEC-2026-3982"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-427",
+        "CWE-94"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-239G-WHFQ-7XJ9",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "gitpython",
+      "installed_version": "3.1.57",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-87819",
+      "aliases": [
+        "CVE-2026-87819",
+        "GHSA-G5VV-9GXW-82HX",
+        "PYSEC-2026-3984"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333",
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-G5VV-9GXW-82HX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "marshmallow",
+      "installed_version": "4.0.1",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2025-68480",
+      "aliases": [
+        "CVE-2025-68480",
+        "GHSA-428G-F7CQ-PGP5",
+        "PYSEC-2026-1605"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-405"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-428G-F7CQ-PGP5",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "mcp",
+      "installed_version": "1.28.1",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-116684",
+      "aliases": [
+        "CVE-2026-116684",
+        "GHSA-W4FH-QVV9-3V23"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-863"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-W4FH-QVV9-3V23",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "mcp",
+      "installed_version": "1.28.1",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-116685",
+      "aliases": [
+        "CVE-2026-116685",
+        "GHSA-5H93-6WHR-6Q8J"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-200"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5H93-6WHR-6Q8J",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "mcp",
+      "installed_version": "1.28.1",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-116686",
+      "aliases": [
+        "CVE-2026-116686",
+        "GHSA-RWRF-2PQF-9J8J"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-918"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-RWRF-2PQF-9J8J",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "mcp",
+      "installed_version": "1.28.1",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-59951",
+      "aliases": [
+        "CVE-2026-59951",
+        "GHSA-84M7-P3X7-PCFV"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-770",
+        "CWE-772"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-84M7-P3X7-PCFV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pyjwt",
+      "installed_version": "2.13.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-101917",
+      "aliases": [
+        "CVE-2026-101917",
+        "GHSA-2GX3-RCP4-G85Q",
+        "PYSEC-2026-4140"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-2GX3-RCP4-G85Q",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pyjwt",
+      "installed_version": "2.13.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-101918",
+      "aliases": [
+        "CVE-2026-101918",
+        "GHSA-42VR-XJ54-VC7V",
+        "PYSEC-2026-4141"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-248"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-42VR-XJ54-VC7V",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pyjwt",
+      "installed_version": "2.13.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-102265",
+      "aliases": [
+        "CVE-2026-102265",
+        "GHSA-8WJV-2P76-3863",
+        "PYSEC-2026-4142"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-674"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8WJV-2P76-3863",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pyjwt",
+      "installed_version": "2.13.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-102266",
+      "aliases": [
+        "CVE-2026-102266",
+        "GHSA-9J54-FG26-WV3R",
+        "PYSEC-2026-4143"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-347"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-9J54-FG26-WV3R",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pyjwt",
+      "installed_version": "2.13.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-102267",
+      "aliases": [
+        "CVE-2026-102267",
+        "GHSA-9V7F-9G4P-FFGJ",
+        "PYSEC-2026-4144"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-200",
+        "CWE-345",
+        "CWE-918"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-9V7F-9G4P-FFGJ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pyjwt",
+      "installed_version": "2.13.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-102268",
+      "aliases": [
+        "CVE-2026-102268",
+        "GHSA-FFC3-869F-JXW9",
+        "PYSEC-2026-4145"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-347"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-FFC3-869F-JXW9",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pyjwt",
+      "installed_version": "2.13.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-102269",
+      "aliases": [
+        "CVE-2026-102269",
+        "GHSA-HXM8-2XGR-2P9M",
+        "PYSEC-2026-4147"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-180"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-HXM8-2XGR-2P9M",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pyjwt",
+      "installed_version": "2.13.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-102270",
+      "aliases": [
+        "CVE-2026-102270",
+        "GHSA-JWRC-G2Q2-PQ5P",
+        "PYSEC-2026-4148"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-JWRC-G2Q2-PQ5P",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pyjwt",
+      "installed_version": "2.13.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-102271",
+      "aliases": [
+        "CVE-2026-102271",
+        "GHSA-P4G4-X82P-Q773",
+        "PYSEC-2026-4149"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-347"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-P4G4-X82P-Q773",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pyjwt",
+      "installed_version": "2.13.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-102272",
+      "aliases": [
+        "CVE-2026-102272",
+        "GHSA-R6X4-923Q-G947",
+        "PYSEC-2026-4150"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-347"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-R6X4-923Q-G947",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pyjwt",
+      "installed_version": "2.13.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-102273",
+      "aliases": [
+        "CVE-2026-102273",
+        "GHSA-W2CX-738M-MC7W",
+        "PYSEC-2026-4151"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-347"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-W2CX-738M-MC7W",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pyjwt",
+      "installed_version": "2.13.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-102274",
+      "aliases": [
+        "CVE-2026-102274",
+        "GHSA-W6J9-CWV2-H6WQ",
+        "PYSEC-2026-4152"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-755"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-W6J9-CWV2-H6WQ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pyjwt",
+      "installed_version": "2.13.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-102275",
+      "aliases": [
+        "CVE-2026-102275",
+        "GHSA-X33G-CR3X-6449",
+        "PYSEC-2026-4183"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-345",
+        "CWE-348"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-X33G-CR3X-6449",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pyjwt",
+      "installed_version": "2.13.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-103001",
+      "aliases": [
+        "CVE-2026-103001",
+        "GHSA-GVP8-978C-RX2Q",
+        "PYSEC-2026-4146"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-471"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-GVP8-978C-RX2Q",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pyjwt",
+      "installed_version": "2.13.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "GHSA-PXH4-856F-4H89",
+      "aliases": [
+        "GHSA-PXH4-856F-4H89"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-347"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-PXH4-856F-4H89",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "pytest",
+      "installed_version": "8.4.2",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2025-71176",
+      "aliases": [
+        "CVE-2025-71176",
+        "GHSA-6W46-J5RX-G56G",
+        "PYSEC-2026-1845"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-379"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-6W46-J5RX-G56G",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "requests",
+      "installed_version": "2.32.5",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-25645",
+      "aliases": [
+        "CVE-2026-25645",
+        "GHSA-GC5V-M9X4-R6X2",
+        "PYSEC-2026-2275"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-377"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-GC5V-M9X4-R6X2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "setuptools",
+      "installed_version": "82.0.1",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-59890",
+      "aliases": [
+        "BIT-SETUPTOOLS-2026-59890",
+        "CVE-2026-59890",
+        "GHSA-H35F-9H28-MQ5C",
+        "PYSEC-2026-3447"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-176",
+        "CWE-697"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-H35F-9H28-MQ5C",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "setuptools",
+      "installed_version": "82.0.1",
+      "ecosystem": "pypi",
+      "vulnerability_id": "GHSA-XMJ3-9GF7-H52W",
+      "aliases": [
+        "GHSA-XMJ3-9GF7-H52W"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-22"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-XMJ3-9GF7-H52W",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "setuptools",
+      "installed_version": "83.0.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "GHSA-XMJ3-9GF7-H52W",
+      "aliases": [
+        "GHSA-XMJ3-9GF7-H52W"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-22"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-XMJ3-9GF7-H52W",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "urllib3",
+      "installed_version": "2.6.3",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-44431",
+      "aliases": [
+        "CVE-2026-44431",
+        "GHSA-QCCP-GFCP-XXVC",
+        "PYSEC-2026-141"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-200"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-QCCP-GFCP-XXVC",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "urllib3",
+      "installed_version": "2.6.3",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-44432",
+      "aliases": [
+        "CVE-2026-44432",
+        "GHSA-MF9V-MFXR-J63J",
+        "PYSEC-2026-142"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-409"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-MF9V-MFXR-J63J",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "urllib3",
+      "installed_version": "2.6.3",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-97687",
+      "aliases": [
+        "CVE-2026-97687",
+        "GHSA-8988-9CW3-XX77",
+        "PYSEC-2026-4175"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-295",
+        "CWE-440"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8988-9CW3-XX77",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "urllib3",
+      "installed_version": "2.6.3",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-97688",
+      "aliases": [
+        "CVE-2026-97688",
+        "GHSA-GH4C-6FX4-QH6G",
+        "PYSEC-2026-4176"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-835"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-GH4C-6FX4-QH6G",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "urllib3",
+      "installed_version": "2.6.3",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-97689",
+      "aliases": [
+        "CVE-2026-97689",
+        "GHSA-VXQ7-64XX-V4GW",
+        "PYSEC-2026-4177"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-VXQ7-64XX-V4GW",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "urllib3",
+      "installed_version": "2.7.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-97687",
+      "aliases": [
+        "CVE-2026-97687",
+        "GHSA-8988-9CW3-XX77",
+        "PYSEC-2026-4175"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-295",
+        "CWE-440"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8988-9CW3-XX77",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "urllib3",
+      "installed_version": "2.7.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-97688",
+      "aliases": [
+        "CVE-2026-97688",
+        "GHSA-GH4C-6FX4-QH6G",
+        "PYSEC-2026-4176"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-835"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-GH4C-6FX4-QH6G",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "urllib3",
+      "installed_version": "2.7.0",
+      "ecosystem": "pypi",
+      "vulnerability_id": "CVE-2026-97689",
+      "aliases": [
+        "CVE-2026-97689",
+        "GHSA-VXQ7-64XX-V4GW",
+        "PYSEC-2026-4177"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-VXQ7-64XX-V4GW",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "grype_dependency_source": "https://github.com/cycodehq/cycode-cli/blob/0d44b695dd0300040b31a9216fe9cacf278145da/poetry.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    }
+  ]
+}

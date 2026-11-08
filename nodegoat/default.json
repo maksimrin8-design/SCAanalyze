@@ -1,0 +1,5231 @@
+{
+  "schema_version": 1,
+  "project_id": "P003",
+  "project": "nodegoat",
+  "repository": "OWASP/NodeGoat",
+  "pinned_commit": "c5cb68a7084e4ae7dcc60e6a98768720a81841e8",
+  "source_run": "https://github.com/maksimrin8-design/SCAanalyze/actions/runs/42440365259",
+  "reference_type": "scanner_union_plus_independently_verified_examples",
+  "is_complete_independent_ground_truth": false,
+  "methodology": "Every finding reported by at least one analyzer, with CVE/GHSA aliases merged, plus verified dependencies and advisories from ground-truth/verified.csv. Scanner-only entries remain PROVISIONAL and vulnerabilities missed by both analyzers may be absent. Do not infer unbiased recall or precision.",
+  "scan_status": {
+    "osv": "ok",
+    "grype": "ok"
+  },
+  "counts": {
+    "only_osv": 130,
+    "severity_Medium": 66,
+    "verified": 1,
+    "severity_High": 120,
+    "both": 70,
+    "severity_Low": 10,
+    "severity_Critical": 24,
+    "only_grype": 20,
+    "independently_verified_but_not_detected": 0,
+    "total": 220,
+    "osv": 200,
+    "grype": 90,
+    "comparison_valid": true
+  },
+  "vulnerabilities": [
+    {
+      "package": "adm-zip",
+      "installed_version": "0.4.4",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2018-1002204",
+      "aliases": [
+        "CVE-2018-1002204",
+        "GHSA-3V6H-HQM4-2RG6"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-22"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "project_and_advisory_verified",
+      "advisory_url": "https://github.com/advisories/GHSA-3V6H-HQM4-2RG6",
+      "project_evidence_url": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Pinned package-lock lists node_modules/adm-zip at 0.4.4 (dev dependency); GitHub advisory GHSA-3v6h-hqm4-2rg6 affects versions below 0.4.11; not necessarily runtime-exploitable."
+    },
+    {
+      "package": "adm-zip",
+      "installed_version": "0.4.4",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-102282",
+      "aliases": [
+        "CVE-2026-102282",
+        "GHSA-J5F4-CC29-5X44"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-732"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-J5F4-CC29-5X44",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "adm-zip",
+      "installed_version": "0.4.4",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-114102",
+      "aliases": [
+        "CVE-2026-114102",
+        "GHSA-8238-W5PM-2374"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-248",
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8238-W5PM-2374",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "adm-zip",
+      "installed_version": "0.4.4",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-114103",
+      "aliases": [
+        "CVE-2026-114103",
+        "GHSA-C6FG-446Q-CG94"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-C6FG-446Q-CG94",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "adm-zip",
+      "installed_version": "0.4.4",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-114104",
+      "aliases": [
+        "CVE-2026-114104",
+        "GHSA-P634-W6R4-RJP2"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-436",
+        "CWE-696"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-P634-W6R4-RJP2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "adm-zip",
+      "installed_version": "0.4.4",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-39244",
+      "aliases": [
+        "CVE-2026-39244",
+        "GHSA-XCPC-8H2W-3J85"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-789"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-XCPC-8H2W-3J85",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "adm-zip",
+      "installed_version": "0.4.4",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-77301",
+      "aliases": [
+        "CVE-2026-77301",
+        "GHSA-7Q85-XJ36-VMFC"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-789"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-7Q85-XJ36-VMFC",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "adm-zip",
+      "installed_version": "0.4.4",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-92000",
+      "aliases": [
+        "CVE-2026-92000",
+        "GHSA-RCW4-F5RP-G42V"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-409"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-RCW4-F5RP-G42V",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "ajv",
+      "installed_version": "6.10.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2020-15366",
+      "aliases": [
+        "CVE-2020-15366",
+        "GHSA-V88G-CGMW-V5XW"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1321",
+        "CWE-915"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-V88G-CGMW-V5XW",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "ajv",
+      "installed_version": "6.10.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2025-69873",
+      "aliases": [
+        "CVE-2025-69873",
+        "GHSA-2G4F-4PWH-QVX6"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1333",
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-2G4F-4PWH-QVX6",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "ansi-regex",
+      "installed_version": "3.0.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2021-3807",
+      "aliases": [
+        "CVE-2021-3807",
+        "GHSA-93Q8-GQ69-WQMW"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333",
+        "CWE-697"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-93Q8-GQ69-WQMW",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "async",
+      "installed_version": "2.6.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2021-43138",
+      "aliases": [
+        "CVE-2021-43138",
+        "GHSA-FWR7-V2MV-HH25"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-FWR7-V2MV-HH25",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "bl",
+      "installed_version": "1.0.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2020-8244",
+      "aliases": [
+        "CVE-2020-8244",
+        "GHSA-PP7H-53GX-MX7R"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-125",
+        "CWE-126"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-PP7H-53GX-MX7R",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "body-parser",
+      "installed_version": "1.18.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2024-45590",
+      "aliases": [
+        "CVE-2024-45590",
+        "GHSA-QWCR-R2FM-QRC7"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-405"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-QWCR-R2FM-QRC7",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "body-parser",
+      "installed_version": "1.18.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-111181",
+      "aliases": [
+        "CVE-2026-111181",
+        "GHSA-27R3-JXMH-P828"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-248"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-27R3-JXMH-P828",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "body-parser",
+      "installed_version": "1.18.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-12590",
+      "aliases": [
+        "CVE-2026-12590",
+        "GHSA-V422-HMWV-36X6"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-V422-HMWV-36X6",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "brace-expansion",
+      "installed_version": "1.1.11",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2025-5889",
+      "aliases": [
+        "CVE-2025-5889",
+        "GHSA-V6H2-P8H4-QCJW"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-1333",
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-V6H2-P8H4-QCJW",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "brace-expansion",
+      "installed_version": "1.1.11",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-102276",
+      "aliases": [
+        "CVE-2026-102276",
+        "GHSA-6J4F-FJ2G-MC7P"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-674"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-6J4F-FJ2G-MC7P",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "brace-expansion",
+      "installed_version": "1.1.11",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-102277",
+      "aliases": [
+        "CVE-2026-102277",
+        "GHSA-Q2HR-2G5M-VWHR"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-Q2HR-2G5M-VWHR",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "brace-expansion",
+      "installed_version": "1.1.11",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-102278",
+      "aliases": [
+        "CVE-2026-102278",
+        "GHSA-QHR7-859C-M2P7"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-674"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-QHR7-859C-M2P7",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "brace-expansion",
+      "installed_version": "1.1.11",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-13149",
+      "aliases": [
+        "CVE-2026-13149",
+        "GHSA-3JXR-9VMJ-R5CP"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-3JXR-9VMJ-R5CP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "brace-expansion",
+      "installed_version": "1.1.11",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-14257",
+      "aliases": [
+        "CVE-2026-14257",
+        "GHSA-MH99-V99M-4GVG"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-MH99-V99M-4GVG",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "brace-expansion",
+      "installed_version": "1.1.11",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-33750",
+      "aliases": [
+        "CVE-2026-33750",
+        "GHSA-F886-M6HF-6M8V"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-F886-M6HF-6M8V",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "brace-expansion",
+      "installed_version": "1.1.11",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-69152",
+      "aliases": [
+        "CVE-2026-69152",
+        "GHSA-RGW5-RVV9-X895"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-RGW5-RVV9-X895",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "braces",
+      "installed_version": "2.3.2",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2024-4068",
+      "aliases": [
+        "CVE-2024-4068",
+        "GHSA-GRV7-FG5C-XMJG"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1050",
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-GRV7-FG5C-XMJG",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "bson",
+      "installed_version": "1.0.9",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2019-2391",
+      "aliases": [
+        "CVE-2019-2391",
+        "GHSA-4JWP-VFVF-657P"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-502"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-4JWP-VFVF-657P",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "bson",
+      "installed_version": "1.0.9",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2020-7610",
+      "aliases": [
+        "CVE-2020-7610",
+        "GHSA-V8W9-2789-6HHR",
+        "SNYK-JS-BSON-561052"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-502"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-V8W9-2789-6HHR",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "cookie",
+      "installed_version": "0.3.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2024-47764",
+      "aliases": [
+        "CVE-2024-47764",
+        "GHSA-PXG6-PF52-XH8X"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-74"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-PXG6-PF52-XH8X",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "cross-spawn",
+      "installed_version": "4.0.2",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2024-21538",
+      "aliases": [
+        "CVE-2024-21538",
+        "GHSA-3XGQ-45JJ-V275"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-3XGQ-45JJ-V275",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "cross-spawn",
+      "installed_version": "5.1.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2024-21538",
+      "aliases": [
+        "CVE-2024-21538",
+        "GHSA-3XGQ-45JJ-V275"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-3XGQ-45JJ-V275",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "cross-spawn",
+      "installed_version": "6.0.5",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2024-21538",
+      "aliases": [
+        "CVE-2024-21538",
+        "GHSA-3XGQ-45JJ-V275"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-3XGQ-45JJ-V275",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "cross-spawn",
+      "installed_version": "7.0.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2024-21538",
+      "aliases": [
+        "CVE-2024-21538",
+        "GHSA-3XGQ-45JJ-V275"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-3XGQ-45JJ-V275",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "debug",
+      "installed_version": "2.2.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2017-16137",
+      "aliases": [
+        "CVE-2017-16137",
+        "GHSA-GXPJ-CX7G-858C"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-GXPJ-CX7G-858C",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "debug",
+      "installed_version": "2.2.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2017-20165",
+      "aliases": [
+        "CVE-2017-20165",
+        "GHSA-9VVW-CC9W-F27H"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-9VVW-CC9W-F27H",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "debug",
+      "installed_version": "3.2.6",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2017-16137",
+      "aliases": [
+        "CVE-2017-16137",
+        "GHSA-GXPJ-CX7G-858C"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-GXPJ-CX7G-858C",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "debug",
+      "installed_version": "4.1.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2017-16137",
+      "aliases": [
+        "CVE-2017-16137",
+        "GHSA-GXPJ-CX7G-858C"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-400"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-GXPJ-CX7G-858C",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "decode-uri-component",
+      "installed_version": "0.2.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2022-38900",
+      "aliases": [
+        "CVE-2022-38900",
+        "GHSA-W573-4HG7-7WGQ"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-20"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-W573-4HG7-7WGQ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "decode-uri-component",
+      "installed_version": "0.2.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-118664",
+      "aliases": [
+        "CVE-2026-118664",
+        "GHSA-QR28-FPJM-WQ7F"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-QR28-FPJM-WQ7F",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "decode-uri-component",
+      "installed_version": "0.2.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-45822",
+      "aliases": [
+        "CVE-2026-45822",
+        "GHSA-VCC3-GHJQ-M6FR"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1176",
+        "CWE-400",
+        "CWE-405",
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-VCC3-GHJQ-M6FR",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "diff",
+      "installed_version": "1.4.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-24001",
+      "aliases": [
+        "CVE-2026-24001",
+        "GHSA-73RR-HH4G-FPGX"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-1333",
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-73RR-HH4G-FPGX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "diff",
+      "installed_version": "1.4.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "GHSA-H6CH-V84P-W6P9",
+      "aliases": [
+        "GHSA-H6CH-V84P-W6P9"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-H6CH-V84P-W6P9",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "dot-prop",
+      "installed_version": "4.2.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2020-8116",
+      "aliases": [
+        "CVE-2020-8116",
+        "GHSA-FF7X-QRG7-QGGM"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1321",
+        "CWE-425",
+        "CWE-471"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-FF7X-QRG7-QGGM",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "express",
+      "installed_version": "4.16.4",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2024-29041",
+      "aliases": [
+        "CVE-2024-29041",
+        "GHSA-RV95-896H-C2VC"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1286",
+        "CWE-601"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-RV95-896H-C2VC",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "express",
+      "installed_version": "4.16.4",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2024-43796",
+      "aliases": [
+        "CVE-2024-43796",
+        "GHSA-QW6H-VGH9-J6WX"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-79"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-QW6H-VGH9-J6WX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "extract-zip",
+      "installed_version": "1.6.7",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-19693",
+      "aliases": [
+        "CVE-2026-19693",
+        "GHSA-7PQW-9J4J-H8Q3"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-22"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-7PQW-9J4J-H8Q3",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "extract-zip",
+      "installed_version": "1.6.7",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-56876",
+      "aliases": [
+        "CVE-2026-56876",
+        "GHSA-JMR9-QJV8-65GV"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-22"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-JMR9-QJV8-65GV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "form-data",
+      "installed_version": "0.1.4",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2025-7783",
+      "aliases": [
+        "CVE-2025-7783",
+        "GHSA-FJXV-7RQG-78G4"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-330"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-FJXV-7RQG-78G4",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "form-data",
+      "installed_version": "0.1.4",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-12143",
+      "aliases": [
+        "CVE-2026-12143",
+        "GHSA-HMW2-7CC7-3QXX"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-93"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-HMW2-7CC7-3QXX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "form-data",
+      "installed_version": "1.0.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2025-7783",
+      "aliases": [
+        "CVE-2025-7783",
+        "GHSA-FJXV-7RQG-78G4"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-330"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-FJXV-7RQG-78G4",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "form-data",
+      "installed_version": "1.0.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-12143",
+      "aliases": [
+        "CVE-2026-12143",
+        "GHSA-HMW2-7CC7-3QXX"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-93"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-HMW2-7CC7-3QXX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "form-data",
+      "installed_version": "2.1.4",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2025-7783",
+      "aliases": [
+        "CVE-2025-7783",
+        "GHSA-FJXV-7RQG-78G4"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-330"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-FJXV-7RQG-78G4",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "form-data",
+      "installed_version": "2.1.4",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-12143",
+      "aliases": [
+        "CVE-2026-12143",
+        "GHSA-HMW2-7CC7-3QXX"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-93"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-HMW2-7CC7-3QXX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "form-data",
+      "installed_version": "2.3.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2025-7783",
+      "aliases": [
+        "CVE-2025-7783",
+        "GHSA-FJXV-7RQG-78G4"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-330"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-FJXV-7RQG-78G4",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "form-data",
+      "installed_version": "2.3.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-12143",
+      "aliases": [
+        "CVE-2026-12143",
+        "GHSA-HMW2-7CC7-3QXX"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-93"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-HMW2-7CC7-3QXX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "fsevents",
+      "installed_version": "1.2.9",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2023-45311",
+      "aliases": [
+        "CVE-2023-45311",
+        "GHSA-8R6J-V8PM-FQW3"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-94"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8R6J-V8PM-FQW3",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "fsevents",
+      "installed_version": "1.2.9",
+      "ecosystem": "npm",
+      "vulnerability_id": "GHSA-XV2F-5JW4-V95M",
+      "aliases": [
+        "GHSA-XV2F-5JW4-V95M",
+        "MAL-2023-462"
+      ],
+      "severity": "Critical",
+      "cwe_types": [],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-XV2F-5JW4-V95M",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "getobject",
+      "installed_version": "0.1.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2020-28282",
+      "aliases": [
+        "CVE-2020-28282",
+        "GHSA-957J-59C2-J692"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-957J-59C2-J692",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "got",
+      "installed_version": "6.7.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2022-33987",
+      "aliases": [
+        "CVE-2022-33987",
+        "GHSA-PFRX-2Q88-QQ97"
+      ],
+      "severity": "Medium",
+      "cwe_types": [],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-PFRX-2Q88-QQ97",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "growl",
+      "installed_version": "1.9.2",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2017-16042",
+      "aliases": [
+        "CVE-2017-16042",
+        "GHSA-QH2H-CHJ9-JFFQ"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-78",
+        "CWE-94"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-QH2H-CHJ9-JFFQ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "grunt",
+      "installed_version": "1.0.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2020-7729",
+      "aliases": [
+        "CVE-2020-7729",
+        "GHSA-M5PJ-VJJF-4M3H"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1188"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-M5PJ-VJJF-4M3H",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "grunt",
+      "installed_version": "1.0.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2022-0436",
+      "aliases": [
+        "CVE-2022-0436",
+        "GHSA-J383-35PM-C5H4"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-22"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-J383-35PM-C5H4",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "grunt",
+      "installed_version": "1.0.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2022-1537",
+      "aliases": [
+        "CVE-2022-1537",
+        "GHSA-RM36-94G8-835R"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-367"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-RM36-94G8-835R",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "hawk",
+      "installed_version": "1.0.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2016-2515",
+      "aliases": [
+        "CVE-2016-2515",
+        "GHSA-JCPV-G9RR-QXRC"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-JCPV-G9RR-QXRC",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "hawk",
+      "installed_version": "1.0.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2022-29167",
+      "aliases": [
+        "CVE-2022-29167",
+        "GHSA-44PW-H2CW-W3VQ"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333",
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-44PW-H2CW-W3VQ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "hawk",
+      "installed_version": "3.1.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2022-29167",
+      "aliases": [
+        "CVE-2022-29167",
+        "GHSA-44PW-H2CW-W3VQ"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333",
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-44PW-H2CW-W3VQ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "helmet-csp",
+      "installed_version": "1.2.2",
+      "ecosystem": "npm",
+      "vulnerability_id": "GHSA-C3M8-X3CG-QM2C",
+      "aliases": [
+        "GHSA-C3M8-X3CG-QM2C"
+      ],
+      "severity": "Medium",
+      "cwe_types": [],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-C3M8-X3CG-QM2C",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "hoek",
+      "installed_version": "0.9.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2018-3728",
+      "aliases": [
+        "CVE-2018-3728",
+        "GHSA-JP4X-W63M-7WGM"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-JP4X-W63M-7WGM",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "hoek",
+      "installed_version": "0.9.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2020-36604",
+      "aliases": [
+        "CVE-2020-36604",
+        "GHSA-C429-5P7V-VGJP"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-C429-5P7V-VGJP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "hoek",
+      "installed_version": "2.16.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2018-3728",
+      "aliases": [
+        "CVE-2018-3728",
+        "GHSA-JP4X-W63M-7WGM"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-JP4X-W63M-7WGM",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "hoek",
+      "installed_version": "2.16.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2020-36604",
+      "aliases": [
+        "CVE-2020-36604",
+        "GHSA-C429-5P7V-VGJP"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-C429-5P7V-VGJP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "hosted-git-info",
+      "installed_version": "2.7.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2021-23362",
+      "aliases": [
+        "CVE-2021-23362",
+        "GHSA-43F8-2H32-F4CJ"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-43F8-2H32-F4CJ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "i",
+      "installed_version": "0.3.6",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2021-3820",
+      "aliases": [
+        "CVE-2021-3820",
+        "GHSA-X55W-VJJP-222R"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-X55W-VJJP-222R",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "ini",
+      "installed_version": "1.3.5",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2020-7788",
+      "aliases": [
+        "CVE-2020-7788",
+        "GHSA-QQGX-2P2H-9C37",
+        "SNYK-JS-INI-1048974"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-QQGX-2P2H-9C37",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "js-yaml",
+      "installed_version": "3.5.5",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2025-64718",
+      "aliases": [
+        "CVE-2025-64718",
+        "GHSA-MH29-5H37-FV8M"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-MH29-5H37-FV8M",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "js-yaml",
+      "installed_version": "3.5.5",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-53550",
+      "aliases": [
+        "CVE-2026-53550",
+        "GHSA-H67P-54HQ-RP68"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-H67P-54HQ-RP68",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "js-yaml",
+      "installed_version": "3.5.5",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-59869",
+      "aliases": [
+        "CVE-2026-59869",
+        "GHSA-52CP-R559-CP3M"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-52CP-R559-CP3M",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "js-yaml",
+      "installed_version": "3.5.5",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-84375",
+      "aliases": [
+        "CVE-2026-84375",
+        "GHSA-2883-XCG3-V3HH"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-2883-XCG3-V3HH",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "js-yaml",
+      "installed_version": "3.5.5",
+      "ecosystem": "npm",
+      "vulnerability_id": "GHSA-2PR6-76VF-7546",
+      "aliases": [
+        "GHSA-2PR6-76VF-7546"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-2PR6-76VF-7546",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "js-yaml",
+      "installed_version": "3.5.5",
+      "ecosystem": "npm",
+      "vulnerability_id": "GHSA-5P4M-2WFM-XMQJ",
+      "aliases": [
+        "GHSA-5P4M-2WFM-XMQJ"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5P4M-2WFM-XMQJ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "js-yaml",
+      "installed_version": "3.5.5",
+      "ecosystem": "npm",
+      "vulnerability_id": "GHSA-8J8C-7JFH-H6HX",
+      "aliases": [
+        "GHSA-8J8C-7JFH-H6HX"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-94"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8J8C-7JFH-H6HX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "js-yaml",
+      "installed_version": "3.6.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2025-64718",
+      "aliases": [
+        "CVE-2025-64718",
+        "GHSA-MH29-5H37-FV8M"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-MH29-5H37-FV8M",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "js-yaml",
+      "installed_version": "3.6.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-53550",
+      "aliases": [
+        "CVE-2026-53550",
+        "GHSA-H67P-54HQ-RP68"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-H67P-54HQ-RP68",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "js-yaml",
+      "installed_version": "3.6.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-59869",
+      "aliases": [
+        "CVE-2026-59869",
+        "GHSA-52CP-R559-CP3M"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-52CP-R559-CP3M",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "js-yaml",
+      "installed_version": "3.6.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-84375",
+      "aliases": [
+        "CVE-2026-84375",
+        "GHSA-2883-XCG3-V3HH"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-2883-XCG3-V3HH",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "js-yaml",
+      "installed_version": "3.6.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "GHSA-2PR6-76VF-7546",
+      "aliases": [
+        "GHSA-2PR6-76VF-7546"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-2PR6-76VF-7546",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "js-yaml",
+      "installed_version": "3.6.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "GHSA-5P4M-2WFM-XMQJ",
+      "aliases": [
+        "GHSA-5P4M-2WFM-XMQJ"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5P4M-2WFM-XMQJ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "js-yaml",
+      "installed_version": "3.6.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "GHSA-8J8C-7JFH-H6HX",
+      "aliases": [
+        "GHSA-8J8C-7JFH-H6HX"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-94"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8J8C-7JFH-H6HX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "json-schema",
+      "installed_version": "0.2.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2021-3918",
+      "aliases": [
+        "CVE-2021-3918",
+        "GHSA-896R-F27R-55MW"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-1321",
+        "CWE-915"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-896R-F27R-55MW",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "jsonpointer",
+      "installed_version": "4.0.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2021-23807",
+      "aliases": [
+        "CVE-2021-23807",
+        "GHSA-282F-QQGM-C34Q"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1321",
+        "CWE-843"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-282F-QQGM-C34Q",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "kind-of",
+      "installed_version": "6.0.2",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2019-20149",
+      "aliases": [
+        "CVE-2019-20149",
+        "GHSA-6C8F-QPHG-QJGP"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-668"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-6C8F-QPHG-QJGP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "lodash",
+      "installed_version": "2.4.2",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2018-16487",
+      "aliases": [
+        "CVE-2018-16487",
+        "GHSA-4XC9-XHRJ-V574"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-4XC9-XHRJ-V574",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "lodash",
+      "installed_version": "2.4.2",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2018-3721",
+      "aliases": [
+        "CVE-2018-3721",
+        "GHSA-FVQR-27WR-82FM"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1321",
+        "CWE-471"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-FVQR-27WR-82FM",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "lodash",
+      "installed_version": "2.4.2",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2019-10744",
+      "aliases": [
+        "CVE-2019-10744",
+        "GHSA-JF85-CPCP-J695",
+        "SNYK-JS-LODASH-450202"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-1321",
+        "CWE-20"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-JF85-CPCP-J695",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "lodash",
+      "installed_version": "2.4.2",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2021-23337",
+      "aliases": [
+        "CVE-2021-23337",
+        "GHSA-35JH-R3H4-6JHM"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-77",
+        "CWE-94"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-35JH-R3H4-6JHM",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "lodash",
+      "installed_version": "4.17.11",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2019-10744",
+      "aliases": [
+        "CVE-2019-10744",
+        "GHSA-JF85-CPCP-J695",
+        "SNYK-JS-LODASH-450202"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-1321",
+        "CWE-20"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-JF85-CPCP-J695",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "lodash",
+      "installed_version": "4.17.11",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2020-28500",
+      "aliases": [
+        "CVE-2020-28500",
+        "GHSA-29MW-WPGM-HMR9"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1333",
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-29MW-WPGM-HMR9",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "lodash",
+      "installed_version": "4.17.11",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2020-8203",
+      "aliases": [
+        "CVE-2020-8203",
+        "GHSA-P6MC-M468-83GW"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1321",
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-P6MC-M468-83GW",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "lodash",
+      "installed_version": "4.17.11",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2021-23337",
+      "aliases": [
+        "CVE-2021-23337",
+        "GHSA-35JH-R3H4-6JHM"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-77",
+        "CWE-94"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-35JH-R3H4-6JHM",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "lodash",
+      "installed_version": "4.17.11",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2025-13465",
+      "aliases": [
+        "CVE-2025-13465",
+        "GHSA-XXJR-MMJV-4GPG"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-XXJR-MMJV-4GPG",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "lodash",
+      "installed_version": "4.17.11",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-4800",
+      "aliases": [
+        "CVE-2026-4800",
+        "GHSA-R5FR-RJXR-66JC"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-94"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-R5FR-RJXR-66JC",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "lodash",
+      "installed_version": "4.17.20",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2020-28500",
+      "aliases": [
+        "CVE-2020-28500",
+        "GHSA-29MW-WPGM-HMR9"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1333",
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-29MW-WPGM-HMR9",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "lodash",
+      "installed_version": "4.17.20",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2021-23337",
+      "aliases": [
+        "CVE-2021-23337",
+        "GHSA-35JH-R3H4-6JHM"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-77",
+        "CWE-94"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-35JH-R3H4-6JHM",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "lodash",
+      "installed_version": "4.17.20",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2025-13465",
+      "aliases": [
+        "CVE-2025-13465",
+        "GHSA-XXJR-MMJV-4GPG"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-XXJR-MMJV-4GPG",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "lodash",
+      "installed_version": "4.17.20",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-4800",
+      "aliases": [
+        "CVE-2026-4800",
+        "GHSA-R5FR-RJXR-66JC"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-94"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-R5FR-RJXR-66JC",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "lodash",
+      "installed_version": "4.17.21",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2025-13465",
+      "aliases": [
+        "CVE-2025-13465",
+        "GHSA-XXJR-MMJV-4GPG"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-XXJR-MMJV-4GPG",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "lodash",
+      "installed_version": "4.17.21",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-4800",
+      "aliases": [
+        "CVE-2026-4800",
+        "GHSA-R5FR-RJXR-66JC"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-94"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-R5FR-RJXR-66JC",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "marked",
+      "installed_version": "0.3.5",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2016-10531",
+      "aliases": [
+        "CVE-2016-10531",
+        "GHSA-VFVF-MQQ8-RWQC"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-79"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-VFVF-MQQ8-RWQC",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "marked",
+      "installed_version": "0.3.5",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2017-1000427",
+      "aliases": [
+        "CVE-2017-1000427",
+        "GHSA-7PX7-7XJX-HXM8"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-79"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-7PX7-7XJX-HXM8",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "marked",
+      "installed_version": "0.3.5",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2017-16114",
+      "aliases": [
+        "CVE-2017-16114",
+        "GHSA-X5PG-88WF-QQ4P"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-X5PG-88WF-QQ4P",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "marked",
+      "installed_version": "0.3.5",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2018-25110",
+      "aliases": [
+        "CVE-2018-25110",
+        "GHSA-P9WX-2529-FP83"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-P9WX-2529-FP83",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "marked",
+      "installed_version": "0.3.5",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2022-21680",
+      "aliases": [
+        "CVE-2022-21680",
+        "GHSA-RRRM-QJM4-V8HF"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333",
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-RRRM-QJM4-V8HF",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "marked",
+      "installed_version": "0.3.5",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2022-21681",
+      "aliases": [
+        "CVE-2022-21681",
+        "GHSA-5V2H-R2CX-5XGJ"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333",
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5V2H-R2CX-5XGJ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "micromatch",
+      "installed_version": "3.1.10",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2024-4067",
+      "aliases": [
+        "CVE-2024-4067",
+        "GHSA-952P-6RRQ-RCJV"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-952P-6RRQ-RCJV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "mime",
+      "installed_version": "1.2.11",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2017-16138",
+      "aliases": [
+        "CVE-2017-16138",
+        "GHSA-WRVR-8MPX-R7PP"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WRVR-8MPX-R7PP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "minimatch",
+      "installed_version": "0.3.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2016-10540",
+      "aliases": [
+        "CVE-2016-10540",
+        "GHSA-HXM2-R34F-QMC5"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-HXM2-R34F-QMC5",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "minimatch",
+      "installed_version": "0.3.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2022-3517",
+      "aliases": [
+        "CVE-2022-3517",
+        "GHSA-F8Q6-P94X-37V3"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333",
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-F8Q6-P94X-37V3",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "minimatch",
+      "installed_version": "0.3.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-26996",
+      "aliases": [
+        "CVE-2026-26996",
+        "GHSA-3PPC-4F35-3M26"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-3PPC-4F35-3M26",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "minimatch",
+      "installed_version": "0.3.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-27903",
+      "aliases": [
+        "CVE-2026-27903",
+        "GHSA-7R86-CG39-JMMJ"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-7R86-CG39-JMMJ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "minimatch",
+      "installed_version": "0.3.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-27904",
+      "aliases": [
+        "CVE-2026-27904",
+        "GHSA-23C5-XMQV-RM74"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-23C5-XMQV-RM74",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "minimatch",
+      "installed_version": "3.0.4",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2022-3517",
+      "aliases": [
+        "CVE-2022-3517",
+        "GHSA-F8Q6-P94X-37V3"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333",
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-F8Q6-P94X-37V3",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "minimatch",
+      "installed_version": "3.0.4",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-26996",
+      "aliases": [
+        "CVE-2026-26996",
+        "GHSA-3PPC-4F35-3M26"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-3PPC-4F35-3M26",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "minimatch",
+      "installed_version": "3.0.4",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-27903",
+      "aliases": [
+        "CVE-2026-27903",
+        "GHSA-7R86-CG39-JMMJ"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-7R86-CG39-JMMJ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "minimatch",
+      "installed_version": "3.0.4",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-27904",
+      "aliases": [
+        "CVE-2026-27904",
+        "GHSA-23C5-XMQV-RM74"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-23C5-XMQV-RM74",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "minimist",
+      "installed_version": "0.0.10",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2020-7598",
+      "aliases": [
+        "CVE-2020-7598",
+        "GHSA-VH95-RMGR-6W4M"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-VH95-RMGR-6W4M",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "minimist",
+      "installed_version": "0.0.10",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2021-44906",
+      "aliases": [
+        "CVE-2021-44906",
+        "GHSA-XVCH-5GV4-984H"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-XVCH-5GV4-984H",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "minimist",
+      "installed_version": "0.0.8",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2020-7598",
+      "aliases": [
+        "CVE-2020-7598",
+        "GHSA-VH95-RMGR-6W4M"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-VH95-RMGR-6W4M",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "minimist",
+      "installed_version": "0.0.8",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2021-44906",
+      "aliases": [
+        "CVE-2021-44906",
+        "GHSA-XVCH-5GV4-984H"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-XVCH-5GV4-984H",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "minimist",
+      "installed_version": "1.2.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2020-7598",
+      "aliases": [
+        "CVE-2020-7598",
+        "GHSA-VH95-RMGR-6W4M"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-VH95-RMGR-6W4M",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "minimist",
+      "installed_version": "1.2.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2021-44906",
+      "aliases": [
+        "CVE-2021-44906",
+        "GHSA-XVCH-5GV4-984H"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-XVCH-5GV4-984H",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "minimist",
+      "installed_version": "1.2.5",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2021-44906",
+      "aliases": [
+        "CVE-2021-44906",
+        "GHSA-XVCH-5GV4-984H"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-XVCH-5GV4-984H",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "mixin-deep",
+      "installed_version": "1.3.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2019-10746",
+      "aliases": [
+        "CVE-2019-10746",
+        "GHSA-FHJF-83WG-R2J9",
+        "SNYK-JS-MIXINDEEP-450212"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-88"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-FHJF-83WG-R2J9",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "moment",
+      "installed_version": "2.24.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2022-24785",
+      "aliases": [
+        "CVE-2022-24785",
+        "GHSA-8HFJ-J24R-96C4"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-22",
+        "CWE-27"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8HFJ-J24R-96C4",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "moment",
+      "installed_version": "2.24.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2022-31129",
+      "aliases": [
+        "CVE-2022-31129",
+        "GHSA-WC69-RHJR-HC9G"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333",
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-WC69-RHJR-HC9G",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "mongodb",
+      "installed_version": "2.2.36",
+      "ecosystem": "npm",
+      "vulnerability_id": "GHSA-MH5C-679W-HH4R",
+      "aliases": [
+        "GHSA-MH5C-679W-HH4R"
+      ],
+      "severity": "High",
+      "cwe_types": [],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-MH5C-679W-HH4R",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "ms",
+      "installed_version": "0.7.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2017-20162",
+      "aliases": [
+        "CVE-2017-20162",
+        "GHSA-W9MR-4MFR-499F"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-W9MR-4MFR-499F",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nconf",
+      "installed_version": "0.10.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2022-21803",
+      "aliases": [
+        "CVE-2022-21803",
+        "GHSA-6XWR-Q98W-RVG7"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-6XWR-Q98W-RVG7",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "nconf",
+      "installed_version": "0.6.9",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2022-21803",
+      "aliases": [
+        "CVE-2022-21803",
+        "GHSA-6XWR-Q98W-RVG7"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-6XWR-Q98W-RVG7",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "npm",
+      "installed_version": "3.10.10",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2018-7408",
+      "aliases": [
+        "CVE-2018-7408",
+        "GHSA-PH34-PC88-72GC"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-732"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-PH34-PC88-72GC",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "npm",
+      "installed_version": "3.10.10",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2019-16775",
+      "aliases": [
+        "CVE-2019-16775",
+        "GHSA-M6CX-G6QM-P2CX"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-59",
+        "CWE-61"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-M6CX-G6QM-P2CX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "npm",
+      "installed_version": "3.10.10",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2019-16776",
+      "aliases": [
+        "CVE-2019-16776",
+        "GHSA-X8QC-RRCW-4R46"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-22"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-X8QC-RRCW-4R46",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "npm",
+      "installed_version": "3.10.10",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2019-16777",
+      "aliases": [
+        "CVE-2019-16777",
+        "GHSA-4328-8HGF-7WJR"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-22",
+        "CWE-269"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-4328-8HGF-7WJR",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "npm",
+      "installed_version": "3.10.10",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2020-15095",
+      "aliases": [
+        "CVE-2020-15095",
+        "GHSA-93F3-23RQ-PJFP"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-532"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-93F3-23RQ-PJFP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "on-headers",
+      "installed_version": "1.0.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2025-7339",
+      "aliases": [
+        "CVE-2025-7339",
+        "GHSA-76C9-3JPH-RJ3Q"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-241"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-76C9-3JPH-RJ3Q",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "path-to-regexp",
+      "installed_version": "0.1.7",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2024-45296",
+      "aliases": [
+        "CVE-2024-45296",
+        "CVE-2026-4867",
+        "GHSA-37CH-88JC-XWX2",
+        "GHSA-9WV6-86V2-598J"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-37CH-88JC-XWX2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "path-to-regexp",
+      "installed_version": "0.1.7",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2024-52798",
+      "aliases": [
+        "CVE-2024-52798",
+        "GHSA-RHX6-C78J-4Q9W"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-RHX6-C78J-4Q9W",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "proxy-addr",
+      "installed_version": "2.0.4",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-90711",
+      "aliases": [
+        "CVE-2026-90711",
+        "GHSA-JQCG-44MW-7W3H"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-290",
+        "CWE-348",
+        "CWE-697"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-JQCG-44MW-7W3H",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "qs",
+      "installed_version": "0.6.6",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2014-10064",
+      "aliases": [
+        "CVE-2014-10064",
+        "GHSA-F9CM-P3W6-XVR3"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-F9CM-P3W6-XVR3",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "qs",
+      "installed_version": "0.6.6",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2014-7191",
+      "aliases": [
+        "CVE-2014-7191",
+        "GHSA-JJV7-QPX3-H62Q"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-JJV7-QPX3-H62Q",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "qs",
+      "installed_version": "0.6.6",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2017-1000048",
+      "aliases": [
+        "CVE-2017-1000048",
+        "GHSA-GQGV-6JQ5-JJJ9"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-20"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-GQGV-6JQ5-JJJ9",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "qs",
+      "installed_version": "0.6.6",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2022-24999",
+      "aliases": [
+        "CVE-2022-24999",
+        "GHSA-HRPP-H998-J3PP"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-HRPP-H998-J3PP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "qs",
+      "installed_version": "0.6.6",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2025-15284",
+      "aliases": [
+        "CVE-2025-15284",
+        "GHSA-6RW7-VPXM-498P"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-20"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-6RW7-VPXM-498P",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "qs",
+      "installed_version": "5.2.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2017-1000048",
+      "aliases": [
+        "CVE-2017-1000048",
+        "GHSA-GQGV-6JQ5-JJJ9"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-20"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-GQGV-6JQ5-JJJ9",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "qs",
+      "installed_version": "5.2.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2022-24999",
+      "aliases": [
+        "CVE-2022-24999",
+        "GHSA-HRPP-H998-J3PP"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-HRPP-H998-J3PP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "qs",
+      "installed_version": "5.2.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2025-15284",
+      "aliases": [
+        "CVE-2025-15284",
+        "GHSA-6RW7-VPXM-498P"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-20"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-6RW7-VPXM-498P",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "qs",
+      "installed_version": "5.2.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-82417",
+      "aliases": [
+        "CVE-2026-82417",
+        "GHSA-4MJR-XMP4-GH2G"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-248",
+        "CWE-703"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-4MJR-XMP4-GH2G",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "qs",
+      "installed_version": "6.3.2",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2022-24999",
+      "aliases": [
+        "CVE-2022-24999",
+        "GHSA-HRPP-H998-J3PP"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-HRPP-H998-J3PP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "qs",
+      "installed_version": "6.3.2",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2025-15284",
+      "aliases": [
+        "CVE-2025-15284",
+        "GHSA-6RW7-VPXM-498P"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-20"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-6RW7-VPXM-498P",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "qs",
+      "installed_version": "6.3.2",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-82417",
+      "aliases": [
+        "CVE-2026-82417",
+        "GHSA-4MJR-XMP4-GH2G"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-248",
+        "CWE-703"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-4MJR-XMP4-GH2G",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "qs",
+      "installed_version": "6.5.2",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2022-24999",
+      "aliases": [
+        "CVE-2022-24999",
+        "GHSA-HRPP-H998-J3PP"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-HRPP-H998-J3PP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "qs",
+      "installed_version": "6.5.2",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2025-15284",
+      "aliases": [
+        "CVE-2025-15284",
+        "GHSA-6RW7-VPXM-498P"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-20"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-6RW7-VPXM-498P",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "qs",
+      "installed_version": "6.5.2",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-82417",
+      "aliases": [
+        "CVE-2026-82417",
+        "GHSA-4MJR-XMP4-GH2G"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-248",
+        "CWE-703"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-4MJR-XMP4-GH2G",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "request",
+      "installed_version": "2.36.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2017-16026",
+      "aliases": [
+        "CVE-2017-16026",
+        "GHSA-7XFP-9C55-5VQJ"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-201"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-7XFP-9C55-5VQJ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "request",
+      "installed_version": "2.36.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2023-28155",
+      "aliases": [
+        "CVE-2023-28155",
+        "GHSA-P8P7-X288-28G6"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-918"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-P8P7-X288-28G6",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "request",
+      "installed_version": "2.67.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2017-16026",
+      "aliases": [
+        "CVE-2017-16026",
+        "GHSA-7XFP-9C55-5VQJ"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-201"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-7XFP-9C55-5VQJ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "request",
+      "installed_version": "2.67.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2023-28155",
+      "aliases": [
+        "CVE-2023-28155",
+        "GHSA-P8P7-X288-28G6"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-918"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-P8P7-X288-28G6",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "request",
+      "installed_version": "2.79.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2023-28155",
+      "aliases": [
+        "CVE-2023-28155",
+        "GHSA-P8P7-X288-28G6"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-918"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-P8P7-X288-28G6",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "request",
+      "installed_version": "2.88.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2023-28155",
+      "aliases": [
+        "CVE-2023-28155",
+        "GHSA-P8P7-X288-28G6"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-918"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-P8P7-X288-28G6",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "semver",
+      "installed_version": "5.6.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2022-25883",
+      "aliases": [
+        "CVE-2022-25883",
+        "GHSA-C2QF-RXJJ-QQGW"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-C2QF-RXJJ-QQGW",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "semver",
+      "installed_version": "5.7.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2022-25883",
+      "aliases": [
+        "CVE-2022-25883",
+        "GHSA-C2QF-RXJJ-QQGW"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-C2QF-RXJJ-QQGW",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "send",
+      "installed_version": "0.16.2",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2024-43799",
+      "aliases": [
+        "CVE-2024-43799",
+        "GHSA-M6FV-JMCG-4JFG"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-79"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-M6FV-JMCG-4JFG",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "serve-static",
+      "installed_version": "1.13.2",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2024-43800",
+      "aliases": [
+        "CVE-2024-43800",
+        "GHSA-CM22-4G7W-348P"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-79"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-CM22-4G7W-348P",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "set-value",
+      "installed_version": "0.4.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2019-10747",
+      "aliases": [
+        "CVE-2019-10747",
+        "GHSA-4G88-FPPR-53PP",
+        "SNYK-JS-SETVALUE-450213"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-1321",
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-4G88-FPPR-53PP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "set-value",
+      "installed_version": "0.4.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2021-23440",
+      "aliases": [
+        "CVE-2021-23440",
+        "GHSA-4JQC-8M5R-9RPR"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1321",
+        "CWE-843"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-4JQC-8M5R-9RPR",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "set-value",
+      "installed_version": "2.0.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2019-10747",
+      "aliases": [
+        "CVE-2019-10747",
+        "GHSA-4G88-FPPR-53PP",
+        "SNYK-JS-SETVALUE-450213"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-1321",
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-4G88-FPPR-53PP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "set-value",
+      "installed_version": "2.0.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2021-23440",
+      "aliases": [
+        "CVE-2021-23440",
+        "GHSA-4JQC-8M5R-9RPR"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1321",
+        "CWE-843"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-4JQC-8M5R-9RPR",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "shelljs",
+      "installed_version": "0.3.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2022-0144",
+      "aliases": [
+        "CVE-2022-0144",
+        "GHSA-4RQ4-32RV-6WP6"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-269"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-4RQ4-32RV-6WP6",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "shelljs",
+      "installed_version": "0.3.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "GHSA-64G7-MVW6-V9QJ",
+      "aliases": [
+        "GHSA-64G7-MVW6-V9QJ"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-269"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-64G7-MVW6-V9QJ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "swig",
+      "installed_version": "1.4.2",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2023-25345",
+      "aliases": [
+        "CVE-2023-25345",
+        "GHSA-2RQ5-699J-X7P6"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-22"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-2RQ5-699J-X7P6",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tar",
+      "installed_version": "4.4.8",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2021-32803",
+      "aliases": [
+        "CVE-2021-32803",
+        "GHSA-R628-MHMH-QJHW"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-22",
+        "CWE-59"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-R628-MHMH-QJHW",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tar",
+      "installed_version": "4.4.8",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2021-32804",
+      "aliases": [
+        "CVE-2021-32804",
+        "GHSA-3JFQ-G458-7QM9"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-22"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-3JFQ-G458-7QM9",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tar",
+      "installed_version": "4.4.8",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2021-37701",
+      "aliases": [
+        "CVE-2021-37701",
+        "GHSA-9R2W-394V-53QC"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-22",
+        "CWE-59"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-9R2W-394V-53QC",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tar",
+      "installed_version": "4.4.8",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2021-37712",
+      "aliases": [
+        "CVE-2021-37712",
+        "GHSA-QQ89-HQ3F-393P"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-22",
+        "CWE-59"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-QQ89-HQ3F-393P",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tar",
+      "installed_version": "4.4.8",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2021-37713",
+      "aliases": [
+        "CVE-2021-37713",
+        "GHSA-5955-9WPR-37JH"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-22"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-5955-9WPR-37JH",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tar",
+      "installed_version": "4.4.8",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2024-28863",
+      "aliases": [
+        "CVE-2024-28863",
+        "GHSA-F5X3-32G6-XQ36"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-F5X3-32G6-XQ36",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tar",
+      "installed_version": "4.4.8",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-23745",
+      "aliases": [
+        "CVE-2026-23745",
+        "GHSA-8QQ5-RM4J-MR97"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-22"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8QQ5-RM4J-MR97",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tar",
+      "installed_version": "4.4.8",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-23950",
+      "aliases": [
+        "CVE-2026-23950",
+        "GHSA-R6Q2-HW4H-H46W"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-176",
+        "CWE-352",
+        "CWE-367"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-R6Q2-HW4H-H46W",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tar",
+      "installed_version": "4.4.8",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-24842",
+      "aliases": [
+        "CVE-2026-24842",
+        "GHSA-34X7-HFP2-RC4V"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-22",
+        "CWE-59"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-34X7-HFP2-RC4V",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tar",
+      "installed_version": "4.4.8",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-26960",
+      "aliases": [
+        "CVE-2026-26960",
+        "GHSA-83G3-92JG-28CX"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-22"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-83G3-92JG-28CX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tar",
+      "installed_version": "4.4.8",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-29786",
+      "aliases": [
+        "CVE-2026-29786",
+        "GHSA-QFFP-2RHF-9H96"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-22",
+        "CWE-59"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-QFFP-2RHF-9H96",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tar",
+      "installed_version": "4.4.8",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-31802",
+      "aliases": [
+        "CVE-2026-31802",
+        "GHSA-9PPJ-QMQM-Q256"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-22"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-9PPJ-QMQM-Q256",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tar",
+      "installed_version": "4.4.8",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-53655",
+      "aliases": [
+        "CVE-2026-53655",
+        "GHSA-VMF3-W455-68VH"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-436"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-VMF3-W455-68VH",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tar",
+      "installed_version": "4.4.8",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-59871",
+      "aliases": [
+        "CVE-2026-59871",
+        "GHSA-W8WR-V893-VJVP"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-704"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-W8WR-V893-VJVP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tar",
+      "installed_version": "4.4.8",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-59873",
+      "aliases": [
+        "CVE-2026-59873",
+        "GHSA-23HP-3JRH-7FPW"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-770"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-23HP-3JRH-7FPW",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tar",
+      "installed_version": "4.4.8",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-59874",
+      "aliases": [
+        "CVE-2026-59874",
+        "GHSA-8X88-C5MF-7J5W"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-835"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-8X88-C5MF-7J5W",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tar",
+      "installed_version": "4.4.8",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-59875",
+      "aliases": [
+        "CVE-2026-59875",
+        "GHSA-GVWX-54WH-QM9J"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-248"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-GVWX-54WH-QM9J",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tar",
+      "installed_version": "4.4.8",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-73566",
+      "aliases": [
+        "CVE-2026-73566",
+        "GHSA-R292-9MHP-454M"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400",
+        "CWE-674"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-R292-9MHP-454M",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tmp",
+      "installed_version": "0.0.24",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2025-54798",
+      "aliases": [
+        "CVE-2025-54798",
+        "GHSA-52F5-9888-HMC6"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-59"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-52F5-9888-HMC6",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tmp",
+      "installed_version": "0.0.24",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-44705",
+      "aliases": [
+        "CVE-2026-44705",
+        "GHSA-PH9P-34F9-6G65"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-22"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-PH9P-34F9-6G65",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tmp",
+      "installed_version": "0.1.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2025-54798",
+      "aliases": [
+        "CVE-2025-54798",
+        "GHSA-52F5-9888-HMC6"
+      ],
+      "severity": "Low",
+      "cwe_types": [
+        "CWE-59"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-52F5-9888-HMC6",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tmp",
+      "installed_version": "0.1.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-44705",
+      "aliases": [
+        "CVE-2026-44705",
+        "GHSA-PH9P-34F9-6G65"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-22"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-PH9P-34F9-6G65",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tough-cookie",
+      "installed_version": "2.2.2",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2016-1000232",
+      "aliases": [
+        "CVE-2016-1000232",
+        "GHSA-QHV9-728R-6JQG"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1333"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-QHV9-728R-6JQG",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tough-cookie",
+      "installed_version": "2.2.2",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2017-15010",
+      "aliases": [
+        "CVE-2017-15010",
+        "GHSA-G7Q5-PJJR-GQVP"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-G7Q5-PJJR-GQVP",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tough-cookie",
+      "installed_version": "2.2.2",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2023-26136",
+      "aliases": [
+        "CVE-2023-26136",
+        "GHSA-72XF-G2V4-QVF3"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-72XF-G2V4-QVF3",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tough-cookie",
+      "installed_version": "2.3.4",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2023-26136",
+      "aliases": [
+        "CVE-2023-26136",
+        "GHSA-72XF-G2V4-QVF3"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-72XF-G2V4-QVF3",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tough-cookie",
+      "installed_version": "2.4.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2023-26136",
+      "aliases": [
+        "CVE-2023-26136",
+        "GHSA-72XF-G2V4-QVF3"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-72XF-G2V4-QVF3",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "trim-newlines",
+      "installed_version": "1.0.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2021-33623",
+      "aliases": [
+        "CVE-2021-33623",
+        "GHSA-7P7H-4MM5-852V"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-7P7H-4MM5-852V",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "tunnel-agent",
+      "installed_version": "0.4.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "GHSA-XC7V-WXCW-J472",
+      "aliases": [
+        "GHSA-XC7V-WXCW-J472"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-200"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-XC7V-WXCW-J472",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "uglify-js",
+      "installed_version": "2.4.24",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2015-8858",
+      "aliases": [
+        "CVE-2015-8858",
+        "GHSA-C9F4-XJ24-8JQX"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1333",
+        "CWE-399"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-C9F4-XJ24-8JQX",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "undefsafe",
+      "installed_version": "2.0.2",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2019-10795",
+      "aliases": [
+        "CVE-2019-10795",
+        "GHSA-332Q-7FF2-57H2",
+        "SNYK-JS-UNDEFSAFE-548940"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-74"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-332Q-7FF2-57H2",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "underscore",
+      "installed_version": "1.8.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2021-23358",
+      "aliases": [
+        "CVE-2021-23358",
+        "GHSA-CF4H-3JHX-XVHQ"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-94"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-CF4H-3JHX-XVHQ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "underscore",
+      "installed_version": "1.8.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-27601",
+      "aliases": [
+        "CVE-2026-27601",
+        "GHSA-QPX9-HPMF-5GMW"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-674",
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-QPX9-HPMF-5GMW",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "underscore",
+      "installed_version": "1.9.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2021-23358",
+      "aliases": [
+        "CVE-2021-23358",
+        "GHSA-CF4H-3JHX-XVHQ"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-94"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-CF4H-3JHX-XVHQ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "underscore",
+      "installed_version": "1.9.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-27601",
+      "aliases": [
+        "CVE-2026-27601",
+        "GHSA-QPX9-HPMF-5GMW"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-674",
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-QPX9-HPMF-5GMW",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "uuid",
+      "installed_version": "3.3.2",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-41907",
+      "aliases": [
+        "CVE-2026-41907",
+        "CVE-2026-41988",
+        "GHSA-W5HQ-G745-H8PQ"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1285",
+        "CWE-787"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-W5HQ-G745-H8PQ",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "websocket-driver",
+      "installed_version": "0.7.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-54466",
+      "aliases": [
+        "CVE-2026-54466",
+        "GHSA-XV26-6W52-CPH6"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-130"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-XV26-6W52-CPH6",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "websocket-driver",
+      "installed_version": "0.7.0",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-54490",
+      "aliases": [
+        "CVE-2026-54490",
+        "GHSA-MP7J-QC5W-4988"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-MP7J-QC5W-4988",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "websocket-extensions",
+      "installed_version": "0.1.3",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2020-7662",
+      "aliases": [
+        "CVE-2020-7662",
+        "GHSA-G78M-2CHM-R7QV",
+        "SNYK-JS-WEBSOCKETEXTENSIONS-570623"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-400"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-G78M-2CHM-R7QV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "ws",
+      "installed_version": "1.1.5",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2026-48779",
+      "aliases": [
+        "CVE-2026-48779",
+        "GHSA-96HV-2XVQ-FX4P"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1050",
+        "CWE-400",
+        "CWE-770"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-96HV-2XVQ-FX4P",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "xml2js",
+      "installed_version": "0.4.4",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2023-0842",
+      "aliases": [
+        "CVE-2023-0842",
+        "GHSA-776F-QX25-Q3CC"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-1321"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-776F-QX25-Q3CC",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "y18n",
+      "installed_version": "3.2.1",
+      "ecosystem": "npm",
+      "vulnerability_id": "CVE-2020-7774",
+      "aliases": [
+        "CVE-2020-7774",
+        "GHSA-C4W7-XM78-47VH"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-1321",
+        "CWE-20",
+        "CWE-915"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-C4W7-XM78-47VH",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "grype_dependency_source": "https://github.com/OWASP/NodeGoat/blob/c5cb68a7084e4ae7dcc60e6a98768720a81841e8/package-lock.json",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    }
+  ]
+}

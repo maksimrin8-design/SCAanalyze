@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "project_id": "P008",
+  "project": "dvwa",
+  "repository": "digininja/DVWA",
+  "pinned_commit": "a1978a2fed195acd093010af6395f86a281537ca",
+  "source_run": "https://github.com/maksimrin8-design/SCAanalyze/actions/runs/42440365259",
+  "reference_type": "scanner_union_plus_independently_verified_examples",
+  "is_complete_independent_ground_truth": false,
+  "methodology": "Every finding reported by at least one analyzer, with CVE/GHSA aliases merged, plus verified dependencies and advisories from ground-truth/verified.csv. Scanner-only entries remain PROVISIONAL and vulnerabilities missed by both analyzers may be absent. Do not infer unbiased recall or precision.",
+  "scan_status": {
+    "osv": "ok",
+    "grype": "ok"
+  },
+  "counts": {
+    "only_osv": 1,
+    "severity_High": 2,
+    "verified": 0,
+    "only_grype": 1,
+    "both": 0,
+    "independently_verified_but_not_detected": 0,
+    "total": 2,
+    "osv": 1,
+    "grype": 1,
+    "comparison_valid": true
+  },
+  "vulnerabilities": [
+    {
+      "package": "symfony/yaml",
+      "installed_version": "v8.1.2",
+      "ecosystem": "packagist",
+      "vulnerability_id": "CVE-2026-109413",
+      "aliases": [
+        "CVE-2026-109413",
+        "GHSA-2V3C-QXHR-7VPV"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-674"
+      ],
+      "found_by": [
+        "osv"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-2V3C-QXHR-7VPV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/digininja/DVWA/blob/a1978a2fed195acd093010af6395f86a281537ca/vulnerabilities/api/composer.lock",
+      "grype_dependency_source": "",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "symfony/yaml",
+      "installed_version": "v8.1.2",
+      "ecosystem": "php-composer",
+      "vulnerability_id": "CVE-2026-109413",
+      "aliases": [
+        "CVE-2026-109413",
+        "GHSA-2V3C-QXHR-7VPV"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-674"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-2V3C-QXHR-7VPV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/digininja/DVWA/blob/a1978a2fed195acd093010af6395f86a281537ca/vulnerabilities/api/composer.lock",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    }
+  ]
+}

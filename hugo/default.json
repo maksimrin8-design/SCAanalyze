@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "project_id": "P021",
+  "project": "hugo",
+  "repository": "gohugoio/hugo",
+  "pinned_commit": "7ff95e046daa1bc6b132ac582c9517ff9f24b204",
+  "source_run": "https://github.com/maksimrin8-design/SCAanalyze/actions/runs/42440365259",
+  "reference_type": "scanner_union_plus_independently_verified_examples",
+  "is_complete_independent_ground_truth": false,
+  "methodology": "Every finding reported by at least one analyzer, with CVE/GHSA aliases merged, plus verified dependencies and advisories from ground-truth/verified.csv. Scanner-only entries remain PROVISIONAL and vulnerabilities missed by both analyzers may be absent. Do not infer unbiased recall or precision.",
+  "scan_status": {
+    "osv": "ok",
+    "grype": "ok"
+  },
+  "counts": {
+    "only_grype": 1,
+    "severity_Critical": 1,
+    "verified": 0,
+    "both": 3,
+    "severity_Unknown": 1,
+    "severity_High": 1,
+    "severity_Medium": 1,
+    "only_osv": 0,
+    "independently_verified_but_not_detected": 0,
+    "total": 4,
+    "osv": 3,
+    "grype": 4,
+    "comparison_valid": true
+  },
+  "vulnerabilities": [
+    {
+      "package": "github.com/andybalholm/brotli",
+      "installed_version": "1.2.6",
+      "ecosystem": "go",
+      "vulnerability_id": "CVE-2026-111497",
+      "aliases": [
+        "CVE-2026-111497",
+        "GHSA-C9GR-GMG4-2VQV",
+        "GO-2026-6888"
+      ],
+      "severity": "Critical",
+      "cwe_types": [
+        "CWE-252",
+        "CWE-787"
+      ],
+      "found_by": [
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://github.com/advisories/GHSA-C9GR-GMG4-2VQV",
+      "project_evidence_url": "",
+      "osv_dependency_source": "",
+      "grype_dependency_source": "https://github.com/gohugoio/hugo/blob/7ff95e046daa1bc6b132ac582c9517ff9f24b204/go.mod",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "golang.org/x/crypto",
+      "installed_version": "0.58.0",
+      "ecosystem": "go",
+      "vulnerability_id": "GO-2026-5932",
+      "aliases": [
+        "GO-2026-5932"
+      ],
+      "severity": "Unknown",
+      "cwe_types": [],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://osv.dev/vulnerability/GO-2026-5932",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/gohugoio/hugo/blob/7ff95e046daa1bc6b132ac582c9517ff9f24b204/go.mod",
+      "grype_dependency_source": "https://github.com/gohugoio/hugo/blob/7ff95e046daa1bc6b132ac582c9517ff9f24b204/go.mod",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "golang.org/x/net",
+      "installed_version": "0.61.0",
+      "ecosystem": "go",
+      "vulnerability_id": "CVE-2026-78661",
+      "aliases": [
+        "CVE-2026-78661",
+        "GO-2026-6860"
+      ],
+      "severity": "High",
+      "cwe_types": [
+        "CWE-407"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78661",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/gohugoio/hugo/blob/7ff95e046daa1bc6b132ac582c9517ff9f24b204/go.mod",
+      "grype_dependency_source": "https://github.com/gohugoio/hugo/blob/7ff95e046daa1bc6b132ac582c9517ff9f24b204/go.mod",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    },
+    {
+      "package": "golang.org/x/net",
+      "installed_version": "0.61.0",
+      "ecosystem": "go",
+      "vulnerability_id": "CVE-2026-97045",
+      "aliases": [
+        "CVE-2026-97045",
+        "GO-2026-6866"
+      ],
+      "severity": "Medium",
+      "cwe_types": [
+        "CWE-79"
+      ],
+      "found_by": [
+        "osv",
+        "grype"
+      ],
+      "verification_status": "scanner_union_provisional",
+      "advisory_url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97045",
+      "project_evidence_url": "",
+      "osv_dependency_source": "https://github.com/gohugoio/hugo/blob/7ff95e046daa1bc6b132ac582c9517ff9f24b204/go.mod",
+      "grype_dependency_source": "https://github.com/gohugoio/hugo/blob/7ff95e046daa1bc6b132ac582c9517ff9f24b204/go.mod",
+      "notes": "Требуется независимая проверка пакета, версии и advisory; находки сканеров не являются эталоном."
+    }
+  ]
+}
